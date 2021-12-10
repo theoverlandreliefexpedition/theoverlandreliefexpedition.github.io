@@ -9,14 +9,13 @@
 
 @font-face {
   font-family: 'Redaction 35 Italic';
-  src: url(Fonts/Redaction_2_001/webfonts/Redaction_35-Italic.woff2) format('woff2');
+  src: url('../fonts/Redaction_2_001/Redaction_35-Italic.woff2') format('woff2');
 }
 
 body {
   margin: 0em;
   /*  background-color: black;*/
 }
-
 
 ::selection {
   color: black;
@@ -44,23 +43,23 @@ body {
 
 
 h1 {
-  font-family: chapman, sans-serif;
+  font-family: chapman, serif;
   font-weight: 400;
   font-style: normal;
-
-  margin: 0;
-  font-family: sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  margin-bottom: 2rem;;
   font-size: 10rem;
+line-height: 9rem;
 }
 
 h2 {
   margin: 0;
   font-family: 'Redaction 35 Italic', serif;
+  font-style: italic;
   font-weight: 500;
   font-style: normal;
   font-size: 10rem;
+  line-height: 9rem;
+
 }
 
 
