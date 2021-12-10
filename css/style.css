@@ -10,10 +10,11 @@
 @font-face {
   font-family: 'Redaction 35 Italic';
   src: url('../fonts/Redaction_2_001/Redaction_35-Italic.woff2') format('woff2');
+}
+@font-face {
     font-family: 'Redaction 100 Italic';
   src: url('../fonts/Redaction_2_001/Redaction_100-Italic.woff2') format('woff2');
-}
-
+  }
 
 
 body {
