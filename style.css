@@ -1,0 +1,237 @@
+/*GLOBALE FARBEN*/
+
+:root {
+  --blue: rgb(200, 240, 255);
+}
+
+
+/*REDACTION*/
+
+@font-face {
+  font-family: 'Redaction 35 Italic';
+  src: url(Fonts/Redaction_2_001/webfonts/Redaction_35-Italic.woff2) format('woff2');
+}
+
+body {
+  margin: 0em;
+  /*  background-color: black;*/
+}
+
+
+::selection {
+  color: black;
+  background-color: var(--blue);
+}
+
+
+
+.headline {
+  position: absolute;
+  bottom: 0;
+  padding: 5rem;
+  color: var(--blue);
+}
+
+.intro {
+  font-family: monospace;
+  position: relative;
+  top: 0;
+  top: 25vh;
+  left: 25vw;
+  width: 50vw;
+  color: var(--blue);
+}
+
+
+h1 {
+  font-family: chapman, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10rem;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Redaction 35 Italic', serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10rem;
+}
+
+
+.warning {
+  text-decoration: underline;
+  background-color: var(--blue);
+  color: black;
+}
+
+
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 800vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  background-image: linear-gradient(90deg, black 50%, white 90%);
+
+}
+
+.screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.start {
+  /*    background: black;  */
+}
+
+.one {
+  /*  background: var(--blue);*/
+}
+
+.two {
+  /*  background: black;*/
+}
+
+.three {
+  /*  background: green;*/
+}
+
+.four {
+  /*  background: black;*/
+}
+
+.five {
+  /*  background: lightblue;*/
+}
+
+.six {
+  /*  background: black;*/
+}
+
+.seven {
+  /*  background: lightblue;*/
+}
+
+.end {
+  /*  background: black;*/
+}
+
+
+
+
+/*SCROLLBAR*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/*
+#sketch-container {
+  position: absolute;
+  top: 0;
+  z-index: -100;
+}
+
+#sketch-container-2 {
+  position: absolute;
+  top: 0;
+  z-index: -100;
+  mix-blend-mode: lighten;
+}*/
+
+iframe {
+  border: none;
+  position: absolute;
+
+}
+
+.play {
+  position: absolute;
+  width: 25vw;
+  top: 50vh;
+  left: 50vw;
+}
+
+.deer {
+  margin: 0;
+  position: absolute;
+  z-index: 100;
+  left: 10rem;
+  bottom: 0rem;
+  display: inline;
+  font-size: 1rem;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.knives {
+    margin: 0;
+  position: absolute;
+  z-index: 100;
+  left: 10rem;
+  bottom: 0rem;
+  display: inline;
+  font-size: 1rem;
+}
+
+.route {
+  top: 0;
+  left: 0;
+  height: 150vh;
+  position: absolute;
+  z-index: -100;
+
+}
+
+.bear {
+  position: absolute;
+  left: 10rem;
+  width: 25vw;
+}
+
+.rainbow {
+  
+  position: absolute;
+  top: 10rem;
+  left: 20rem;
+
+  width: 25vw;
+  height: 25vh;
+  mix-blend-mode: exclusion;
+}
