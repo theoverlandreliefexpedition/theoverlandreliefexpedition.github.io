@@ -262,4 +262,5 @@ iframe {
 .scroll {
   height: 100vh;
   mix-blend-mode: lighten;
+  background-blend-mode: lighten;
 }
