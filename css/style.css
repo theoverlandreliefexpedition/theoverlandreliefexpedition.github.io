@@ -256,6 +256,10 @@ iframe {
 .text1-1 {
   position: absolute;
   top: 10rem;
-  left: 10rem;
-  
+  left: 10rem; 
+}
+
+.scroll {
+  height: 100vh;
+  mix-blend-mode: lighten;
 }
