@@ -233,4 +233,5 @@ iframe {
   width: 25vw;
   height: 25vh;
   mix-blend-mode: exclusion;
+  background-blend-mode: exclusion;
 }
