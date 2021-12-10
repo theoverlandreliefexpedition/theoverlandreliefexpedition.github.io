@@ -10,7 +10,11 @@
 @font-face {
   font-family: 'Redaction 35 Italic';
   src: url('../fonts/Redaction_2_001/Redaction_35-Italic.woff2') format('woff2');
+    font-family: 'Redaction 100 Italic';
+  src: url('../fonts/Redaction_2_001/Redaction_100-Italic.woff2') format('woff2');
 }
+
+
 
 body {
   margin: 0em;
@@ -22,7 +26,32 @@ body {
   background-color: var(--blue);
 }
 
+p em {
+font-family: chapman, serif;
+font-weight: 400;
+font-style: italic;
+}
 
+p {
+  font-family: chapman, serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  color: var(--blue);
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-family: 'Redaction 100 Italic', serif;
+  font-style: italic;
+  font-weight: 500;
+
+  font-size: 1rem;
+  line-height: 9rem;
+    color: var(--blue);
+
+}
 
 .headline {
   position: absolute;
@@ -32,13 +61,11 @@ body {
 }
 
 .intro {
-  font-family: monospace;
   position: relative;
   top: 0;
   top: 25vh;
   left: 25vw;
   width: 50vw;
-  color: var(--blue);
 }
 
 
@@ -99,11 +126,11 @@ h2 {
 
 
 .start {
-  /*    background: black;  */
+ 
 }
 
 .one {
-  /*  background: var(--blue);*/
+/*    background: red;*/
 }
 
 .two {
@@ -111,7 +138,7 @@ h2 {
 }
 
 .three {
-  /*  background: green;*/
+/*    background: green;*/
 }
 
 .four {
@@ -146,7 +173,7 @@ h2 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+  background-image: linear-gradient(black 50%, white 90%);
 }
 
 /* Handle */
@@ -156,7 +183,7 @@ h2 {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: white;
 }
 
 
@@ -221,17 +248,14 @@ iframe {
 .bear {
   position: absolute;
   left: 10rem;
-  width: 25vw;
+  top: 1rem;
+  width: 50vw;
+  z-index: -100;
 }
 
-.rainbow {
-
+.text1-1 {
   position: absolute;
   top: 10rem;
-  left: 20rem;
-
-  width: 25vw;
-  height: 25vh;
-  mix-blend-mode: exclusion;
-  background-blend-mode: exclusion;
+  left: 10rem;
+  
 }
