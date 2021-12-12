@@ -130,8 +130,6 @@ h2 {
  }
 
 .one {
-    background-color: red
-
 }
 
 .two {
@@ -150,8 +148,6 @@ h2 {
 }
 
 .seven {
-    background-color: red
-
 }
 
 .eight {
@@ -204,20 +200,6 @@ h2 {
   background: white;
 }
 
-
-/*
-#sketch-container {
-  position: absolute;
-  top: 0;
-  z-index: -100;
-}
-
-#sketch-container-2 {
-  position: absolute;
-  top: 0;
-  z-index: -100;
-  mix-blend-mode: lighten;
-}*/
 
 iframe {
   border: none;
