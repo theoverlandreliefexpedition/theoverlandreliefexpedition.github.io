@@ -1,31 +1,45 @@
-let pos = 0;
+////RAINBOW BACKGROUND
+//
+//let sketch1 = function (p) {
+//  let r = 0;
+//  let g = 200;
+//  let b = 200;
+//
+//  p.setup = function () {
+//    p.createCanvas(p.windowWidth, p.windowHeight);
+//  };
+//
+//  p.draw = function () {
+//    p.background(r, g, b);
+//    b = p.map(p.mouseX, 0, 400, 0, 255);
+//    r = p.map(p.mouseY, 0, 400, 0, 255);
+//
+//    //cursor
+//    p.noFill();
+//    p.stroke(b, r, g);
+//    p.strokeWeight(10);
+//    p.ellipse(p.mouseX, p.mouseY, r);
+//    p.noCursor();
+//  };
+//};
+//
+//let myp5_1 = new p5(sketch1, 'sketch-container')
 
-function setup() {
-createCanvas(windowWidth, windowHeight);
-}
+////RANDOM DOTS
+//
+//let sketch2 = function (p) {
+//
+//  p.setup = function () {
+//    p.createCanvas(300,300);
+//  };
+//
+//  p.draw = function () {
+//    p.background(0);
+//    
+//    p.ellipse(10,10,20,20);
+//    
+//  };
+//};
+//
+//let myp5_2 = new p5(sketch2, 'sketch-container-2')
 
-function draw() {
-//  background(255);
-  fill(200,240,255);
-  stroke(200,240,255);
-
-  rect(pos, windowHeight/2, pos, 2);
-  
-  noFill();
-  ellipse(0, windowHeight/2, pos*2);
-
-}
-
-function mouseWheel(event) {
-  print(event.delta);
-  //move the square according to the vertical scroll amount
-  pos += event.delta;
-  //uncomment to block page scrolling
-  //return false;
-}
-
-function touchMoved() {
-  pos = pos + 5;
-  if (pos > 255) {
-    pos = 0;
-  }

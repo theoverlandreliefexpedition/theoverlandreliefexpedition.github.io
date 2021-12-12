@@ -23,11 +23,3 @@ function mouseWheel(event) {
   //uncomment to block page scrolling
   //return false;
 }
-
-function touchMoved(event) {
-  print(event.delta);
-  //move the square according to the vertical scroll amount
-  pos += event.delta;
-  //uncomment to block page scrolling
-  //return false;
-}
