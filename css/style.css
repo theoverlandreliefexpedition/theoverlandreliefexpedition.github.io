@@ -112,7 +112,7 @@ h2 {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 900vw;
+  width: 1600vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   background-image: linear-gradient(90deg, black 50%, white 90%);
@@ -126,41 +126,58 @@ h2 {
 }
 
 
-.start {
- 
-}
+.zero {
+ }
 
 .one {
-/*    background: red;*/
+    background-color: red
+
 }
 
 .two {
-  /*  background: black;*/
 }
 
 .three {
-/*    background: green;*/
 }
 
 .four {
-/*    background: blue;*/
 }
 
 .five {
-  /*  background: lightblue;*/
 }
 
 .six {
-  /*  background: black;*/
 }
 
 .seven {
-  /*  background: lightblue;*/
+    background-color: red
+
 }
 
-.end {
-  /*  background: black;*/
+.eight {
 }
+
+.nine {
+}
+
+.ten {
+}
+
+.eleven {
+}
+
+.twelve {
+}
+
+.thirteen {
+}
+
+.fourteen {
+}
+
+.fifteen {
+}
+
 
 
 
@@ -264,5 +281,6 @@ iframe {
   position: absolute;
 top: 0;
   height: 100vh;
+  width: 100vw;
   mix-blend-mode: lighten;
 }
