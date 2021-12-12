@@ -214,7 +214,7 @@ iframe {
   left: 50vw;
 }
 
-.deer {
+.deer-emoji {
   margin: 0;
   position: absolute;
   z-index: 100;
@@ -226,7 +226,7 @@ iframe {
   transform: scaleX(-1);
 }
 
-.knives {
+.knives-emoji {
   margin: 0;
   position: absolute;
   z-index: 100;
@@ -251,6 +251,30 @@ iframe {
   top: 1rem;
   width: 50vw;
   z-index: -100;
+}
+
+.deer, .kill {
+  position: absolute;
+  left: 10rem;
+  width: 30vw;
+  z-index: 100;
+  left: 30vw;
+  top: 0rem;
+}
+
+.deer-alt {
+  position: absolute;
+  width: 30vw;
+  z-index: 100;
+  right: 0vw;
+  top: 0rem;
+}
+
+.ice {
+  position: absolute;
+  width: 60vw;
+  z-index: -100;
+  bottom: -10rem;
 }
 
 .text1-1 {
