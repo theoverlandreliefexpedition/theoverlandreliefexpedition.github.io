@@ -6,6 +6,9 @@
   <script src="p5.sound.min.js"></script>
   
   <link rel="stylesheet" href="https://use.typekit.net/lcm1bja.css">
+  
+  <link rel="preload" href="css/style.css" as="style">
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <meta charset="utf-8">
@@ -17,37 +20,46 @@
   <title>The Overland Relief Expedition</title>
 
 
-<link rel="stylesheet" href="https://use.typekit.net/lcm1bja.css">
-
-
-
-
-  <!--
-AUTOSCROLL DOES NOT WORK BECAUSE OF WRAPPER
- 
-  <script>
-    setInterval(function() {
-      window.scrollBy(1, 0);
-    }, 1);
-  </script>
-
--->
-
-
-
 </head>
 
 <body>
+ 
+       <script>
+                
+        function pageScroll() {
+    	window.scrollBy(50,0); // horizontal and vertical scroll increments
+    	scrolldelay = setTimeout('pageScroll()',100); // scrolls every 100 milliseconds
+}
+       </script>
+  
+ 
   <script src="scripts/sketch.js"></script>
+      
+       <nav><ul>
+       <li><a href="#duty">Duty</a></li>
+       <li><a href="#good-bye">Good-bye</a></li>
+       <li><a href="#sleds">Sleds</a></li>
+       <li><a href="#natives">Natives</a></li>
+       <li><a href="#huts">Huts</a></li>
+       <li><a href="#way">Way</a></li>
+       <li><a href="#ice">Ice</a></li>
+       <li><a href="#camps">Camps</a></li>
+       <li><a href="#nights">Nights</a></li>
+       <li><a href="#deer">Deer</a></li>
+       <li><a href="#dogs-wolves">Dogs/Wolves</a></li>
+       <li><a href="#blizzards">Blizzards</a></li>
+       <li><a href="#mates">Mates</a></li>
+       <li><a href="#kill">Kill</a></li>
+       <li><a href="#relief">Relief</a></li>
+       </ul></nav>
 
 
   <div class="outer-wrapper">
-    <div class="wrapper">
     
 
-
-
-      <div class="screen zero">
+    <div class="wrapper">
+    
+      <div id="duty" class="screen one">
 
 <!--    <iframe class="rainbow" src="scripts/global_rainbow/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>-->
        
@@ -61,21 +73,34 @@ AUTOSCROLL DOES NOT WORK BECAUSE OF WRAPPER
          
 
           <p>
-<!--          Early in November, 1897 <br>-->
+          Early in November, 1897 <br>
           in great danger of starvation<br>
           the danger was so imminent and serious<br>
-<!--          Little hope was held out by those experienced in work in the Arctic regions that anything could be accomplished by an expedition in the winter season,<br>-->
 
           </p>
 
           <div><p>Press play to start the experience. It will take approximately <em>15</em> minutes of your time. <br>
-            <span class="warning">WARNING:</span> This may potentially trigger seizures for people with photosensitive epilepsy.</p>
+            <span class="warning">WARNING:</span> This may potentially trigger seizures for people with photosensitive epilepsy.<br>
+            <input type="button" onClick="pageScroll()" value="Scroll Page"></p>
           </div>
           
 
         </div>
 
-        <a href=""><img src="images/play.svg" class="play"></a>
+
+       
+        <a onClick="document.getElementById('duty').play()" onClick="pageScroll()"><img src="images/play.svg" class="play"></a>
+        
+<!--
+       <embed controls src="audio/duty_3m45s.mp3" 
+       align="baseline" border="0" width="145" 
+       height="60" autostart="false" loop="false">
+-->
+       
+       <audio id="duty" controls src="audio/duty_3m45s.mp3" 
+       align="baseline" border="0" autostart="true" loop="false"></audio>
+       
+
 
 <img src="images/route.svg" class="route">
 
@@ -85,7 +110,7 @@ AUTOSCROLL DOES NOT WORK BECAUSE OF WRAPPER
       </div>
 
 
-      <div class="screen one">
+      <div id="good-bye" class="screen two">
        
        <p class="text1-1">landed safely on the beach, <br><br>our good-byes to our shipmates had been said, <br> and we stood on the shore watching the boat as it went back to the Bear,<br><br> wondering whether we should ever see our friends again.<em><br><br> good-bye<br><br> good-bye</em></p> 
        
@@ -100,44 +125,44 @@ AUTOSCROLL DOES NOT WORK BECAUSE OF WRAPPER
       </div>
 
 
-      <div class="screen two">
+      <div id="sleds" class="screen three">
         <h2 class="headline">Sleds</h2>
       </div>
       
-      <div class="screen three">
+      <div id="natives" class="screen four">
         <h2 class="headline">Natives</h2>
       </div>
 
 
-      <div class="screen four">
+      <div id="huts" class="screen five">
         
         <h2 class="headline">Huts</h2>
             
       </div>
       
-      <div class="screen five">
+      <div id="way" class="screen six">
         <h2 class="headline">Way</h2>
       </div>
       
       
-      <div class="screen six">
+      <div id="ice" class="screen seven">
         <h2 class="headline">Ice</h2>
         <img class="ice" src="images/ice-alt2.png">
       </div>
       
       
-      <div class="screen seven">
+      <div id="camps" class="screen eight">
         
         <h2 class="headline">Camps</h2>       
         
       </div>
       
-      <div class="screen eight">
+      <div id="nights" class="screen nine">
         <h2 class="headline">Nights</h2>
         <iframe class="aurora" src="scripts/aurora/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
       </div>
       
-      <div class="screen nine">
+      <div id="deer" class="screen ten">
         <h2 class="headline">Deer</h2>
         <img class="deer" src="images/deer.png">
 
@@ -209,25 +234,21 @@ AUTOSCROLL DOES NOT WORK BECAUSE OF WRAPPER
       </div>
         
       
-      <div class="screen ten">
+      <div id="dogs-wolves" class="screen eleven">
         <h2 class="headline">Dogs / Wolves</h2>
       </div>
         
       
-      <div class="screen eleven">
+      <div id="blizzards" class="screen twelve">
         <h2 class="headline">Blizzards</h2>
       </div>
       
-      <div class="screen twelve">
-        <h2 class="headline">Fire</h2>
-      </div>
       
-      
-      <div class="screen thirteen">
+      <div id="mates" class="screen thirteen">
         <h2 class="headline">Mates</h2>
       </div>
       
-      <div class="screen fourteen">
+      <div id="kill" class="screen fourteen">
         <h2 class="headline">Kill</h2>
         <img class="kill" src="images/kill-alt.png">
         <img class="deer-alt" src="images/deer-alt.png">
@@ -301,7 +322,7 @@ AUTOSCROLL DOES NOT WORK BECAUSE OF WRAPPER
 
       </div>
       
-      <div class="screen fifteen">
+      <div id="relief" class="screen fifteen">
         <h2 class="headline">Relief</h2>
         <a href=""><img src="images/play.svg" class="play"></a>
 
