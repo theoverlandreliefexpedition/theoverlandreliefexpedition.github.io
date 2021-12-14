@@ -347,11 +347,28 @@ iframe {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  z-index: 100;
+  z-index: 1000;
   top: 0rem;
   left: 0rem;
   mix-blend-mode: darken;
 }
+
+.hut1 {
+  position: absolute;
+  width: 75vw;
+  top: 1rem;
+  left: 19rem;;
+
+}
+
+.hut2 {
+  position: absolute;
+  width: 50vw;
+  top: 16vh;
+  left: 27vw;
+    mix-blend-mode: multiply;
+}
+
 
 .deer,
 .kill {
