@@ -11,10 +11,21 @@
   font-family: 'Redaction 35 Italic';
   src: url('../fonts/Redaction_2_001/Redaction_35-Italic.woff2') format('woff2');
 }
+
 @font-face {
-    font-family: 'Redaction 100 Italic';
+  font-family: 'Redaction 50 Italic';
+  src: url('../fonts/Redaction_2_001/Redaction_50-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Redaction 70 Italic';
+  src: url('../fonts/Redaction_2_001/Redaction_70-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Redaction 100 Italic';
   src: url('../fonts/Redaction_2_001/Redaction_100-Italic.woff2') format('woff2');
-  }
+}
 
 
 body {
@@ -28,9 +39,9 @@ body {
 }
 
 p em {
-font-family: chapman, serif;
-font-weight: 400;
-font-style: italic;
+  font-family: chapman, serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 p {
@@ -50,7 +61,7 @@ h5 {
 
   font-size: 1rem;
   line-height: 9rem;
-    color: var(--blue);
+  color: var(--blue);
 
 }
 
@@ -112,7 +123,7 @@ h2 {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 1600vw;
+  width: 1500vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   background-image: linear-gradient(90deg, black 50%, white 90%);
@@ -126,54 +137,36 @@ h2 {
 }
 
 
-.zero {
- }
 
-.one {
-}
+.one {}
 
-.two {
-}
+.two {}
 
-.three {
-}
+.three {}
 
-.four {
-}
+.four {}
 
-.five {
-}
+.five {}
 
-.six {
-}
+.six {}
 
-.seven {
-}
+.seven {}
 
-.eight {
-}
+.eight {}
 
-.nine {
-}
+.nine {}
 
-.ten {
-}
+.ten {}
 
-.eleven {
-}
+.eleven {}
 
-.twelve {
-}
+.twelve {}
 
-.thirteen {
-}
+.thirteen {}
 
-.fourteen {
-}
+.fourteen {}
 
-.fifteen {
-}
-
+.fifteen {}
 
 
 
@@ -250,11 +243,12 @@ iframe {
   left: 10rem;
   top: 1rem;
   width: 50vw;
-/*  z-index: -100;*/
+  /*  z-index: -100;*/
   mix-blend-mode: exclusion;
 }
 
-.deer, .kill {
+.deer,
+.kill {
   position: absolute;
   left: 10rem;
   width: 30vw;
@@ -281,12 +275,12 @@ iframe {
 .text1-1 {
   position: absolute;
   top: 10rem;
-  left: 10rem; 
+  left: 10rem;
 }
 
 .scroll {
   position: absolute;
-top: 0;
+  top: 0;
   height: 100vh;
   width: 100vw;
   mix-blend-mode: lighten;
@@ -294,7 +288,7 @@ top: 0;
 
 .kill-emoji {
   position: absolute;
-top: 0;
+  top: 0;
   z-index: 200;
   height: 100vh;
   width: 100vw;
@@ -306,4 +300,41 @@ top: 0;
   height: 100vh;
   width: 100vw;
   mix-blend-mode: lighten;
+}
+
+nav {
+  margin 0;
+  position: fixed;
+  z-index: 500;
+  top: 0.3rem;
+  width: 100vw;
+  height: 2rem;
+}
+
+ul,
+li,
+nav a {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+/*  justify-content: space-between;*/
+  width: 6.7vw;
+  align-items: center;
+
+  color: var(--blue);
+  /*  font-family: 'Redaction 50 Italic', serif;*/
+  font-family: 'Redaction 70 Italic', serif;
+  /*  font-family: 'Redaction 100 Italic', serif;*/
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color: black;
+  background-color: var(--blue);
 }
