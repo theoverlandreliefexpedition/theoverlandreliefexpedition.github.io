@@ -310,7 +310,7 @@ iframe {
 .natives2 {
   position: absolute;
   width: 30vw;
-  bottom: -5rem;
+  bottom: -5  rem;
   left: 10rem;
   /*  z-index: -100;*/
   mix-blend-mode: exclusion;
@@ -340,6 +340,18 @@ iframe {
   mix-blend-mode: exclusion;
 }
 
+
+/*SCREEN FIVE*/
+
+.hut {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  top: 0rem;
+  left: 0rem;
+  mix-blend-mode: darken;
+}
 
 .deer,
 .kill {
