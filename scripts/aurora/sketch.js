@@ -44,8 +44,8 @@ function draw() {
   ellipse(windowWidth/1.5, windowHeight/1.5, mouseY*3, mouseX*3);
   //ellipse(windowWidth/1.5, windowHeight/1.5, 5, 5);
   rectMode(CENTER);
+  
+    noCursor();
+
 }
 
-function mouseWheel() {
-  g = g + 10;
-}

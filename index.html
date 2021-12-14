@@ -3,7 +3,8 @@
 
 <head>
   <script src="scripts/p5.js"></script>
-  <script src="p5.sound.min.js"></script>
+  
+  <script src="scripts/p5.sound.min.js"></script>
   
   <link rel="stylesheet" href="https://use.typekit.net/lcm1bja.css">
   
@@ -23,7 +24,12 @@
 </head>
 
 <body>
- 
+
+<!--    <script class="cursor" src="scripts/Cursor/sketch.js"></script>-->
+
+
+
+<!-- 
        <script>
                 
         function pageScroll() {
@@ -31,12 +37,11 @@
     	scrolldelay = setTimeout('pageScroll()',100); // scrolls every 100 milliseconds
 }
        </script>
-  
+-->  
  
-  <script src="scripts/sketch.js"></script>
       
        <nav><ul>
-       <li><a href="#duty">Duty</a></li>
+       <li><a class="duty" href="#duty">Duty</a></li>
        <li><a href="#good-bye">Good-bye</a></li>
        <li><a href="#sleds">Sleds</a></li>
        <li><a href="#natives">Natives</a></li>
@@ -52,14 +57,20 @@
        <li><a href="#kill">Kill</a></li>
        <li><a href="#relief">Relief</a></li>
        </ul></nav>
+       
+       <div class="ground"></div>
 
 
   <div class="outer-wrapper">
-    
+
 
     <div class="wrapper">
     
+    
+    
       <div id="duty" class="screen one">
+      
+    
 
 <!--    <iframe class="rainbow" src="scripts/global_rainbow/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>-->
        
@@ -81,6 +92,7 @@
 
           <div><p>Press play to start the experience. It will take approximately <em>15</em> minutes of your time. <br>
             <span class="warning">WARNING:</span> This may potentially trigger seizures for people with photosensitive epilepsy.<br>
+            
             <input type="button" onClick="pageScroll()" value="Scroll Page"></p>
           </div>
           
@@ -90,15 +102,8 @@
        <audio id="song1" controls src="audio/duty_3m45s.mp3" 
        align="baseline" border="0" autostart="true" loop="false"></audio>
        
-        <a onClick="document.getElementById('song1').play()"><img src="images/play.svg" class="play"></a>
+        <button onClick="document.getElementById('song1').play()"><img src="images/play.svg" class="play"></button>
         
-<!--
-       <embed controls src="audio/duty_3m45s.mp3" 
-       align="baseline" border="0" width="145" 
-       height="60" autostart="false" loop="false">
--->
-       
-       
 
 
 <img src="images/route.svg" class="route">
@@ -115,7 +120,7 @@
        
        <h5>good-bye</h5>
        
-       <h2 class="headline">good-bye</h2>
+       <h2 class="headline good-bye">good-bye</h2>
        
        <img class="bear" src="images/bear.png">
        

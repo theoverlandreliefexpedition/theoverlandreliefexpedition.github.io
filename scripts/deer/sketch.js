@@ -8,4 +8,7 @@ function draw() {
   textFont('Georgia');
   text('🦌', mouseY, mouseX);
   text('🔪', mouseX, mouseY);
+  
+    noCursor();
+
 }
