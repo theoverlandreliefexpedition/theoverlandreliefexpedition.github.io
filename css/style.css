@@ -1,4 +1,4 @@
-/*GLOBALE FARBEN*/
+/*GLOBAL COLOR*/
 
 :root {
   --blue: rgb(200, 240, 255);
@@ -250,6 +250,16 @@ iframe {
 
 }
 
+
+
+
+
+
+/*IMAGES*/
+
+
+/*SCREEN TWO*/
+
 .bear {
   position: absolute;
   left: 10rem;
@@ -258,6 +268,78 @@ iframe {
   /*  z-index: -100;*/
   mix-blend-mode: exclusion;
 }
+
+
+/*SCREEN THREE*/
+
+.sled-dogs {
+  position: absolute;
+  left: -15rem;
+  top: -15rem;
+  width: 75vw;
+  /*  z-index: -100;*/
+  mix-blend-mode: exclusion;
+}
+
+.sled-deer {
+  position: absolute;
+  /*  z-index: -100;*/
+  mix-blend-mode: exclusion;
+}
+
+.sled-sail {
+    position: absolute;
+  right: 10rem;
+  top: 10rem;
+  width: 50vw;
+  /*  z-index: -100;*/
+  mix-blend-mode: exclusion;
+}
+
+
+/*SCREEN FOUR*/
+
+.natives1 {
+  position: absolute;
+  right: 25rem;
+  top: 0rem;
+  width: 50vw;
+  /*  z-index: -100;*/
+  mix-blend-mode: exclusion;
+}
+.natives2 {
+  position: absolute;
+  width: 30vw;
+  bottom: -5rem;
+  left: 10rem;
+  /*  z-index: -100;*/
+  mix-blend-mode: exclusion;
+}
+.grave1 {
+  position: absolute;
+  right: 0rem;
+  bottom: 12rem;
+  width: 25vw;
+  /*  z-index: -100;*/
+  mix-blend-mode: exclusion;
+}
+.grave2 {
+  position: absolute;
+  right: 25rem;
+  bottom: 8rem;
+  width: 25vw;
+  /*  z-index: -100;*/
+  mix-blend-mode: exclusion;
+}
+.grave3 {
+  position: absolute;
+  right: 10rem;
+  bottom: 0rem;
+  width: 25vw;
+  /*  z-index: -100;*/
+  mix-blend-mode: exclusion;
+}
+
 
 .deer,
 .kill {
