@@ -14,6 +14,8 @@ function draw() {
   noFill();
   ellipse(0, windowHeight/2, pos*2);
 
+  cursor('grab');
+
 }
 
 function mouseWheel(event) {
