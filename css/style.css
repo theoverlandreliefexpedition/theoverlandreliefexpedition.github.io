@@ -34,6 +34,88 @@ body {
   /*  cursor: none;*/
 }
 
+#outer-wrapper {
+  position: absolute;
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  overflow-x: hidden;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 1500vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  background-image: linear-gradient(90deg, black 50%, white 90%);
+
+}
+
+.screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  
+}
+
+
+.one {}
+
+.two {}
+
+.three {}
+
+.four {}
+
+.five {}
+
+.six {}
+
+.seven {}
+
+.eight {}
+
+.nine {}
+
+.ten {}
+
+.eleven {}
+
+.twelve {}
+
+.thirteen {}
+
+.fourteen {}
+
+.fifteen {}
+
+
+#wrapper2 {
+  display: none;
+  flex-direction: row;
+  width: 1500vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+#wrapper2-1 {
+  background-color: red;
+}
+
+#wrapper2-1 {
+  background-color: green;
+}
+
+
+
+
 ::selection {
   color: black;
   background-color: var(--blue);
@@ -112,75 +194,6 @@ h2 {
 
 
 
-.outer-wrapper {
-  position: absolute;
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  /*  scroll-snap-type: both proximity;*/
-
-  overflow-x: hidden;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 1500vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-  background-image: linear-gradient(90deg, black 50%, white 90%);
-
-
-
-}
-
-.screen {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-
-}
-
-
-
-.one {}
-
-.two {}
-
-.three {}
-
-.four {}
-
-.five {}
-
-.six {}
-
-.seven {}
-
-.eight {}
-
-.nine {}
-
-.ten {}
-
-.eleven {}
-
-.twelve {}
-
-.thirteen {}
-
-.fourteen {}
-
-.fifteen {}
-
-
-
-
 /*SCROLLBAR*/
 
 /* width */
@@ -211,7 +224,7 @@ iframe {
 
 }
 
-.play {
+#button, #button-end {
   position: absolute;
   width: 25vw;
   top: 50vh;
@@ -252,9 +265,6 @@ iframe {
 
 
 
-
-
-
 /*IMAGES*/
 
 
@@ -262,8 +272,8 @@ iframe {
 
 .bear {
   position: absolute;
-  left: 10rem;
-  top: 1rem;
+  left: 10vw;
+  top: 1vh;
   width: 50vw;
   /*  z-index: -100;*/
   mix-blend-mode: exclusion;
@@ -274,25 +284,24 @@ iframe {
 
 .sled-dogs {
   position: absolute;
-  left: -15rem;
-  top: -15rem;
+  left: -15vw;
+  top: -25vh;
   width: 75vw;
-  /*  z-index: -100;*/
   mix-blend-mode: exclusion;
 }
 
 .sled-deer {
   position: absolute;
-  /*  z-index: -100;*/
+  width: 75vw;
+  top: 0vh;
   mix-blend-mode: exclusion;
 }
 
 .sled-sail {
     position: absolute;
-  right: 10rem;
-  top: 10rem;
+  right: 12vw;
+  top: 10vh;
   width: 50vw;
-  /*  z-index: -100;*/
   mix-blend-mode: exclusion;
 }
 
@@ -301,42 +310,41 @@ iframe {
 
 .natives1 {
   position: absolute;
-  right: 25rem;
-  top: 0rem;
+  right: 25vw;
+  top: 0vh;
   width: 50vw;
-  /*  z-index: -100;*/
   mix-blend-mode: exclusion;
 }
+
 .natives2 {
   position: absolute;
   width: 30vw;
-  bottom: -5  rem;
-  left: 10rem;
-  /*  z-index: -100;*/
+  bottom: -5vh;
+  left: 10vw;
   mix-blend-mode: exclusion;
 }
+
 .grave1 {
   position: absolute;
-  right: 0rem;
-  bottom: 12rem;
+  right: 0vw;
+  bottom: 15vh;
   width: 25vw;
-  /*  z-index: -100;*/
   mix-blend-mode: exclusion;
 }
+
 .grave2 {
   position: absolute;
-  right: 25rem;
-  bottom: 8rem;
+  right: 25vw;
+  bottom: 5vh;
   width: 25vw;
-  /*  z-index: -100;*/
   mix-blend-mode: exclusion;
 }
+
 .grave3 {
   position: absolute;
-  right: 10rem;
-  bottom: 0rem;
+  right: 10vw;
+  bottom: 0vh;
   width: 25vw;
-  /*  z-index: -100;*/
   mix-blend-mode: exclusion;
 }
 
@@ -348,16 +356,16 @@ iframe {
   width: 100vw;
   height: 100vh;
   z-index: 1000;
-  top: 0rem;
-  left: 0rem;
+  top: 0vh;
+  left: 0vw;
   mix-blend-mode: darken;
 }
 
 .hut1 {
   position: absolute;
   width: 75vw;
-  top: 1rem;
-  left: 19rem;;
+  top: 1vh;
+  left: 16vw;;
 
 }
 
@@ -373,11 +381,10 @@ iframe {
 .deer,
 .kill {
   position: absolute;
-  left: 10rem;
   width: 30vw;
   z-index: 100;
   left: 30vw;
-  top: 0rem;
+  top: 0vh;
 }
 
 .deer-alt {
@@ -385,20 +392,20 @@ iframe {
   width: 30vw;
   z-index: 100;
   right: 0vw;
-  top: 0rem;
+  top: 0vh;
 }
 
 .ice {
   position: absolute;
-  width: 60vw;
+  width: 50vw;
   z-index: -100;
-  bottom: -10rem;
+  bottom: -10vh;
 }
 
 .text1-1 {
   position: absolute;
-  top: 10rem;
-  left: 10rem;
+  top: 15vh;
+  left: 10vw;
 }
 
 .scroll {
@@ -431,16 +438,18 @@ nav {
   position: fixed;
   z-index: 1000;
   top: 0.3rem;
-  /*  bottom: 0rem;*/
   width: 100vw;
-  /*  height: 2rem;*/
   border-style: solid;
   border-width: 0 0 1px;
-  /*  border-width: 1px 0 0;*/
   border-color: var(--blue);
-  /*  background-color: white;*/
+  
+/*      bottom: 0rem;*/
+/*      background-color: white;*/
+/*      border-width: 1px 0 0;*/
+/*      height: 2rem;*/
 
 }
+
 
 ul,
 li,
@@ -474,6 +483,7 @@ a:hover {
 
 
 /*
+
 .ground {
   background-color: white;
   bottom: 0;
@@ -484,7 +494,8 @@ a:hover {
   border-style: solid;
   border-width: 1px 0 0;
   border-color: var(--blue);
-}*/
+}
+*/
 
 
 /*

@@ -2,9 +2,11 @@
 <html lang="de">
 
 <head>
+
+ 
   <script src="scripts/p5.js"></script>
   
-  <script src="scripts/p5.sound.min.js"></script>
+    <!-- <script src="scripts/p5.sound.min.js"></script> -->
   
   <link rel="stylesheet" href="https://use.typekit.net/lcm1bja.css">
   
@@ -19,25 +21,18 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 
   <title>The Overland Relief Expedition</title>
-
+  
+  <script src="scripts/scrollToAudioPosition.js"></script>
+  
+<!--  <script src="scripts/scrollOnly.js"></script>-->
+ 
+<!--  <script src="scripts/wrapper-switch.js"></script> -->
+  
 
 </head>
 
-<body>
+<body id="body">
 
-<!--    <script class="cursor" src="scripts/Cursor/sketch.js"></script>-->
-
-
-
-<!-- 
-       <script>
-                
-        function pageScroll() {
-    	window.scrollBy(50,0); // horizontal and vertical scroll increments
-    	scrolldelay = setTimeout('pageScroll()',100); // scrolls every 100 milliseconds
-}
-       </script>
--->  
  
       
        <nav><ul>
@@ -61,18 +56,15 @@
        <div class="ground"></div>
 
 
-  <div class="outer-wrapper">
+  <div id="outer-wrapper">
 
 
-    <div class="wrapper">
+    <div id="wrapper">
     
     
     
       <div id="duty" class="screen one">
       
-    
-
-<!--    <iframe class="rainbow" src="scripts/global_rainbow/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>-->
        
         <div class="headline">
 
@@ -93,7 +85,6 @@
           <div><p>Press play to start the experience. It will take approximately <em>15</em> minutes of your time. <br>
             <span class="warning">WARNING:</span> This may potentially trigger seizures for people with photosensitive epilepsy.<br>
             
-<!--            <input type="button" onClick="pageScroll()" value="Scroll Page">-->
             
             </p>
           </div>
@@ -101,16 +92,14 @@
 
         </div>
 
-       <audio id="song1" controls src="audio/duty_3m45s.mp3" 
-       align="baseline" border="0" autostart="true" loop="false"></audio>
+
+       <audio id="audioplayer" controls src="audio/duty_3m45s.mp3"></audio>
        
-        <a onClick="document.getElementById('song1').play()"><img src="images/play.svg" class="play"></a>
+        <div id="button"><img src="images/play.svg"></div>
         
 
 
 <img src="images/route.svg" class="route">
-
-<!--<iframe class="rainbow" src="scripts/global_rainbow/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>-->
 
       
       </div>
@@ -352,10 +341,27 @@
       
       <div id="relief" class="screen fifteen">
         <h2 class="headline">Relief</h2>
-        <a href=""><img src="images/play.svg" class="play"></a>
+        
+        <div id="button-end"><img src="images/play.svg"></div>
 
       </div>
 
+    
+    
+    
+    <div id="wrapper2">
+    
+    
+    
+      <div id="wrapper2-1" class="screen one"></div>
+      <div id="wrapper2-2" class="screen two"></div>
+      <div id="wrapper2-3" class="screen three"></div>
+      <div id="wrapper2-4" class="screen four"></div>
+    
+      
+          
+    </div>  
+    
 
     </div>
   </div>
