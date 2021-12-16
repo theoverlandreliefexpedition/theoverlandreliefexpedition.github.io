@@ -5,7 +5,7 @@
 }
 
 
-/*REDACTION*/
+/*REDACTION FONT*/
 
 @font-face {
   font-family: 'Redaction 35 Italic';
@@ -30,8 +30,6 @@
 
 body {
   margin: 0em;
-  /*  background-color: black;*/
-  /*  cursor: none;*/
 }
 
 #outer-wrapper {
@@ -54,15 +52,13 @@ body {
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   background-image: linear-gradient(90deg, black 50%, white 90%);
-
 }
 
 .screen {
   position: relative;
   width: 100vw;
   height: 100vh;
-  scroll-snap-align: start;
-  
+  /*  scroll-snap-align: start;*/
 }
 
 
@@ -100,25 +96,69 @@ body {
 #wrapper2 {
   display: none;
   flex-direction: row;
-  width: 1500vw;
+  width: 500vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
+  /*  z-index: -100;*/
 }
 
 #wrapper2-1 {
   background-color: red;
 }
 
-#wrapper2-1 {
+#wrapper2-2 {
   background-color: green;
 }
 
+#wrapper2-3 {
+  background-color: red;
+}
+
+#wrapper2-4 {
+  background-color: green;
+}
+
+#wrapper2-5 {
+  background-color: red;
+}
 
 
 
 ::selection {
   color: black;
   background-color: var(--blue);
+}
+
+
+h1 {
+  font-family: chapman, serif;
+  font-weight: 400;
+  font-style: normal;
+
+  margin-bottom: 2rem;
+  font-size: 10rem;
+  line-height: 9rem;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Redaction 35 Italic', serif;
+  font-style: italic;
+  font-weight: 500;
+
+  font-size: 10rem;
+  line-height: 9rem;
+}
+
+h5 {
+  margin: 0;
+  font-family: 'Redaction 100 Italic', serif;
+  font-style: italic;
+  font-weight: 500;
+
+  font-size: 1rem;
+  line-height: 9rem;
+  color: var(--blue);
 }
 
 p em {
@@ -136,62 +176,14 @@ p {
   font-size: 1rem;
 }
 
-h5 {
-  margin: 0;
-  font-family: 'Redaction 100 Italic', serif;
-  font-style: italic;
-  font-weight: 500;
-
-  font-size: 1rem;
-  line-height: 9rem;
-  color: var(--blue);
-
-}
-
 .headline {
   position: absolute;
   bottom: 0;
   padding: 5rem;
   color: var(--blue);
+  z-index: 100;
+  pointer-events: none;
 }
-
-.intro {
-  position: relative;
-  top: 0;
-  top: 10vh;
-  left: 45vw;
-  width: 50vw;
-}
-
-
-h1 {
-  font-family: chapman, serif;
-  font-weight: 400;
-  font-style: normal;
-
-  margin-bottom: 2rem;
-  font-size: 10rem;
-  line-height: 9rem;
-
-}
-
-h2 {
-  margin: 0;
-  font-family: 'Redaction 35 Italic', serif;
-  font-style: italic;
-  font-weight: 500;
-
-  font-size: 10rem;
-  line-height: 9rem;
-}
-
-
-.warning {
-  text-decoration: underline;
-  background-color: var(--blue);
-  color: black;
-}
-
 
 
 /*SCROLLBAR*/
@@ -204,7 +196,6 @@ h2 {
 /* Track */
 ::-webkit-scrollbar-track {
   background-image: linear-gradient(black 50%, white 90%);
-
 }
 
 /* Handle */
@@ -218,40 +209,37 @@ h2 {
 }
 
 
+/*P5 SKETCHES*/
+
 iframe {
   border: none;
   position: absolute;
-
 }
 
-#button, #button-end {
+
+/*SCREEN 1*/
+
+.intro {
+  position: relative;
+  top: 0;
+  top: 10vh;
+  left: 45vw;
+  width: 50vw;
+}
+
+.warning {
+  text-decoration: underline;
+  background-color: var(--blue);
+  color: black;
+}
+
+#button,
+#button-end {
   position: absolute;
   width: 25vw;
   top: 50vh;
   left: 50vw;
   cursor: pointer;
-}
-
-.deer-emoji {
-  margin: 0;
-  position: absolute;
-  z-index: 100;
-  left: 50vw;
-  bottom: 0rem;
-  display: inline;
-  font-size: 1rem;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-.knives-emoji {
-  margin: 0;
-  position: absolute;
-  z-index: 100;
-  left: 50vw;
-  bottom: 0rem;
-  display: inline;
-  font-size: 1rem;
 }
 
 .route {
@@ -260,15 +248,10 @@ iframe {
   height: 150vh;
   position: absolute;
   z-index: -100;
-
 }
 
 
-
-/*IMAGES*/
-
-
-/*SCREEN TWO*/
+/*SCREEN 2*/
 
 .bear {
   position: absolute;
@@ -279,8 +262,22 @@ iframe {
   mix-blend-mode: exclusion;
 }
 
+.text1-1 {
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+}
 
-/*SCREEN THREE*/
+.scroll {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  mix-blend-mode: lighten;
+}
+
+
+/*SCREEN 3*/
 
 .sled-dogs {
   position: absolute;
@@ -298,7 +295,7 @@ iframe {
 }
 
 .sled-sail {
-    position: absolute;
+  position: absolute;
   right: 12vw;
   top: 10vh;
   width: 50vw;
@@ -306,7 +303,7 @@ iframe {
 }
 
 
-/*SCREEN FOUR*/
+/*SCREEN 4*/
 
 .natives1 {
   position: absolute;
@@ -349,13 +346,12 @@ iframe {
 }
 
 
-/*SCREEN FIVE*/
+/*SCREEN 5*/
 
 .hut {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  z-index: 1000;
   top: 0vh;
   left: 0vw;
   mix-blend-mode: darken;
@@ -365,7 +361,8 @@ iframe {
   position: absolute;
   width: 75vw;
   top: 1vh;
-  left: 16vw;;
+  left: 16vw;
+  ;
 
 }
 
@@ -374,18 +371,189 @@ iframe {
   width: 50vw;
   top: 16vh;
   left: 27vw;
-    mix-blend-mode: multiply;
+  mix-blend-mode: multiply;
 }
 
 
-.deer,
-.kill {
+/*SCREEN 6*/
+
+.midday-halt {
+  position: absolute;
+  width: 60vw;
+  top: 25vh;
+  left: 25vw;
+  pointer-events: none;
+}
+
+.cursor {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0vh;
+  left: 0vw;
+}
+
+.way {
+  position: absolute;
+  width: 75vw;
+  bottom: 0vh;
+  left: 0vw;
+  pointer-events: none;
+  z-index: -100;
+}
+
+.mountain {
+  position: absolute;
+  height: 100vh;
+  top: 0vh;
+  right: -10vw;
+  pointer-events: none;
+  z-index: 500;
+  mix-blend-mode: exclusion;
+}
+
+
+/*SCREEN 7*/
+
+.ice {
+  position: absolute;
+  width: 40vw;
+  bottom: 0vh;
+}
+
+.icy {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+  background-image: url(../images/ice-alt3.png);
+  background-repeat: repeat;
+  background-size: 0.5vw;
+}
+
+.icy-gradient {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -50;
+  mix-blend-mode: multiply;
+}
+
+
+/*SCREEN 8*/
+
+.camp {
+  position: absolute;
+  top: 0;
+  top: -10vh;
+  left: -20vw;
+  width: 90vw;
+  mix-blend-mode: exclusion;
+}
+
+.camp-tilton {
+  position: absolute;
+  bottom: 0vh;
+  left: -15vw;
+  width: 40vw;
+  /*  mix-blend-mode: exclusion;*/
+}
+
+.snow-houses {
+  position: absolute;
+  top: -10vh;
+  right: -10vw;
+  width: 70vw;
+  mix-blend-mode: exclusion;
+}
+
+
+/*SCREEN 9*/
+
+.midnight-sun {
+  position: absolute;
+  top: 10vh;
+  right: 0vw;
+  width: 50vw;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.midnight {
+  position: absolute;
+  top: 10vh;
+  right: 0vw;
+  width: 50vw;
+  mix-blend-mode: difference;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.aurora {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  mix-blend-mode: lighten;
+}
+
+
+/*SCREEN 10*/
+
+.deer {
   position: absolute;
   width: 30vw;
   z-index: 100;
   left: 30vw;
   top: 0vh;
+  pointer-events: none;
 }
+
+.fawns {
+  position: absolute;
+  width: 50vw;
+  z-index: 200;
+  right: -0vw;
+  top: 0vh;
+  pointer-events: none;
+}
+
+.deer-cursor {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  z-index: 200;
+  /*  mix-blend-mode: lighten;*/
+}
+
+.deer-emoji {
+  margin: 0;
+  position: absolute;
+  z-index: 100;
+  left: 50vw;
+  bottom: 0rem;
+  display: inline;
+  font-size: 1rem;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  pointer-events: none;
+}
+
+
+/*SCREEN 11*/
+
+
+/*SCREEN 12*/
+
+
+/*SCREEN 13*/
+
+
+/*SCREEN 14*/
 
 .deer-alt {
   position: absolute;
@@ -395,25 +563,22 @@ iframe {
   top: 0vh;
 }
 
-.ice {
+.kill {
   position: absolute;
-  width: 50vw;
-  z-index: -100;
-  bottom: -10vh;
+  width: 30vw;
+  z-index: 100;
+  left: 30vw;
+  top: 0vh;
 }
 
-.text1-1 {
+.knives-emoji {
+  margin: 0;
   position: absolute;
-  top: 15vh;
-  left: 10vw;
-}
-
-.scroll {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  mix-blend-mode: lighten;
+  z-index: 100;
+  left: 50vw;
+  bottom: 0rem;
+  display: inline;
+  font-size: 1rem;
 }
 
 .kill-emoji {
@@ -424,13 +589,11 @@ iframe {
   width: 100vw;
 }
 
-.aurora {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  mix-blend-mode: lighten;
-}
+
+/*SCREEN 15*/
+
+
+/*NAVIGATION*/
 
 nav {
   margin 0;
@@ -442,14 +605,12 @@ nav {
   border-style: solid;
   border-width: 0 0 1px;
   border-color: var(--blue);
-  
-/*      bottom: 0rem;*/
-/*      background-color: white;*/
-/*      border-width: 1px 0 0;*/
-/*      height: 2rem;*/
 
+  /*      bottom: 0rem;*/
+  /*      background-color: white;*/
+  /*      border-width: 1px 0 0;*/
+  /*      height: 2rem;*/
 }
-
 
 ul,
 li,
@@ -473,36 +634,9 @@ nav a {
 
 nav a {
   padding-left: 0.3rem;
-
 }
 
 a:hover {
   color: black;
   background-color: var(--blue);
 }
-
-
-/*
-
-.ground {
-  background-color: white;
-  bottom: 0;
-  height: 5vh;
-  width: 100vw;
-  position: fixed;
-  z-index: 1;
-  border-style: solid;
-  border-width: 1px 0 0;
-  border-color: var(--blue);
-}
-*/
-
-
-/*
-.rainbow {
-  position: absolute;
-  width: 25vw;
-  height: 25vh;
-  bottom: 25rem;
-}
-*/

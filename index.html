@@ -1,18 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
 
- 
-  <script src="scripts/p5.js"></script>
-  
-    <!-- <script src="scripts/p5.sound.min.js"></script> -->
-  
-  <link rel="stylesheet" href="https://use.typekit.net/lcm1bja.css">
-  
-  <link rel="preload" href="css/style.css" as="style">
-
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="google" content="notranslate">
 
   <meta charset="utf-8">
 
@@ -21,51 +12,53 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 
   <title>The Overland Relief Expedition</title>
-  
-  <script src="scripts/scrollToAudioPosition.js"></script>
-  
-<!--  <script src="scripts/scrollOnly.js"></script>-->
- 
-<!--  <script src="scripts/wrapper-switch.js"></script> -->
-  
+
+  <script src="scripts/p5.js"></script>
+
+  <!-- <script src="scripts/p5.sound.min.js"></script> -->
+
+  <link rel="stylesheet" href="https://use.typekit.net/lcm1bja.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
 
 </head>
 
 <body id="body">
 
- 
-      
-       <nav><ul>
-       <li><a href="#duty">Duty</a></li>
-       <li><a href="#good-bye">Good-bye</a></li>
-       <li><a href="#sleds">Sleds</a></li>
-       <li><a href="#natives">Natives</a></li>
-       <li><a href="#huts">Huts</a></li>
-       <li><a href="#way">Way</a></li>
-       <li><a href="#ice">Ice</a></li>
-       <li><a href="#camps">Camps</a></li>
-       <li><a href="#nights">Nights</a></li>
-       <li><a href="#deer">Deer</a></li>
-       <li><a href="#dogs-wolves">Dogs/Wolves</a></li>
-       <li><a href="#blizzards">Blizzards</a></li>
-       <li><a href="#mates">Mates</a></li>
-       <li><a href="#kill">Kill</a></li>
-       <li><a href="#relief">Relief</a></li>
-       </ul></nav>
-       
-       <div class="ground"></div>
+  <nav id="navigation">
+    <ul>
+      <li><a href="#duty">Duty</a></li>
+      <li><a href="#good-bye">Good-bye</a></li>
+      <li><a href="#sleds">Sleds</a></li>
+      <li><a href="#natives">Natives</a></li>
+      <li><a href="#huts">Huts</a></li>
+      <li><a href="#way">Way</a></li>
+      <li><a href="#ice">Ice</a></li>
+      <li><a href="#camps">Camps</a></li>
+      <li><a href="#nights">Nights</a></li>
+      <li><a href="#deer">Deer</a></li>
+      <li><a href="#canidae">Canidae</a></li>
+      <li><a href="#blizzards">Blizzards</a></li>
+      <li><a href="#mates">Mates</a></li>
+      <li><a href="#kill">Kill</a></li>
+      <li><a href="#relief">Relief</a></li>
+    </ul>
+  </nav>
 
+  <!--  <div class="ground"></div>-->
 
   <div id="outer-wrapper">
 
 
     <div id="wrapper">
-    
-    
-    
+
+
+      <!--SCREEN 1-->
       <div id="duty" class="screen one">
-      
-       
+
+
         <div class="headline">
 
           <h1>The <br>Overland</h1>
@@ -73,116 +66,139 @@
         </div>
 
         <div class="intro">
-         
 
           <p>
-          Early in November, 1897 <br>
-          in great danger of starvation<br>
-          the danger was so imminent and serious<br>
-
+            Early in November, 1897 <br>
+            in great danger of starvation<br>
+            the danger was so imminent and serious<br>
           </p>
 
-          <div><p>Press play to start the experience. It will take approximately <em>15</em> minutes of your time. <br>
-            <span class="warning">WARNING:</span> This may potentially trigger seizures for people with photosensitive epilepsy.<br>
-            
-            
+          <div>
+            <p>Press play to start the experience. It will take approximately <em>15</em> minutes of your time. <br>
+              <span class="warning">WARNING:</span> This may potentially trigger seizures for people with photosensitive epilepsy.<br>
             </p>
           </div>
-          
 
         </div>
 
 
-       <audio id="audioplayer" controls src="audio/duty_3m45s.mp3"></audio>
-       
+        <audio id="audioplayer" controls src="audio/3x5-pads.mp3"></audio>
+
         <div id="button"><img src="images/play.svg"></div>
-        
 
+        <img src="images/route.svg" class="route">
 
-<img src="images/route.svg" class="route">
-
-      
       </div>
 
 
+      <!--SCREEN 2-->
       <div id="good-bye" class="screen two">
-       
-       <p class="text1-1">landed safely on the beach, <br><br>our good-byes to our shipmates had been said, <br> and we stood on the shore watching the boat as it went back to the Bear,<br><br> wondering whether we should ever see our friends again.<em><br><br> good-bye<br><br> good-bye</em></p> 
-       
-       <h5>good-bye</h5>
-       
-       <h2 class="headline good-bye">good-bye</h2>
-       
-       <img class="bear" src="images/bear.png">
-       
-       <iframe class="scroll" src="scripts/scroll/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
-       
+
+        <p class="text1-1">landed safely on the beach, <br><br>our good-byes to our shipmates had been said, <br> and we stood on the shore watching the boat as it went back to the Bear,<br><br> wondering whether we should ever see our friends again.<em><br><br> good-bye<br><br> good-bye</em></p>
+
+        <h5>good-bye</h5>
+
+        <h2 class="headline good-bye">good-bye</h2>
+
+        <img class="bear" src="images/bear.png">
+
+        <iframe class="scroll" src="scripts/scroll/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+
       </div>
 
 
+      <!--SCREEN 3-->
       <div id="sleds" class="screen three">
         <h2 class="headline">Sleds</h2>
-        
-       <img class="sled-dogs" src="images/sled-dogs.png">
-       <img class="sled-deer" src="images/sled-deer.png">
-       <img class="sled-sail" src="images/sled-sail.png">
-        
-        
+
+        <img class="sled-dogs" src="images/sled-dogs.png">
+        <img class="sled-deer" src="images/sled-deer.png">
+        <img class="sled-sail" src="images/sled-sail.png">
+
       </div>
-      
+
+
+      <!--     SCREEN 4-->
       <div id="natives" class="screen four">
         <h2 class="headline">Natives</h2>
-        
-       <img class="natives1" src="images/natives1.png">
-       <img class="natives2" src="images/natives2.png">
-       <img class="grave1" src="images/grave1.png">
-       <img class="grave2" src="images/grave2.png">
-       <img class="grave3" src="images/grave3.png">
-       
-       
-        
-        
+
+        <img class="natives1" src="images/natives1.png">
+        <img class="natives2" src="images/natives2.png">
+        <img class="grave1" src="images/grave1.png">
+        <img class="grave2" src="images/grave2.png">
+        <img class="grave3" src="images/grave3.png">
+
       </div>
 
 
+      <!--     SCREEN 5-->
       <div id="huts" class="screen five">
-        
-        <h2 class="headline">Huts</h2>
-           
-       <img class="hut1" src="images/hut1.png">
-       <img class="hut2" src="images/hut2.png">
-       
-       <iframe class="hut" src="scripts/hut/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
 
-                     
+        <h2 class="headline">Huts</h2>
+
+        <img class="hut1" src="images/hut1.png">
+        <img class="hut2" src="images/hut2.png">
+
+        <iframe class="hut" src="scripts/hut/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+
       </div>
-      
+
+
+      <!--     SCREEN 6-->
       <div id="way" class="screen six">
         <h2 class="headline">Way</h2>
+
+        <iframe class="cursor" src="scripts/cursor/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+
+        <img class="midday-halt" src="images/midday-halt.png">
+        <img class="way" src="images/way.png">
+        <img class="mountain" src="images/mountain.png">
+
       </div>
-      
-      
+
+
+      <!--     SCREEN 7-->
       <div id="ice" class="screen seven">
         <h2 class="headline">Ice</h2>
         <img class="ice" src="images/ice-alt2.png">
+        <div class="icy"></div>
+        <img class="icy-gradient" src="images/gradient.png">
+
       </div>
-      
-      
+
+
+      <!--     SCREEN 8-->
       <div id="camps" class="screen eight">
-        
-        <h2 class="headline">Camps</h2>       
-        
+
+        <h2 class="headline">Camps</h2>
+
+        <img class="camp" src="images/camp.png">
+        <img class="camp-tilton" src="images/camp-tilton.png">
+        <img class="snow-houses" src="images/snow-houses.png">
+
       </div>
-      
+
+
+      <!--     SCREEN 9-->
       <div id="nights" class="screen nine">
         <h2 class="headline">Nights</h2>
+
+        <img class="midnight-sun" src="images/midnight-sun.png">
+        <img class="midnight" src="images/midnight.png">
+
         <iframe class="aurora" src="scripts/aurora/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+
       </div>
-      
+
+
+      <!--SCREEN 10-->
       <div id="deer" class="screen ten">
         <h2 class="headline">Deer</h2>
         <img class="deer" src="images/deer.png">
 
+        <img class="fawns" src="images/fawns.png">
+
+        <!--       448x deer emoji-->
         <p class="deer-emoji">&#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
           &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
           &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
@@ -247,126 +263,142 @@
           &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
           &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
           &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br></p>
-          
+
+        <iframe class="deer-cursor" src="scripts/deer-cursor/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+
       </div>
-        
-      
-      <div id="dogs-wolves" class="screen eleven">
-        <h2 class="headline">Dogs / Wolves</h2>
+
+
+      <!--SCREEN 11-->
+      <div id="canidae" class="screen eleven">
+        <h2 class="headline">Canidae</h2>
       </div>
-        
-      
+
+
+      <!--     SCREEN 12-->
       <div id="blizzards" class="screen twelve">
         <h2 class="headline">Blizzards</h2>
       </div>
-      
-      
+
+
+      <!--      SCREEN 13-->
       <div id="mates" class="screen thirteen">
         <h2 class="headline">Mates</h2>
       </div>
-      
+
+
+      <!--     SCREEN 14-->
       <div id="kill" class="screen fourteen">
         <h2 class="headline">Kill</h2>
-        <img class="kill" src="images/kill-alt.png">
+        <img class="kill" src="images/kill-alt2.png">
         <img class="deer-alt" src="images/deer-alt.png">
-        <iframe class="kill-emoji" src="scripts/deer/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <iframe class="kill-emoji" src="scripts/kill-emoji/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
 
-
+        <!--       448x knife emoji-->
         <p class="knives-emoji">&#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br></p>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br></p>
 
       </div>
-      
+
+
+      <!--     SCREEN 15-->
       <div id="relief" class="screen fifteen">
         <h2 class="headline">Relief</h2>
-        
+
         <div id="button-end"><img src="images/play.svg"></div>
 
       </div>
 
-    
-    
-    
+
+
+
+      <!--     INNER WRAPPER END-->
+    </div>
+
+
     <div id="wrapper2">
-    
-    
-    
+
       <div id="wrapper2-1" class="screen one"></div>
       <div id="wrapper2-2" class="screen two"></div>
       <div id="wrapper2-3" class="screen three"></div>
       <div id="wrapper2-4" class="screen four"></div>
-    
-      
-          
-    </div>  
-    
+      <div id="wrapper2-5" class="screen five"></div>
 
     </div>
+
+
+    <!--    OUTER WRAPPER END-->
   </div>
 
 
+  <!--SCRIPTS AT END OF HTML-->
+  <script src="scripts/scrollToAudioPosition.js"></script>
+
+  <!--  <script src="scripts/scrollOnly.js"></script>-->
+
+  <script src="scripts/wrapper-switch.js"></script>
 
 </body>
 
