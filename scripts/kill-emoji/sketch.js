@@ -4,9 +4,12 @@ function setup() {
 
 function draw() {
     
-  textSize(50);
-  textFont('Georgia');
-  text('🦌', mouseY, mouseX);
+  noStroke();
+  textSize(100);
+//  text('🦌', mouseY, mouseX);
+//  text('🐋', mouseY-10, mouseX);
+//  text('🦭', mouseY, mouseX);
+//  text('🦆', mouseY+10, mouseX);
   text('🔪', mouseX, mouseY);
   
     noCursor();
