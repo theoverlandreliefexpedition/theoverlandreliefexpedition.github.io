@@ -620,6 +620,34 @@ iframe {
   width: 100vw;
 }
 
+.ducks {
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  width: 10vw;
+}
+
+.whales {
+  position: absolute;
+  top: 50vh;
+  left: -10vw;
+  width: 30vw;
+}
+
+.seals {
+  position: absolute;
+  top: 10vh;
+  left: 0vw;
+  width: 20vw;
+}
+
+.skinning {
+  position: absolute;
+  bottom: 10vh;
+  width: 20vw;
+  right: 40vw;
+}
+
 
 /*SCREEN 15*/
 
