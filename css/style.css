@@ -276,6 +276,8 @@ iframe {
   position: absolute;
   top: 15vh;
   left: 10vw;
+    mix-blend-mode: exclusion;
+
 }
 
 .scroll {
@@ -373,8 +375,6 @@ iframe {
   top: 1vh;
   left: 16vw;
     mix-blend-mode: exclusion;
-
-
 }
 
 .hut2 {
@@ -390,6 +390,16 @@ iframe {
   bottom: 15vh;
   right: 10vw;
   z-index: 100;
+  mix-blend-mode: exclusion;
+
+}
+
+.text1-3 {
+  position: absolute;
+  top: 45vh;
+  left: 20vw;
+ mix-blend-mode: exclusion;
+
 }
 
 
@@ -427,7 +437,17 @@ iframe {
   right: -10vw;
   pointer-events: none;
   z-index: 500;
-  mix-blend-mode: exclusion;
+/*  mix-blend-mode: exclusion;*/
+}
+
+.track-chart {
+  position: absolute;
+  width: 40vw;
+  top: 10vh;
+  left: -10vw;
+  pointer-events: none;
+  z-index: -0;
+/*  mix-blend-mode: exclusion;*/
 }
 
 
@@ -452,8 +472,8 @@ iframe {
 .icy-gradient {
   position: absolute;
   top: 0;
+/*  height: 100vh;*/
   width: 100vw;
-  height: 100vh;
   z-index: -50;
   mix-blend-mode: multiply;
 }
@@ -584,6 +604,25 @@ iframe {
 
 /*SCREEN 12*/
 
+.blizzard {
+  position: absolute;
+  top: 0;
+  z-index: 200;
+  height: 100vh;
+  width: 100vw;
+  mix-blend-mode: lighten;
+}
+
+.blizzard-gradient {
+  position: absolute;
+  top: 0;
+/*  height: 100vh;*/
+  width: 100vw;
+  z-index: -50;
+  mix-blend-mode: lighten;
+}
+
+
 
 /*SCREEN 13*/
 
@@ -599,6 +638,7 @@ iframe {
   width: 25vw;
   top: 0vh;
   left: -10vw;
+  z-index: 200;
 }
 
 
