@@ -10,7 +10,7 @@ function draw() {
 //strokeWeight(5);
   noStroke();
   fill(255);
-  rect(windowWidth/2,windowHeight/2, windowWidth-mouseX*2);
+  ellipse(windowWidth/2,windowHeight/2, windowWidth-mouseX*2);
   
 }
 
