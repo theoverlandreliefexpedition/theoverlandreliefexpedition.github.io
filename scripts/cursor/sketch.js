@@ -9,13 +9,18 @@ function setup() {
 function draw() {
   //  background(0);
 
-  noFill();
-  stroke(200, 240, 255);
-  drawingContext.setLineDash([0, 0]);
 
-  ellipse(mouseX, mouseY, 10);
+  stroke(200, 240, 255);
 
   noCursor();
   drawingContext.setLineDash([5, 5]);
   line(pmouseX, pmouseY, mouseX, mouseY);
+}
+
+function mousePressed(){
+    noFill();
+  stroke(200, 240, 255);
+  drawingContext.setLineDash([0, 0]);
+
+  ellipse(mouseX, mouseY, 10);
 }
