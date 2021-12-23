@@ -28,7 +28,7 @@
 }
 
 
-body {
+html, body {
   margin: 0em;
 }
 
@@ -176,13 +176,14 @@ p {
   font-style: normal;
   text-align: justify;
   color: var(--blue);
-  font-size: 1rem;
+/*  font-size: 1rem;*/
 }
 
 .headline {
   position: absolute;
   bottom: 0;
   padding: 5rem;
+  
   color: var(--blue);
   z-index: 100;
   pointer-events: none;
@@ -220,6 +221,13 @@ iframe {
 }
 
 
+.text1-1 {
+    position: absolute;
+  top: 15vh;
+  left: 10vw;
+  mix-blend-mode: exclusion;
+}
+
 /*SCREEN 1*/
 
 .intro {
@@ -228,6 +236,7 @@ iframe {
   top: 10vh;
   left: 45vw;
   width: 50vw;
+  font-size: 1.5rem;
 }
 
 .warning {
@@ -273,12 +282,12 @@ iframe {
   width: 30vw;
 }
 
-.text1-1 {
+.text2-1 {
   position: absolute;
   top: 15vh;
   left: 10vw;
-    mix-blend-mode: exclusion;
-
+  font-size: 3rem;
+  mix-blend-mode: exclusion;
 }
 
 .scroll {
@@ -312,6 +321,13 @@ iframe {
   right: 12vw;
   top: 10vh;
   width: 50vw;
+  mix-blend-mode: exclusion;
+}
+
+.text3-1 {
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
   mix-blend-mode: exclusion;
 }
 
@@ -566,7 +582,7 @@ iframe {
   width: 100vw;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  z-index: 200;
+  z-index: 400;
   /*  mix-blend-mode: lighten;*/
 }
 
@@ -583,6 +599,14 @@ iframe {
   pointer-events: none;
 }
 
+.deer-account {
+  position: absolute;
+  width: 50vw;
+  z-index: 200;
+  left: -0vw;
+  top: 0vh;
+  pointer-events: none;
+}
 
 /*SCREEN 11*/
 
