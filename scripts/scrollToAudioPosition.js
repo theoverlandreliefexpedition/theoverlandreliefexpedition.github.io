@@ -66,7 +66,13 @@ audioPlayer.addEventListener( 'timeupdate', function() {
 
 	var currentScrollPosition = scrollDistance*playAlpha;
   
-  document.getElementById('outer-wrapper').scrollTo( 0, currentScrollPosition );
+  document.getElementById('outer-wrapper').scrollTo({
+        top: currentScrollPosition,
+        left: 0,
+        behavior: 'smooth'
+  });
+  
+  console.log(currentScrollPosition);
 
 
 	window.scrollTo( 0, currentScrollPosition ); // ..scrollTo( currentScrollPosition, 0 );

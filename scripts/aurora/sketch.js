@@ -1,7 +1,6 @@
 var r = 150;
 var g = 150;
 var b = 150;
-
 var canvas;
 
 //function windowResized() {
@@ -17,9 +16,10 @@ function setup() {
 
 function draw() {
   
+  
 
 //  background(schwarz, transparenz 0-255);
-  background(0, 10);
+  background(0, 5);
 
   b = map(mouseX*4, 0, windowWidth, 0, 255);
   r = map(mouseY*2, 0, windowHeight, 0, 255);
