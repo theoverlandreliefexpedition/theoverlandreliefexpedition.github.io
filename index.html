@@ -23,6 +23,11 @@
   <link rel="stylesheet" href="https://use.typekit.net/lcm1bja.css">
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  
+  
+  <script src="jquery-3.6.0.js"></script>
+<script src="jquery-ui.js"></script>
 
 
 
@@ -68,7 +73,7 @@
           <h2>Relief <br>Expedition</h2>
         </div>
 
-        <div class="intro">
+        <div class="intro" class="drag-me">
 
           <p>
             Early in November, 1897 <br>
@@ -79,7 +84,7 @@
             looking to the relief
           </p>
 
-          <div>
+          <div class="drag-me">
             <p>Press play to start the experience. It will take approximately <em>15</em> minutes of your time. <br>
               <span class="warning">WARNING:</span> This may potentially trigger seizures for people with photosensitive epilepsy.<br>
             </p>
@@ -90,7 +95,7 @@
 
         <audio id="audioplayer" src="audio/3x5-pads.mp3"></audio>
 
-        <div id="button"><img src="images/play.svg"></div>
+        <div class="drag-me" id="button"><img src="images/play.svg"></div>
 
         <img src="images/route.svg" class="route">
 
@@ -110,7 +115,7 @@
           <h2>bye</h2>
         </div>  
 
-        <img class="bear" src="images/bear.png">
+        <img class="bear" src="images/bear.png" class="drag-me">
 
         <iframe class="scroll" src="scripts/scroll/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
 
@@ -984,6 +989,14 @@ the Revenue-Cutter Service.</p>
   <!--  <script src="scripts/scrollOnly.js"></script>-->
 
   <script src="scripts/wrapper-switch.js"></script>
+  
+
+  <script>
+    $(function() {
+  $(".drag-me").draggable();
+});
+  </script>
+  
 
 </body>
 
