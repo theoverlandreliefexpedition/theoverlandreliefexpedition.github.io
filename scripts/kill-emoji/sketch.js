@@ -3,6 +3,8 @@ function setup() {
 }
 
 function draw() {
+  
+  background(0);
     
   noStroke();
   textSize(100);

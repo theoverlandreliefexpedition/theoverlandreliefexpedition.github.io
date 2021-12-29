@@ -14,12 +14,7 @@ function draw() {
     noCursor();
 
 }
-//function mousePressed() {
-//    
-//  noStroke();
-//  
-//  textSize(100);
-//  text('🦌', mouseX, mouseY);
-//  
-//
-//}
+
+function mousePressed() {
+  clear();
+}
