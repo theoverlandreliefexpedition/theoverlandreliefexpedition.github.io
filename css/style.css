@@ -839,3 +839,27 @@ a:hover {
   color: black;
   background-color: var(--blue);
 }
+
+#text1-1 {
+    cursor: pointer;
+
+}
+
+#text1-3 {
+  
+  display: none;
+    cursor: pointer;
+
+  
+  font-size: 3rem;
+    
+  mix-blend-mode: normal;
+  background-color: rgba(0,0,0,0.5);
+    
+  border: 1px solid var(--blue);
+  
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 2px 2px 50px 10px rgba(0,0,0,0.5);
+  
+  
+}
