@@ -4,7 +4,7 @@
   --blue: rgb(200, 240, 255);
   
     /* offset-x | offset-y | blur-radius | spread-radius | color */
-  --shadow: 2px 2px 50px 10px rgba(0, 0, 0, 0.5);
+  --shadow: 2px 2px 50px 10px rgba(0, 0, 0, 1);
 }
 
 
@@ -175,7 +175,7 @@ p em {
 }
 
 p {
-  margin: 0;
+  margin: 0 0 1vh;
   font-family: chapman, serif;
   font-weight: 400;
   font-style: normal;
@@ -423,20 +423,21 @@ iframe {
 }
 
 #text4-2 {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  width: 50vw;
+/*  width: 50vw;*/
   right: 10vw;
   bottom: 10vh;
-  padding: 0 0.5vw 0.5vw;;
+  padding: 0.2vw 0.5vw 0vw;
 
   display: none;
-  cursor: pointer;
   
   z-index: 1000;
 
   font-size: 1vw;
 
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid var(--blue);
 
   box-shadow: var(--shadow);
@@ -890,5 +891,19 @@ a:hover {
 
 #text1-1 {
   cursor: pointer;
+}
 
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1vw;
+  height: 1vw;
+    
+  color: var(--blue);
+  background-color: rgba(0, 0, 0, 0);
+  border: solid var(--blue);
+  border-width: 0 0 1px 1px;
+
+  cursor: pointer;
 }
