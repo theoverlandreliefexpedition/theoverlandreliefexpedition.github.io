@@ -2,6 +2,9 @@
 
 :root {
   --blue: rgb(200, 240, 255);
+  
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+  --shadow: 2px 2px 50px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -30,7 +33,7 @@
 
 html,
 body {
-  margin: 0em;
+  margin: 0;
 }
 
 #outer-wrapper {
@@ -172,10 +175,10 @@ p em {
 }
 
 p {
+  margin: 0;
   font-family: chapman, serif;
   font-weight: 400;
   font-style: normal;
-  text-align: justify;
   color: var(--blue);
 }
 
@@ -184,7 +187,6 @@ details p {
   font-family: chapman, serif;
   font-weight: 400;
   font-style: normal;
-  text-align: justify;
 
   padding: 1rem;
 
@@ -409,6 +411,36 @@ iframe {
   bottom: 0vh;
   width: 25vw;
   mix-blend-mode: exclusion;
+}
+
+#text4-1 {
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+  mix-blend-mode: exclusion;
+  cursor: pointer;
+  font-size: 2vw;
+}
+
+#text4-2 {
+  position: absolute;
+  width: 50vw;
+  right: 10vw;
+  bottom: 10vh;
+  padding: 0 0.5vw 0.5vw;;
+
+  display: none;
+  cursor: pointer;
+  
+  z-index: 1000;
+
+  font-size: 1vw;
+
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid var(--blue);
+
+  box-shadow: var(--shadow);
+
 }
 
 
@@ -858,24 +890,5 @@ a:hover {
 
 #text1-1 {
   cursor: pointer;
-
-}
-
-#text1-3 {
-
-  display: none;
-  cursor: pointer;
-
-
-  font-size: 3rem;
-
-  mix-blend-mode: normal;
-  background-color: rgba(0, 0, 0, 0.5);
-
-  border: 1px solid var(--blue);
-
-  /* offset-x | offset-y | blur-radius | spread-radius | color */
-  box-shadow: 2px 2px 50px 10px rgba(0, 0, 0, 0.5);
-
 
 }
