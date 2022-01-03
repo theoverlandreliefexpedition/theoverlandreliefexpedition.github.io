@@ -4,7 +4,7 @@
   --blue: rgb(200, 240, 255);
 
   /* offset-x | offset-y | blur-radius | spread-radius | color */
-  --shadow: 2px 2px 50px 10px rgba(0, 0, 0, 1);
+  --shadow: 2px 2px 50px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -328,9 +328,9 @@ iframe {
 
 .sled-dogs {
   position: absolute;
-  left: -15vw;
-  top: -25vh;
-  width: 75vw;
+  right: 12vw;
+  top: 10vh;
+  width: 50vw;
   mix-blend-mode: exclusion;
 }
 
@@ -343,16 +343,16 @@ iframe {
 
 .sled-sail {
   position: absolute;
-  right: 12vw;
-  top: 10vh;
-  width: 50vw;
+  left: -15vw;
+  top: -25vh;
+  width: 70vw;
   mix-blend-mode: exclusion;
 }
 
 #text3-1 {
   position: absolute;
   top: 15vh;
-  left: 10vw;
+  left: 15vw;
 
   z-index: 100;
 
@@ -364,12 +364,27 @@ iframe {
   flex-direction: column;
 
   position: absolute;
-  right: 10vw;
-  bottom: 10vh;
+  left: 20vw;
+  top: 50vh;
 
   display: none;
 
-  z-index: 1000;
+  z-index: 100;
+
+  font-size: 1vw;
+}
+
+#text3-3 {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  left: 50vw;
+  top: 60vh;
+
+  display: none;
+
+  z-index: 100;
 
   font-size: 1vw;
 }
@@ -913,21 +928,6 @@ button {
   box-shadow: var(--shadow);
 }
 
-#text3-3 {
-  display: flex;
-  flex-direction: column;
-
-  position: absolute;
-  left: 10vw;
-  bottom: 10vh;
-
-  display: none;
-
-  z-index: 1000;
-
-  font-size: 1vw;
-}
-
 .button {
   color: var(--blue);
   background-color: rgba(0, 0, 0, 0);
@@ -937,5 +937,14 @@ button {
   padding: 0vw 0.5vw 0.2vw;
   
   cursor: pointer;
-;
+}
+
+.draggable:hover {
+  cursor: grab;
+  cursor: -webkit-grab;  
+}
+
+.draggable:active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
 }
