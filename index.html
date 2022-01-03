@@ -69,29 +69,28 @@
           <h2>Relief <br>Expedition</h2>
         </div>
 
-        <div class="intro" class="drag-me">
+        <div class="intro" class="draggable">
 
           <p>
-            Early in November, 1897 <br>
-            in great danger of starvation<br>
-            in dire distress.<br>
-            the danger was so imminent and serious<br>
-            These conditions call for prompt and energetic action, <br>
-            looking to the relief
+            Early in November, 1897: <br>
+            In dire distress and in great danger of starvation.<br>
+            The danger was so imminent and serious.<br>
+            These conditions call for prompt and energetic action &mdash; <br>
+            looking to the relief.
           </p>
 
-          <div class="drag-me">
+         
             <p>Press play to start the experience. <br>It will take approximately <em>15</em> minutes of your time. <br>
               <span class="em">WARNING:</span> This may potentially trigger <br>seizures for people with photosensitive epilepsy.<br>
             </p>
-          </div>
+          
 
         </div>
 
 
-        <audio id="audioplayer" src="audio/3x5-pads.mp3"></audio>
+        <audio id="audioplayer" src="audio/3x5-pads.mp3" controls></audio>
 
-        <div class="drag-me" id="button"><img src="images/play.svg"></div>
+        <div id="button"><img src="images/play.svg"></div>
 
         <img src="images/route.svg" class="route">
 
@@ -112,7 +111,7 @@
           <h2>bye</h2>
         </div>
 
-        <img class="bear" src="images/bear.png" class="drag-me">
+        <img class="bear" src="images/bear.png">
 
         <iframe class="scroll" src="scripts/scroll/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
 
@@ -134,7 +133,7 @@
 
         <!--       CLICKABLE DIV-->
 
-        <div class="drag-me clickable box" id="text3-1">
+        <div class="draggable box" id="text3-1">
 
           <p>The sled is an open framework of hickory or oak, <br>no more wood being used than is absolutely necessary<br><br>
             <em class="button" onclick="getElementById('text3-2').style.display='flex'">click for dog ride</em>
@@ -147,7 +146,7 @@
 
         <!--        DETAILS-->
 
-        <div id="text3-2" class="drag-me box">
+        <div id="text3-2" class="draggable box">
           <button class="close" onclick="getElementById('text3-2').style.display='none'">x</button>
 
           <p>With dogs:</p>
@@ -156,7 +155,7 @@
 
         </div>
 
-        <div id="text3-3" class="drag-me box">
+        <div id="text3-3" class="draggable box">
           <button class="close" onclick="getElementById('text3-3').style.display='none'">x</button>
 
           <p>With deer:</p>
@@ -1162,7 +1161,12 @@ hide, few or no nails being used;
 
   <script>
     $(function() {
-      $(".drag-me").draggable();
+      $('.draggable').draggable();
+    });
+
+    $('.draggable').draggable({
+      appendTo: 'body',
+      scroll: false //stops scrolling container when moved outside boundaries
     });
   </script>
 
