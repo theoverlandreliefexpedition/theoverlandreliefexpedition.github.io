@@ -74,15 +74,15 @@
           <p>
             Early in November, 1897 <br>
             in great danger of starvation<br>
-            the danger was so imminent and serious<br>
             in dire distress.<br>
+            the danger was so imminent and serious<br>
             These conditions call for prompt and energetic action, <br>
             looking to the relief
           </p>
 
           <div class="drag-me">
-            <p>Press play to start the experience. It will take approximately <em>15</em> minutes of your time. <br>
-              <span class="warning">WARNING:</span> This may potentially trigger seizures for people with photosensitive epilepsy.<br>
+            <p>Press play to start the experience. <br>It will take approximately <em>15</em> minutes of your time. <br>
+              <span class="em">WARNING:</span> This may potentially trigger <br>seizures for people with photosensitive epilepsy.<br>
             </p>
           </div>
 
@@ -132,11 +132,41 @@
         <img class="sled-sail" src="images/sled-sail.png">
 
 
-        <details id="text3-1">
-          <summary>The sled is an open framework of<br>
-            hickory or oak, no more wood being used than is absolutely necessary</summary>
-          <p>More info about the details. Lorem ipsum dolor sit amet</p>
-        </details>
+        <!--       CLICKABLE DIV-->
+
+        <div class="drag-me clickable box" id="text3-1">
+
+          <p>The sled is an open framework of hickory or oak, <br>no more wood being used than is absolutely necessary<br><br>
+            <em class="button" onclick="getElementById('text3-2').style.display='flex'">click for dog ride</em>
+            <em class="button" onclick="getElementById('text3-3').style.display='flex'">click for deer ride</em>
+
+          </p>
+
+        </div>
+
+
+        <!--        DETAILS-->
+
+        <div id="text3-2" class="drag-me box">
+          <button class="close" onclick="getElementById('text3-2').style.display='none'">x</button>
+
+          <p>With dogs:</p>
+
+          <p>Lorem ipsum dolor</p>
+
+        </div>
+
+        <div id="text3-3" class="drag-me box">
+          <button class="close" onclick="getElementById('text3-3').style.display='none'">x</button>
+
+          <p>With deer:</p>
+
+          <p>Lorem ipsum dolor</p>
+
+        </div>
+
+
+
 
         <!--
         <p class="text3-1">The sled is an open framework of<br>
@@ -151,6 +181,7 @@ hide, few or no nails being used;
           it is subjected in traveling.
 
         </p>
+         
           -->
 
         <!--       ONE TEXT DESCRIBES SLED RIDE WITH DOGS THE OTHER ONE WITH DEER-->
@@ -269,64 +300,28 @@ hide, few or no nails being used;
         <!--       SUMMARY-->
 
 
-        <details id="text3-1">
+        <details id="text4-1">
           <summary>He saw what our needs were, and, so far as he was able, <br>or as much as he had, he would help us gladly.<br>
             It is refreshing to meet such simple, true-hearted people in time of need,<br>
             with that open-hearted hospitality
             which is universal among the natives of Alaska.<br>
-            [click for more]</summary>
-          <p>The hospitality of these people I have never seen equaled<br>
-            elsewhere. It is never grudging; it is thrust upon you. The best they<br>
+            <em>click for more</em>
+          </summary>
+          <p>The hospitality of these people I have never seen equaled
+            elsewhere. <br>It is never grudging; it is thrust upon you. <br>The best they
             have, and the best place in the house are at your disposal.</p>
 
           <p>Never in all our journey did we pass a house where the people<br>
-            did not extend a cordial welcome and urge us to go in; and hardly a<br>
-            hut that we did go into, but the best place was cleared out for us and<br>
-            our belongings. What this means to a 1 ired, cold, and hungry traveler<br>
-            can not be fully appreciated save by those who have experienced it,</p>
+            did not extend a cordial welcome and urge us to go in; <br>and hardly a
+            hut that we did go into, but the best place was cleared out <br>for us and
+            our belongings. What this means to a tired, cold, <br>and hungry traveler
+            can not be fully appreciated save by those who have experienced it.</p>
 
-          <p>and my former good impressions of the Alaskan Eskimo were but<br>
+          <p>and my former good impressions of the Alaskan Eskimo were <br>but
             intensified by this winter’s journey. All that we ever gave in return<br>
             for such hospitality, and all that was expected was a cup of tea and<br>
             a cracker to the inmates of the house after we had finished our meal.</p>
         </details>
-
-        <!--
-        <div class="drag-me" id="text4-1">
-
-
-          <p>He saw what our needs were, and, so <br>
-            far as he was able, or as much as he had, he would help us gladly.<br>
-            It is refreshing to meet such simple, true-hearted people in time of need,<br>
-            with that open-hearted hospitality<br>
-            which is universal among the natives of Alaska.<br>
-            [click for more]</p>
-
-        </div>
--->
-
-        <!--        DETAILS-->
-
-        <div id="text4-2" class="drag-me">
-          <button onclick="getElementById('text4-2').style.display='none'">x</button>
-
-          <p>The hospitality of these people I have never seen equaled<br>
-            elsewhere. It is never grudging; it is thrust upon you. The best they<br>
-            have, and the best place in the house are at your disposal.</p>
-
-          <p>Never in all our journey did we pass a house where the people<br>
-            did not extend a cordial welcome and urge us to go in; and hardly a<br>
-            hut that we did go into, but the best place was cleared out for us and<br>
-            our belongings. What this means to a 1 ired, cold, and hungry traveler<br>
-            can not be fully appreciated save by those who have experienced it,</p>
-
-          <p>and my former good impressions of the Alaskan Eskimo were but<br>
-            intensified by this winter’s journey. All that we ever gave in return<br>
-            for such hospitality, and all that was expected was a cup of tea and<br>
-            a cracker to the inmates of the house after we had finished our meal.</p>
-
-
-        </div>
 
 
         <!--
@@ -420,7 +415,7 @@ hide, few or no nails being used;
         <iframe class="cursor" src="scripts/cursor/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
 
         <img class="midday-halt" src="images/midday-halt.png">
-        <img class="way" src="images/way.png">
+        <!--        <img class="way" src="images/way.png">-->
         <img class="mountain" src="images/mountain.png">
         <img class="track-chart" src="images/track-chart.png">
 
@@ -664,7 +659,7 @@ hide, few or no nails being used;
           did I ever sleep cold, and less seldom do I remember being wakeful
           during the night.</p>
 
-        <p class="text1-1">From Cape Prince of Wales on we had been treated to bright auroral<br>
+        <p id="text9">From Cape Prince of Wales on we had been treated to bright auroral<br>
           displays almost every night. They generally came out of a dark bank<br>
           that would form in the northern horizon just after dark, and stretch<br>
           in long shooting streamers that gradually worked over the heavens to<br>
