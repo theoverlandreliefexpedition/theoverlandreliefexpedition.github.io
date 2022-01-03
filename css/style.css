@@ -933,4 +933,9 @@ button {
   background-color: rgba(0, 0, 0, 0);
   border: solid var(--blue);
   border-width: 1px;
+  
+  padding: 0vw 0.5vw 0.2vw;
+  
+  cursor: pointer;
+;
 }
