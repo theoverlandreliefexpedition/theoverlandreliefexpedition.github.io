@@ -8,9 +8,9 @@ function draw() {
 
   noStroke();
   
-  let starX = random(mouseX-200, mouseX+200);
-  let starY = random(mouseY-200, mouseY+200);
-  let gr = random(5, 20)
+  let starX = random(width);
+  let starY = random(height);
+  let gr = random(1, 10)
   
 //  ellipse(starX, starY, starX/2)
   ellipse(starX, starY, gr)
