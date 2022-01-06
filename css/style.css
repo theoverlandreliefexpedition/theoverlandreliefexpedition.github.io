@@ -1,6 +1,8 @@
+/*
 iframe {
   display: none;
 }
+*/
 
 /*GLOBAL COLOR*/
 
@@ -390,8 +392,8 @@ iframe {
   flex-direction: column;
 
   position: absolute;
-  left: 20vw;
-  top: 50vh;
+  left: 50vw;
+  top: 10vh;
 
   display: none;
 
@@ -402,11 +404,11 @@ iframe {
 
 #text3-3 {
   display: flex;
-  flex-direction: column;
+/*  flex-direction: column;*/
 
   position: absolute;
-  left: 50vw;
-  top: 60vh;
+  left: 10vw;
+  top: 50vh;
 
   display: none;
 
@@ -600,7 +602,7 @@ iframe {
   display: none;
   
   position: absolute;
-  top: 50vh;
+  top: 40vh;
   left: 0vw;
   right: 0vw;
 
@@ -815,6 +817,8 @@ iframe {
   top: 10vh;
   left: 20vw;
   font-size: 1.5vw;
+  pointer-events: none;
+  mix-blend-mode: exclusion;
 }
 
 #text9-2 {
@@ -918,7 +922,8 @@ iframe {
   z-index: 200;
   height: 100vh;
   width: 100vw;
-  mix-blend-mode: lighten;
+/*  mix-blend-mode: lighten;*/
+  pointer-events: none;
 }
 
 .blizzard-gradient {
@@ -959,7 +964,10 @@ iframe {
   left: 30vw;
   top: 0vh;
   
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s linear;
+
 }
 
 
@@ -1024,7 +1032,7 @@ iframe {
 
 .free-bear {
   position: absolute;
-  right: -2vw;
+  right: 6vw;
   top: -1vh;
   width: 50vw;
   /*  z-index: -100;*/
@@ -1033,7 +1041,7 @@ iframe {
 
 .ice-break {
   position: absolute;
-  right: 0vw;
+  right: 8vw;
   top: 1vh;
   width: 50vw;
   /*  z-index: -100;*/
@@ -1160,7 +1168,9 @@ button {
 
 
 .hide:hover .deer-alt {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+
 }
 
 #text14-1 {
@@ -1310,3 +1320,5 @@ button {
 #text15-4 {
   display: none;
 }
+
+
