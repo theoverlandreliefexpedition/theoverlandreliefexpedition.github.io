@@ -1,8 +1,6 @@
-/*
 iframe {
   display: none;
 }
-*/
 
 /*GLOBAL COLOR*/
 
@@ -392,8 +390,10 @@ iframe {
   flex-direction: column;
 
   position: absolute;
-  left: 50vw;
+  left: 40vw;
   top: 10vh;
+  
+  width: 50vw;
 
   display: none;
 
@@ -1322,3 +1322,21 @@ button {
 }
 
 
+
+#play {
+  display: none;
+  position: absolute;
+  width: 25vw;
+  top: 50vh;
+  left: 50vw;
+  cursor: pointer;
+}
+
+#pause {
+  display: none;
+  position: absolute;
+  width: 25vw;
+  top: 50vh;
+  left: 50vw;
+  cursor: pointer;
+}

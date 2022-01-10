@@ -64,7 +64,7 @@
       <div id="duty" class="screen one">
 
         <div class="headline">
-          <h2>The <br>Overland<br>Relief <br>Expedition</h2>
+          <h2>The Overland<br>Relief Expedition</h2>
         </div>
 
         <div class="intro" class="draggable">
@@ -82,132 +82,143 @@
             <span class="em">WARNING:</span> This may potentially trigger <br>seizures for people with photosensitive epilepsy.<br>
           </p>
 
+          <p class="redaction50">
+            (Eigenes in Pixelschrift.)
+          </p>
+
 
         </div>
 
 
-        <!--        <audio id="audioplayer" src="audio/3x5-pads.mp3" controls></audio>-->
+<!--PLAY BUTTON-->
 
-        <!--        <div id="button"><img src="images/play.svg"></div>-->
+<!--
+      <audio id="audio" src="audio/aurora.mp3" controls></audio>
 
-        <img src="images/route.svg" class="route">
+      <div id="button" onclick="document.getElementById('audio').play(); getElementById('button').style.display='none'; getElementById('play').style.display='block'"><img src="noplay.gif"></div>
+
+      <div id="play" onclick="document.getElementById('audio').pause(); getElementById('play').style.display='none'; getElementById('pause').style.display='block'"><img src="play.gif"></div>
+      
+     <div id="pause" onclick="document.getElementById('audio').play(); getElementById('pause').style.display='none'; getElementById('play').style.display='block'"><img src="pause.gif"></div>
+
+      <img src="images/route.svg" class="route">
+-->
+      
+      
+<!--      COMPASS-->
+      
+            <audio id="audio" src="audio/aurora.mp3"></audio>
+
+      <div id="button" onclick="document.getElementById('audio').play(); getElementById('button').style.display='none'; getElementById('play').style.display='block'"><img src="compass.gif"></div>
+
+      <div id="play" onclick="document.getElementById('audio').pause(); getElementById('play').style.display='none'; getElementById('button').style.display='block'"><img src="play.gif"></div>
+
+
+      <img src="images/route.svg" class="route">
+
+   
+   
+   
+   
+    </div>
+
+
+
+
+
+
+    <!--SCREEN 2-->
+    <div id="good-bye" class="screen two">
+
+      <div class="headline">
+        <h2>Good&mdash;<br>bye</h2>
+      </div>
+
+      <p id="text2-1">landed safely on the beach, <br><br>our good-byes to our shipmates had been said, <br> and we stood on the shore watching the boat as it went back to the Bear,<br><br> wondering whether we should ever see our friends again.<em><br><br> good-bye<br><br> good-bye</em></p>
+
+      <h5>good-bye</h5>
+
+      <img class="forecastle" src="images/forecastle.png">
+
+      <img class="bear" src="images/bear.png">
+
+      <iframe class="scroll" src="scripts/scroll/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+
+    </div>
+
+
+    <!--SCREEN 3-->
+    <div id="sleds" class="screen three">
+
+      <div class="headline">
+        <h2>Pull and <br>be pulled</h2>
+      </div>
+
+      <img class="sled-dogs" src="images/sled-dogs.png">
+      <img class="sled-deer" src="images/sled-deer.png">
+      <img class="sled-sail" src="images/sled-sail.png">
+
+
+      <!--       CLICKABLE DIV-->
+
+      <div class="draggable box" id="text3-1">
+
+        <p>The sled is an open framework of hickory or oak, <br>no more wood being used than is absolutely necessary<br><br>
+          <em class="button" onclick="getElementById('text3-2').style.display='flex'">click for dog ride</em>
+          <em class="button" onclick="getElementById('text3-3').style.display='flex'">click for deer ride</em>
 
       </div>
 
 
-      <!--SCREEN 2-->
-      <div id="good-bye" class="screen two">
 
-        <div class="headline">
-          <h2>Good&mdash;<br>bye</h2>
-        </div>
+      <div id="text3-2" class="draggable box">
+        <button class="close" onclick="getElementById('text3-2').style.display='none'">x</button>
 
-        <p id="text2-1">landed safely on the beach, <br><br>our good-byes to our shipmates had been said, <br> and we stood on the shore watching the boat as it went back to the Bear,<br><br> wondering whether we should ever see our friends again.<em><br><br> good-bye<br><br> good-bye</em></p>
+        <p class="redaction50">With dogs:</p>
 
-        <h5>good-bye</h5>
+        <p>A team generally consists of an odd number of dogs, the odd one being harnessed to the central line ahead of the others and acts as a leader.</p>
 
-        <img class="forecastle" src="images/forecastle.png">
+        <p>In traveling over a comparatively level county, with a good road and light loads on the sleds, the dogs will maintain a trot, which is faster than a man can walk, but not as fast as he can run, so the trail maker runs ahead for soine distance and then slows down to a walk until the head team comes up with him, when he repeats the operation.</p>
 
-        <img class="bear" src="images/bear.png">
+        <p>But this was not to be accomplished as usually pictured, sitting back on the sled and cracking a whip.
 
-        <iframe class="scroll" src="scripts/scroll/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+          In Alaska, at least, it is not that way, and
+          unless the road is very smooth and the load light,
+
+          the men of an outfit must not only walk, but push, and haul, and sometimes harness
+          themselves up to the sleds to get along.
+
+          At first such work seems
+          killing, but you get used to it like anything else and take it as a
+          matter of course.</p>
 
       </div>
 
 
-      <!--SCREEN 3-->
-      <div id="sleds" class="screen three">
+      <div id="text3-3" class="draggable box">
+        <button class="close" onclick="getElementById('text3-3').style.display='none'">x</button>
 
-        <div class="headline">
-          <h2>Pull<br> and <br>be <br>pulled</h2>
-        </div>
+        <p class="redaction50">With deer:</p>
 
-        <img class="sled-dogs" src="images/sled-dogs.png">
-        <img class="sled-deer" src="images/sled-deer.png">
-        <img class="sled-sail" src="images/sled-sail.png">
+        <p>All our travel heretofore had been by dog teams, and, as we were to have much deer traveling farther on, I was very anxious to try the change and note the difference, wishing for anything that would hurry us along.</p>
 
+        <p>All hands must be ready at the same time when starting a deer train, for, just as soon as the animals see the head team start, they are all off with a jump, and for a short time keep up a very high rate of speed. If one is not quick in jumping and holding on to his sled, he is likely either to lose his team or be dragged along in the snow. They soon come down to a moderate gait, however, and finally drop into a walk when tired.</p>
 
-        <!--       CLICKABLE DIV-->
+        <p>No whip is used, and none should be, for the deer are very timid and easily frightened, and once gotten in that state they are hard to quiet and control.</p>
 
-        <div class="draggable box" id="text3-1">
+        <p>It was very cold sitting idly on a deer sled, and it was all we could do to keep some part of the body from freezing; many times a sharp twinge or prick would make one’s head turn from the wind and his hand go up, to work vigorously to rouse the feeble circulation in the end of his nose.</p>
 
-          <p>The sled is an open framework of hickory or oak, <br>no more wood being used than is absolutely necessary<br><br>
-            <em class="button" onclick="getElementById('text3-2').style.display='flex'">click for dog ride</em>
-            <em class="button" onclick="getElementById('text3-3').style.display='flex'">click for deer ride</em>
+        <p>My deer, which, as I afterwards learned, once had a leg broken by the sled running ahead on him, became frightened and bolted down the hill, throwing me off the sled. I held on to the line and was dragged through the snow against an old fish rack at the bottom of the hill. When I saw that fish rack loom up, I thought my time had come, but my bones seemed stronger than the rack, for throwing my head aside, my shoulder caught the upright and broke it short off. When I finally stopped the deer and pulled myself together, I was grateful to find I had no bones broken, for such a thing was too serious a matter even for contemplation.</p>
 
-        </div>
+        <p>It seemed to be my day for accidents, for soon after dark my deer wandered from the trail, became entangled in a lot of driftwood on the beach, half covered with snow, and finally wound up by running the sled full speed against a stump, breaking the harness, dragging the line out of my hand, and disappearing in the darkness and flying snow.</p>
 
 
-
-        <div id="text3-2" class="draggable box">
-          <button class="close" onclick="getElementById('text3-2').style.display='none'">x</button>
-
-          <p class="redaction50">With dogs:</p>
-
-          <p>A team generally consists of an odd number of dogs, the odd one being harnessed to the central line ahead of the others and acts as a leader.</p>
-
-          <p>In traveling over a comparatively level county, with a good road and light loads on the sleds, the dogs will maintain a trot, which is faster than a man can walk, but not as fast as he can run, so the trail maker runs ahead for soine distance and then slows down to a walk until the head team comes up with him, when he repeats the operation.</p>
-
-          <p>But this was not to be accomplished as usually pictured, sitting back on the sled and cracking a whip.
-
-            In Alaska, at least, it is not that way, and
-            unless the road is very smooth and the load light,
-
-            the men of an outfit must not only walk, but push, and haul, and sometimes harness
-            themselves up to the sleds to get along.
-
-            At first such work seems
-            killing, but you get used to it like anything else and take it as a
-            matter of course.</p>
-
-        </div>
-
-
-        <div id="text3-3" class="draggable box">
-          <button class="close" onclick="getElementById('text3-3').style.display='none'">x</button>
-
-          <p class="redaction50">With deer:</p>
-
-          <p>All our travel heretofore had been by dog teams, and, as we were
-            to have much deer traveling farther on, I was very anxious to try the
-            change and note the difference, wishing for anything that would hurry
-            us along.</p>
-
-          <p>All hands must be
-            ready at the same time when starting a deer train, for, just as soon as
-            the animals see the head team start, they are all off with a jump, and
-            for a short time keep up a very high rate of speed.
-
-            If one is not
-            quick in jumping and holding on to his sled, he is likely either to lose
-            his team or be dragged along in the snow.
-
-            They soon come down to
-            a moderate gait, however, and finally drop into a walk when tired.</p>
-
-          <p>No whip is used, and none
-            should be, for the deer are very timid and easily frightened, and
-            once gotten in that state they are hard to quiet and control.</p>
-
-          <p>It was very cold sitting idly on a deer sled, and it was all we could do to keep some part of the body from freezing; many times a sharp twinge or prick would make one’s head turn from the wind and his hand go up, to work vigorously to rouse the feeble circulation in the end of his nose.</p>
-
-          <p>My deer, which, as I afterwards learned, once had a leg broken by the sled running ahead on him, became frightened and bolted down the hill, throwing me off the sled. I held on to the line and was dragged through the snow against an old fish rack at the bottom of the hill. When I saw that fish rack loom up, I thought my time had come, but my bones seemed stronger than the rack, for throwing my head aside, my shoulder caught the upright and broke it short off. When I finally stopped the deer and pulled myself together, I was grateful to find I had no bones broken, for such a thing was too serious a matter even for contemplation.</p>
-
-          <p>It seemed to be
-            my day for accidents, for soon after dark my deer wandered from the
-            trail, became entangled in a lot of driftwood on the beach, half covered
-            with snow, and finally wound up by running the sled full speed against
-            a stump, breaking the harness, dragging the line out of my hand, and
-
-            disappearing in the darkness and flying snow.</p>
-
-
-        </div>
+      </div>
 
 
 
 
-        <!--
+      <!--
         <p class="text3-1">The sled is an open framework of<br>
           hickory or oak, no more wood being used than is absolutely necessary,<br>
 
@@ -224,55 +235,55 @@ hide, few or no nails being used;
           -->
 
 
+    </div>
+
+
+    <!--     SCREEN 4-->
+    <div id="natives" class="screen four">
+
+      <div class="headline">
+        <h2>Open&mdash; <br>hearted</h2>
+      </div>
+
+      <img class="natives1" src="images/natives1.png">
+      <img class="natives2" src="images/natives2.png">
+      <img class="grave1" src="images/grave1.png">
+      <img class="grave2" src="images/grave2.png">
+      <img class="grave3" src="images/grave3.png">
+
+
+      <div class="draggable box" id="text4-1">
+
+        <p>He saw what our needs were, and, so far as he was able, <br>or as much as he had, he would help us gladly.<br>
+          It is refreshing to meet such simple, true-hearted people in time of need,<br>
+          with that open-hearted hospitality which is universal among the natives of Alaska.<br><br>
+          <em class="button" onclick="getElementById('text4-2').style.display='block'">click for more</em>
+
+        <div id="text4-2" class="box">
+          <button class="close" onclick="getElementById('text4-2').style.display='none'">x</button>
+
+          <p>The hospitality of these people I have never seen equaled
+            elsewhere. <br>It is never grudging; it is thrust upon you. <br>The best they
+            have, and the best place in the house are at your disposal.</p>
+
+          <p>Never in all our journey did we pass a house where the people<br>
+            did not extend a cordial welcome and urge us to go in; <br>and hardly a
+            hut that we did go into, but the best place was cleared out <br>for us and
+            our belongings. What this means to a tired, cold, <br>and hungry traveler
+            can not be fully appreciated save by those who have experienced it.</p>
+
+          <p>and my former good impressions of the Alaskan Eskimo were <br>but
+            intensified by this winter’s journey. All that we ever gave in return<br>
+            for such hospitality, and all that was expected was a cup of tea and<br>
+            a cracker to the inmates of the house after we had finished our meal.</p>
+        </div>
+
       </div>
 
 
-      <!--     SCREEN 4-->
-      <div id="natives" class="screen four">
+      <!--      GRAVEYARDS? MAYBE ON WAY?-->
 
-        <div class="headline">
-          <h2>Open&mdash; <br>hearted</h2>
-        </div>
-
-        <img class="natives1" src="images/natives1.png">
-        <img class="natives2" src="images/natives2.png">
-        <img class="grave1" src="images/grave1.png">
-        <img class="grave2" src="images/grave2.png">
-        <img class="grave3" src="images/grave3.png">
-
-
-        <div class="draggable box" id="text4-1">
-
-          <p>He saw what our needs were, and, so far as he was able, <br>or as much as he had, he would help us gladly.<br>
-            It is refreshing to meet such simple, true-hearted people in time of need,<br>
-            with that open-hearted hospitality which is universal among the natives of Alaska.<br><br>
-            <em class="button" onclick="getElementById('text4-2').style.display='block'">click for more</em>
-
-          <div id="text4-2" class="box">
-            <button class="close" onclick="getElementById('text4-2').style.display='none'">x</button>
-
-            <p>The hospitality of these people I have never seen equaled
-              elsewhere. <br>It is never grudging; it is thrust upon you. <br>The best they
-              have, and the best place in the house are at your disposal.</p>
-
-            <p>Never in all our journey did we pass a house where the people<br>
-              did not extend a cordial welcome and urge us to go in; <br>and hardly a
-              hut that we did go into, but the best place was cleared out <br>for us and
-              our belongings. What this means to a tired, cold, <br>and hungry traveler
-              can not be fully appreciated save by those who have experienced it.</p>
-
-            <p>and my former good impressions of the Alaskan Eskimo were <br>but
-              intensified by this winter’s journey. All that we ever gave in return<br>
-              for such hospitality, and all that was expected was a cup of tea and<br>
-              a cracker to the inmates of the house after we had finished our meal.</p>
-          </div>
-
-        </div>
-
-
-        <!--      GRAVEYARDS? MAYBE ON WAY?-->
-
-        <!--
+      <!--
         <p>The most interesting graveyard in Alaska is at Point Hope. It is
           situated about a mile from the village, on slightly elevated ridges of
           sand and gravel covering the undulations of an extinct glacier. Most of
@@ -285,252 +296,252 @@ hide, few or no nails being used;
           which the body is then placed</p>
 -->
 
+    </div>
+
+
+    <!--     SCREEN 5-->
+    <div id="huts" class="screen five">
+
+      <div class="headline">
+        <h2>Horrible <br>temporary home</h2>
       </div>
 
+      <p id="text5-1">Though it turned out to be a horrible place, no palace could<br>
+        have been more welcome. It was a small hut, about 10 by 12, and 5<br>
+        feet high, and 15 people were already sleeping there. It was most<br>
+        filthy and the worst house I have seen in all my Alaskan experience;<br>
+        but I was too tired then to care for that, too tired even to eat; and<br>
+        though I had had nothing but a couple of crackers since morning, I<br>
+        was quite satisfied to take off my wet clothing, crawl into my bag,<br>
+        and sleep.</p>
 
-      <!--     SCREEN 5-->
-      <div id="huts" class="screen five">
+      <p id="text5-2">The small huts, called “igloos,” <br>
+        are occupied by one or more families, often<br>
+        being very crowded. The large hut was the “kazheem,” used for<br>
+        the dance house, council house, general workhouse, and place of<br>
+        lodging for travelers; and is occupied by all the male inhabitants of<br>
+        the village who have no families</p>
 
-        <div class="headline">
-          <h2>Horrible <br>temporary home</h2>
-        </div>
+      <p id="text5-3"> When we awoke in the morning<br>
+        The air was horrible, <br>and it was refreshing to get outside<br>
+        and to be going again through the storm <br>and over the rough ice.</p>
 
-        <p id="text5-1">Though it turned out to be a horrible place, no palace could<br>
-          have been more welcome. It was a small hut, about 10 by 12, and 5<br>
-          feet high, and 15 people were already sleeping there. It was most<br>
-          filthy and the worst house I have seen in all my Alaskan experience;<br>
-          but I was too tired then to care for that, too tired even to eat; and<br>
-          though I had had nothing but a couple of crackers since morning, I<br>
-          was quite satisfied to take off my wet clothing, crawl into my bag,<br>
-          and sleep.</p>
+      <img class="hut1" src="images/hut1.png">
+      <img class="hut2" src="images/hut2.png">
 
-        <p id="text5-2">The small huts, called “igloos,” <br>
-          are occupied by one or more families, often<br>
-          being very crowded. The large hut was the “kazheem,” used for<br>
-          the dance house, council house, general workhouse, and place of<br>
-          lodging for travelers; and is occupied by all the male inhabitants of<br>
-          the village who have no families</p>
+      <iframe class="hut" src="scripts/hut/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
 
-        <p id="text5-3"> When we awoke in the morning<br>
-          The air was horrible, <br>and it was refreshing to get outside<br>
-          and to be going again through the storm <br>and over the rough ice.</p>
+    </div>
 
-        <img class="hut1" src="images/hut1.png">
-        <img class="hut2" src="images/hut2.png">
 
-        <iframe class="hut" src="scripts/hut/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+    <!--     SCREEN 6-->
+    <div id="way" class="screen six">
 
+      <div class="headline">
+        <h2>En <br>route</h2>
       </div>
 
+      <iframe class="cursor" src="scripts/cursor/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
 
-      <!--     SCREEN 6-->
-      <div id="way" class="screen six">
+      <img class="midday-halt" src="images/midday-halt.png">
+      <!--        <img class="way" src="images/way.png">-->
+      <img class="mountain" src="images/mountain.png">
+      <img class="track-chart" src="images/track-chart.jpg">
 
-        <div class="headline">
-          <h2>En <br>route</h2>
-        </div>
-
-        <iframe class="cursor" src="scripts/cursor/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
-
-        <img class="midday-halt" src="images/midday-halt.png">
-        <!--        <img class="way" src="images/way.png">-->
-        <img class="mountain" src="images/mountain.png">
-        <img class="track-chart" src="images/track-chart.jpg">
-
-        <p id="text6-1">we soon came to the leal ascent of the mountain, and then our progress was very slow, many places were so steep that it required three or four of us to help each sled up.</p>
+      <p id="text6-1">we soon came to the leal ascent of the mountain, and then our progress was very slow, many places were so steep that it required three or four of us to help each sled up.</p>
 
 
-        <div class="draggable box" id="text6-1">
+      <div class="draggable box" id="text6-1">
 
-          <p>Examples what happened en route:<br>
-            <em class="button" onclick="getElementById('text6-2').style.display='flex'">difficulties</em>
-            <em class="button" onclick="getElementById('text6-3').style.display='flex'">thirst</em>
-            <em class="button" onclick="getElementById('text6-4').style.display='flex'">midday halt</em>
-
-
-        </div>
-
-
-        <!--        DIFFICULTIES-->
-
-        <div id="text6-2" class="draggable box">
-          <button class="close" onclick="getElementById('text6-2').style.display='none'">x</button>
-
-
-          <p>I thought the ice we recently passed over had made a rough road, but this was even worse, for here were all the crushings of the straits shoved up against the mountains that ran down abruptly into the sea, and over this kind of ice we had to make our way. Darkness set in long before we had come to the worst of it, and a faint moon gave too little light for such a road. It was a continuous jumble of dogs, sleds, men, and ice—particularly ice—and it would be hard to tell which suffered most, men or dogs. Once, in helping the sled over a particularly bad place, I was thrown 8 or 9 feet down a slide, landing on the back of my head with the sled on top of me.</p>
-
-          <p>By this time some of our dogs were in rather bad shape. The thin crust on the snow coming across the delta country and the hard ice on the river had lacerated the cushions of their feet, and many of them left a trail of blood behind them with every step.</p>
-
-
-        </div>
-
-
-        <!--        THIRST-->
-
-        <div id="text6-3" class="draggable box">
-          <button class="close" onclick="getElementById('text6-3').style.display='none'">x</button>
-
-
-          <p>It is always well before starting in the morning to take as much tea and water as one can hold, to avoid as much as possible a thirst during the day. It is impossible to get water during the day without stopping to build a fire and melt snow, unless one carries a flask inside the clothing, and this stopping uses up time. Snow is bad for the mouth and soon makes it sore, besides not being sufficient to quench the thirst except for the minute. The worst feature of eating snow is that if one gives way to the temptation there is no stopping for the rest of the day, for, while it serves to quench the thirst for the time being, it seems to really increase it in the long run, and shortly after taking some snow one is more thirsty than ever. I found that by drinking a quart of tea in the morning I seldom was thirsty until night, and had no great desire to drink unless a halt was made in the middle of the day to rest and make a fire for tea.</p>
-
-        </div>
-
-
-        <!--        MIDDAY HALT-->
-
-        <div id="text6-4" class="draggable box">
-          <button class="close" onclick="getElementById('text6-4').style.display='none'">x</button>
-
-
-          <p>If in the middle ot the day wood could be had, and other circumstances would permit, a stop was made to make a fire, melt snow, and have a lunch of tea and crackers. Sometimes, however, circumstances would not permit us to stop, and we kept on the entire day without a break. At first I was more loath to stop than later, but after more experience I found that the hour spent in getting our fire and a bite to eat was well spent, for not only were we refreshed and better able to continue in the afternoon, but the dogs also seemed to be benefited by the short rest and traveled all the better for it.</p>
-
-          <p>Refreshed by our rest and lunch, we started for the second ascent in good spirits.</p>
-
-        </div>
-
-      </div>
-
-
-      <!--     SCREEN 7-->
-      <div id="ice" class="screen seven">
-
-        <div class="headline">
-          <h2>Infinite <br>Cold</h2>
-        </div>
-
-
-        <img class="ice" src="images/ice-alt2.png">
-        <div class="icy"></div>
-        <img class="icy-gradient" src="images/gradient.png">
-
-        <h5> 0° -5° -10° -15° -20° -25° -30 -35° -40°</h5>
-
-        <div class="draggable box" id="text7-1">
-
-          <p class="redaction50">c ii ie e c ie c ice ce i ice ic e ice i ce ic e icc ce ice ice ice ice ice ice<br>
-          <p><em class="button redaction50" onclick="getElementById('text7-2').style.display='flex'">ice</em>
-            <em class="button redaction35" onclick="getElementById('text7-3').style.display='block'">ice</em>
-            <em class="button redaction70" onclick="getElementById('text7-4').style.display='flex'">ice</em>
-            <em class="button redaction35" onclick="getElementById('text7-5').style.display='flex'">freezing</em>
-
-          </p>
-
-        </div>
-
-
-        <div id="text7-2" class="draggable box">
-          <button class="close" onclick="getElementById('text7-2').style.display='none'">x</button>
-
-          <p>In the darkness I stepped through a crack in the ice, and my leg to the knee was immediately one mass of ice. I was now com pelled to go on to some place where my foot gear could be dried, and, though almost ready to drop where I was, I had to keep on, for to stop, meant to freeze.</p>
-
-        </div>
-
-
-        <div id="text7-3" class="draggable box">
-          <button class="close" onclick="getElementById('text7-3').style.display='none'">x</button>
-
-          <p class="redaction35">we found the ice of sufficient thickness to
-            cross with the sleds.</p>
-
-        </div>
-
-
-        <div id="text7-4" class="draggable box">
-          <button class="close" onclick="getElementById('text7-4').style.display='none'">x</button>
-
-          <p>as the ice was hard and level, made excellent
-            progress.</p>
-
-        </div>
-
-
-        <div id="text7-5" class="draggable box">
-          <button class="close" onclick="getElementById('text7-5').style.display='none'">x</button>
-
-          <p>The difference between care and carelessness is slight, in arctic travel, and the first let-up is sure to bring its reminder in the shape of a frosted toe or finger or a frozen nose. One must be on guard, and the slightest tinge in the nose or cheek must be heeded, and circulation started again by vigorous rubbing. Though somewhat disagreeable and painful, freezing these parts is not necessarily harmful unless too long neglected.</p>
-
-          <p> I saw a case where the end of a man’s nose had dropped off from frostbite, but such things are rare. Usually the skin is discolored, becomes dead and peels off, leaving the member quite sensitive for a time.</p>
-
-          <p> But with the hands, and especially the feet, it is different. No part of the body requires more attention
-            than these ; socks and boots must be well made and kept thoroughly dry; even the slightest perspiration will, if one stops too long, work disastrously. Both boots and socks should be changed immediately upon going into camp, and dry ones must be put on in the morning before starting. The natives know the importance of this only too well, and if they see one inclined to neglect these precautions, they will insist on his taking care of his foot gear.</p>
-
-          <p>It is the easiest thing in the world for a man to suffer severely in such a climate, but it is possible, by good care and attention, to avoid what one might call extreme suffering, and live there with only the unavoidable discomforts of the country, to which a man in good health sooner or later grows accustomed.</p>
-        </div>
+        <p>Examples what happened en route:<br>
+          <em class="button" onclick="getElementById('text6-2').style.display='flex'">difficulties</em>
+          <em class="button" onclick="getElementById('text6-3').style.display='flex'">thirst</em>
+          <em class="button" onclick="getElementById('text6-4').style.display='flex'">midday halt</em>
 
 
       </div>
 
 
-      <!--     SCREEN 8-->
-      <div id="camps" class="screen eight">
+      <!--        DIFFICULTIES-->
 
-        <div class="headline">
-          <h2>Camps</h2>
-        </div>
-
-        <img class="camp" src="images/camp.png">
-        <img class="camp-tilton" src="images/camp-tilton.png">
-        <img class="snow-houses" src="images/snow-houses.png">
+      <div id="text6-2" class="draggable box">
+        <button class="close" onclick="getElementById('text6-2').style.display='none'">x</button>
 
 
-        <div class="draggable box" id="text8-1">
+        <p>I thought the ice we recently passed over had made a rough road, but this was even worse, for here were all the crushings of the straits shoved up against the mountains that ran down abruptly into the sea, and over this kind of ice we had to make our way. Darkness set in long before we had come to the worst of it, and a faint moon gave too little light for such a road. It was a continuous jumble of dogs, sleds, men, and ice—particularly ice—and it would be hard to tell which suffered most, men or dogs. Once, in helping the sled over a particularly bad place, I was thrown 8 or 9 feet down a slide, landing on the back of my head with the sled on top of me.</p>
 
-          <p class="redaction50">Camps<br>
-          <p><em class="button redaction50" onclick="getElementById('text8-2').style.display='flex'">building snow houses</em>
-          <p><em class="button redaction50" onclick="getElementById('text8-3').style.display='block'">camping system</em>
+        <p>By this time some of our dogs were in rather bad shape. The thin crust on the snow coming across the delta country and the hard ice on the river had lacerated the cushions of their feet, and many of them left a trail of blood behind them with every step.</p>
 
-          </p>
-
-        </div>
-
-
-        <!--        SNOW HOUSES-->
-
-        <div id="text8-2" class="draggable box">
-          <button class="close" onclick="getElementById('text8-2').style.display='none'">x</button>
-
-          <p>The favorite way among the Eskimos of camping in this part of the country is to build snow houses at night. The wind packs the snow so hard that with a long knife it can be cut into blocks like building stone, and in a short time a small strong house can be constructed with these, the chinks being stopped up with loose snow, and a large block used as a door to close theopening, making the place nearly airtight. Soon the warmth of the bodies of three or four people, together with the heat from a native seal-oil lamp or kerosene-oil stove, will raise the temperature of the place so that it is fairly comfortable, and one can even remove some of his clothing. On account of the difficulties of construction, a snow house can not be so large as a tent, and the oil for the stove adds greatly to the weight to be carried; but, when traveling back from the coast, where there is no wood, snow houses are the necessity of circumstances. As such they are made the best of, and whatever discomforts they entail are passed off as unavoidable and not thought of. A philosophical common sense is a great help in living in the arctic regions, as elsewhere. If you are subjected to miserable discomforts, or even if you suffer, it must be regarded as all right and simply a part of the life, and like sailors, you must never dwell too much on the dangers or suffering, lest others question your courage.</p>
-
-        </div>
-
-
-
-
-        <!--       SYSTEM-->
-
-        <div id="text8-3" class="draggable box">
-          <button class="close" onclick="getElementById('text8-3').style.display='none'">x</button>
-
-          <p>We had now been traveling so long that our camping and packing the sleds had been reduced to a system. There were four of us and each had his own part of the work to do. The doctor was the cook and looked out for the stove and the food. I attended to the sleds and the tent, fhe native woman was the doctor’s assistant and besides looked after our clothes, while her husband Nekowrah helped me and did the heavy work. On coming to our camping place, Nekowrah and I would get out the tent and pitch it. This done, the doctor would set up his stove, while Nekowrah went on a hunt for wood, and I would bank up the snow around the sides to keep the wind out and secure the hut generally. Then the sleds were unpacked and all our sleeping gear, food, and cooking utensils were passed in to Shucungunga, who arranged them inside. By the time the fire was started in the stove, the dogs were unharnessed, and the sleds put beyond their reach. This would all take from one-half to threequarters of an hour, and in that time the tent would be good and warm and we could go inside and change our clothes. The wet ones were passed over to Shucungunga for drying, who stretched a line along the ridgepole and hung up the clothes to catch all the warm air possible. It was not long before supper was ready, and it generally mattered little what it was, so long as there was enough, for by this time we were about like the dogs, hungry enough to eat anything that could be chewed. Usually the supper consisted of bacon and beans, followed by “slapjacks” (cakes made of flour and water and fried), and all the tea we could drink, generally not less than a quart.</p>
-
-          <p>In camping one must be careful of the few belongings and camp tools, for anything left outside at night is sure to be covered over in the morning if it is blowing, and anything that has to be left out must be stuck up in the snow or packed in the sleds if you want to see it again. In the morning Nekowrah or the doctor would be up by 5 o’clock and have the fire started and the breakfast under way, which was not different from the supper—simply something to eat.</p>
-
-          <p>Breakfast being over, the sleds were gotten out and packed, reserv ing the tent to the last, so as to be handy at night. The grub box, with a little food inside, and a camp kettle and axe were placed on the sled where they could easily be gotten at in case a stop was made during the day. The sleds were then lashed, the dogs caught and har nessed, and we were ready to start.</p>
-        </div>
 
       </div>
 
 
-      <!--     SCREEN 9-->
-      <div id="nights" class="screen nine">
+      <!--        THIRST-->
+
+      <div id="text6-3" class="draggable box">
+        <button class="close" onclick="getElementById('text6-3').style.display='none'">x</button>
 
 
-        <div class="headline">
-          <h2>Bright<br>Darkness</h2>
-        </div>
+        <p>It is always well before starting in the morning to take as much tea and water as one can hold, to avoid as much as possible a thirst during the day. It is impossible to get water during the day without stopping to build a fire and melt snow, unless one carries a flask inside the clothing, and this stopping uses up time. Snow is bad for the mouth and soon makes it sore, besides not being sufficient to quench the thirst except for the minute. The worst feature of eating snow is that if one gives way to the temptation there is no stopping for the rest of the day, for, while it serves to quench the thirst for the time being, it seems to really increase it in the long run, and shortly after taking some snow one is more thirsty than ever. I found that by drinking a quart of tea in the morning I seldom was thirsty until night, and had no great desire to drink unless a halt was made in the middle of the day to rest and make a fire for tea.</p>
+
+      </div>
 
 
-        <img class="midnight-sun" src="images/midnight-sun.png">
-        <img class="midnight" src="images/midnight.png">
+      <!--        MIDDAY HALT-->
 
-        <iframe class="aurora" src="scripts/aurora/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
-
-        <p id="text9-1">From Cape Prince of Wales on we had been treated to bright auroral displays almost every night. They generally came out of a dark bank that would form in the northern horizon just after dark, and stretch in long shooting streamers that gradually worked over the heavens to the opposite horizon, waving back and forth, so close to the earth as to be seemingly within reach, and then as gradually receded and subsided. Usually they came in extremely cold weather and seemed to presage cold weather for the following day. During the coldest days there were numerous sun-dogs, and, sailorlike, when two and often three of these showed in the sky, I anticipated bad and stormy weather, but it never came, and it seemed that good weather instead of bad followed in these regions.</p>
-
-        <p id="text9-2">It was impossible to see 10 yards ahead, and I knew it would be reckless to start off alone, for the others were far in advance by this time, and I might wander about all night, become exhausted, and perhaps freeze.</p>
+      <div id="text6-4" class="draggable box">
+        <button class="close" onclick="getElementById('text6-4').style.display='none'">x</button>
 
 
-        <!--
+        <p>If in the middle ot the day wood could be had, and other circumstances would permit, a stop was made to make a fire, melt snow, and have a lunch of tea and crackers. Sometimes, however, circumstances would not permit us to stop, and we kept on the entire day without a break. At first I was more loath to stop than later, but after more experience I found that the hour spent in getting our fire and a bite to eat was well spent, for not only were we refreshed and better able to continue in the afternoon, but the dogs also seemed to be benefited by the short rest and traveled all the better for it.</p>
+
+        <p>Refreshed by our rest and lunch, we started for the second ascent in good spirits.</p>
+
+      </div>
+
+    </div>
+
+
+    <!--     SCREEN 7-->
+    <div id="ice" class="screen seven">
+
+      <div class="headline">
+        <h2>Infinite <br>Cold</h2>
+      </div>
+
+
+      <img class="ice" src="images/ice-alt2.png">
+      <div class="icy"></div>
+      <img class="icy-gradient" src="images/gradient.png">
+
+      <h5> 0° -5° -10° -15° -20° -25° -30 -35° -40°</h5>
+
+      <div class="draggable box" id="text7-1">
+
+        <p class="redaction50">c ii ie e c ie c ice ce i ice ic e ice i ce ic e icc ce ice ice ice ice ice ice<br>
+        <p><em class="button redaction50" onclick="getElementById('text7-2').style.display='flex'">ice</em>
+          <em class="button redaction35" onclick="getElementById('text7-3').style.display='block'">ice</em>
+          <em class="button redaction70" onclick="getElementById('text7-4').style.display='flex'">ice</em>
+          <em class="button redaction35" onclick="getElementById('text7-5').style.display='flex'">freezing</em>
+
+        </p>
+
+      </div>
+
+
+      <div id="text7-2" class="draggable box">
+        <button class="close" onclick="getElementById('text7-2').style.display='none'">x</button>
+
+        <p>In the darkness I stepped through a crack in the ice, and my leg to the knee was immediately one mass of ice. I was now com pelled to go on to some place where my foot gear could be dried, and, though almost ready to drop where I was, I had to keep on, for to stop, meant to freeze.</p>
+
+      </div>
+
+
+      <div id="text7-3" class="draggable box">
+        <button class="close" onclick="getElementById('text7-3').style.display='none'">x</button>
+
+        <p class="redaction35">we found the ice of sufficient thickness to
+          cross with the sleds.</p>
+
+      </div>
+
+
+      <div id="text7-4" class="draggable box">
+        <button class="close" onclick="getElementById('text7-4').style.display='none'">x</button>
+
+        <p>as the ice was hard and level, made excellent
+          progress.</p>
+
+      </div>
+
+
+      <div id="text7-5" class="draggable box">
+        <button class="close" onclick="getElementById('text7-5').style.display='none'">x</button>
+
+        <p>The difference between care and carelessness is slight, in arctic travel, and the first let-up is sure to bring its reminder in the shape of a frosted toe or finger or a frozen nose. One must be on guard, and the slightest tinge in the nose or cheek must be heeded, and circulation started again by vigorous rubbing. Though somewhat disagreeable and painful, freezing these parts is not necessarily harmful unless too long neglected.</p>
+
+        <p> I saw a case where the end of a man’s nose had dropped off from frostbite, but such things are rare. Usually the skin is discolored, becomes dead and peels off, leaving the member quite sensitive for a time.</p>
+
+        <p> But with the hands, and especially the feet, it is different. No part of the body requires more attention
+          than these ; socks and boots must be well made and kept thoroughly dry; even the slightest perspiration will, if one stops too long, work disastrously. Both boots and socks should be changed immediately upon going into camp, and dry ones must be put on in the morning before starting. The natives know the importance of this only too well, and if they see one inclined to neglect these precautions, they will insist on his taking care of his foot gear.</p>
+
+        <p>It is the easiest thing in the world for a man to suffer severely in such a climate, but it is possible, by good care and attention, to avoid what one might call extreme suffering, and live there with only the unavoidable discomforts of the country, to which a man in good health sooner or later grows accustomed.</p>
+      </div>
+
+
+    </div>
+
+
+    <!--     SCREEN 8-->
+    <div id="camps" class="screen eight">
+
+      <div class="headline">
+        <h2>Camps</h2>
+      </div>
+
+      <img class="camp" src="images/camp.png">
+      <img class="camp-tilton" src="images/camp-tilton.png">
+      <img class="snow-houses" src="images/snow-houses.png">
+
+
+      <div class="draggable box" id="text8-1">
+
+        <p class="redaction50">Camps<br>
+        <p><em class="button redaction50" onclick="getElementById('text8-2').style.display='flex'">building snow houses</em>
+        <p><em class="button redaction50" onclick="getElementById('text8-3').style.display='block'">camping system</em>
+
+        </p>
+
+      </div>
+
+
+      <!--        SNOW HOUSES-->
+
+      <div id="text8-2" class="draggable box">
+        <button class="close" onclick="getElementById('text8-2').style.display='none'">x</button>
+
+        <p>The favorite way among the Eskimos of camping in this part of the country is to build snow houses at night. The wind packs the snow so hard that with a long knife it can be cut into blocks like building stone, and in a short time a small strong house can be constructed with these, the chinks being stopped up with loose snow, and a large block used as a door to close theopening, making the place nearly airtight. Soon the warmth of the bodies of three or four people, together with the heat from a native seal-oil lamp or kerosene-oil stove, will raise the temperature of the place so that it is fairly comfortable, and one can even remove some of his clothing. On account of the difficulties of construction, a snow house can not be so large as a tent, and the oil for the stove adds greatly to the weight to be carried; but, when traveling back from the coast, where there is no wood, snow houses are the necessity of circumstances. As such they are made the best of, and whatever discomforts they entail are passed off as unavoidable and not thought of. A philosophical common sense is a great help in living in the arctic regions, as elsewhere. If you are subjected to miserable discomforts, or even if you suffer, it must be regarded as all right and simply a part of the life, and like sailors, you must never dwell too much on the dangers or suffering, lest others question your courage.</p>
+
+      </div>
+
+
+
+
+      <!--       SYSTEM-->
+
+      <div id="text8-3" class="draggable box">
+        <button class="close" onclick="getElementById('text8-3').style.display='none'">x</button>
+
+        <p>We had now been traveling so long that our camping and packing the sleds had been reduced to a system. There were four of us and each had his own part of the work to do. The doctor was the cook and looked out for the stove and the food. I attended to the sleds and the tent, fhe native woman was the doctor’s assistant and besides looked after our clothes, while her husband Nekowrah helped me and did the heavy work. On coming to our camping place, Nekowrah and I would get out the tent and pitch it. This done, the doctor would set up his stove, while Nekowrah went on a hunt for wood, and I would bank up the snow around the sides to keep the wind out and secure the hut generally. Then the sleds were unpacked and all our sleeping gear, food, and cooking utensils were passed in to Shucungunga, who arranged them inside. By the time the fire was started in the stove, the dogs were unharnessed, and the sleds put beyond their reach. This would all take from one-half to threequarters of an hour, and in that time the tent would be good and warm and we could go inside and change our clothes. The wet ones were passed over to Shucungunga for drying, who stretched a line along the ridgepole and hung up the clothes to catch all the warm air possible. It was not long before supper was ready, and it generally mattered little what it was, so long as there was enough, for by this time we were about like the dogs, hungry enough to eat anything that could be chewed. Usually the supper consisted of bacon and beans, followed by “slapjacks” (cakes made of flour and water and fried), and all the tea we could drink, generally not less than a quart.</p>
+
+        <p>In camping one must be careful of the few belongings and camp tools, for anything left outside at night is sure to be covered over in the morning if it is blowing, and anything that has to be left out must be stuck up in the snow or packed in the sleds if you want to see it again. In the morning Nekowrah or the doctor would be up by 5 o’clock and have the fire started and the breakfast under way, which was not different from the supper—simply something to eat.</p>
+
+        <p>Breakfast being over, the sleds were gotten out and packed, reserv ing the tent to the last, so as to be handy at night. The grub box, with a little food inside, and a camp kettle and axe were placed on the sled where they could easily be gotten at in case a stop was made during the day. The sleds were then lashed, the dogs caught and har nessed, and we were ready to start.</p>
+      </div>
+
+    </div>
+
+
+    <!--     SCREEN 9-->
+    <div id="nights" class="screen nine">
+
+
+      <div class="headline">
+        <h2>Bright<br>Darkness</h2>
+      </div>
+
+
+      <img class="midnight-sun" src="images/midnight-sun.png">
+      <img class="midnight" src="images/midnight.png">
+
+      <iframe class="aurora" src="scripts/aurora/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+
+      <p id="text9-1">From Cape Prince of Wales on we had been treated to bright auroral displays almost every night. They generally came out of a dark bank that would form in the northern horizon just after dark, and stretch in long shooting streamers that gradually worked over the heavens to the opposite horizon, waving back and forth, so close to the earth as to be seemingly within reach, and then as gradually receded and subsided. Usually they came in extremely cold weather and seemed to presage cold weather for the following day. During the coldest days there were numerous sun-dogs, and, sailorlike, when two and often three of these showed in the sky, I anticipated bad and stormy weather, but it never came, and it seemed that good weather instead of bad followed in these regions.</p>
+
+      <p id="text9-2">It was impossible to see 10 yards ahead, and I knew it would be reckless to start off alone, for the others were far in advance by this time, and I might wander about all night, become exhausted, and perhaps freeze.</p>
+
+
+      <!--
         <p>After getting in my bag seldom
           did I ever sleep cold, and less seldom do I remember being wakeful
           during the night.</p>
@@ -556,342 +567,342 @@ hide, few or no nails being used;
           supper</p>
 -->
 
-      </div>
-
-
-      <!--SCREEN 10-->
-      <div id="deer" class="screen ten">
-
-        <div class="headline">
-          <h2>448</h2>
-        </div>
-
-        <img class="deer" src="images/deer.png">
-
-        <img class="fawns" src="images/fawns.png">
-
-        <!--       448x deer emoji-->
-        <p class="deer-emoji">&#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
-          &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br></p>
-
-        <iframe class="deer-cursor" src="scripts/deer-cursor/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
-
-        <p id="text10-1">The first and great need of the whalemen will probably be food. It is believed that the only practicable method of getting it to them is to drive it on the hoof. The purpose is to collect from the herds at Rodney and Cape Prince of Wales the entire available herds of reindeer, all to be driven to Point Barrow.</p>
-
-        <img class="deer-account" src="images/deer-account.png">
-
-
-      </div>
-
-
-      <!--SCREEN 11-->
-      <div id="canidae" class="screen eleven">
-
-        <div class="headline">
-          <h2>Canidae</h2>
-        </div>
-
-        <img class="dogs" src="images/dogs.png">
-        <img class="feeding" src="images/feeding.png">
-
-
-        <div class="draggable box" id="text11-1">
-
-          <p><em class="button redaction35" onclick="getElementById('text11-2').style.display='flex'">wolves</em></p>
-          <h5>and</h5>
-          <p><em class="button redaction35" onclick="getElementById('text11-3').style.display='flex'">dogs</em>
-
-          </p>
-
-        </div>
-
-
-        <div id="text11-2" class="draggable box">
-          <button class="close" onclick="getElementById('text11-2').style.display='none'">x</button>
-
-          <p>Wolves had been following them for the last few days and a strict watch had to be kept both day and night. <br>Last night three wolves got into the herd and killed one deer before they were discovered and driven off.</p>
-
-        </div>
-
-        <div id="text11-3" class="draggable box">
-          <button class="close" onclick="getElementById('text11-3').style.display='none'">x</button>
-
-          <p>And after supper and a smoke it was time to feed the dogs. The frozen seal meat was first chopped into small pieces, and Nekowrah and myself, armed with clubs, would undertake to see that all the dogs fared alike. It was a task, for I know of nothing so ravenous as a hard-worked Eskimo dog, and with a pack of fifteen or twenty animals it took all of our time and attention to see that the larger dogs did not monopolize all the food. If a piece of meat was too large for a dog to swallow immediately, another dog would have it out of his mouth and a general fight ensue, and then a liberal use of the clubs would be necessary to produce harmony in the pack. Dogs should be fed once a day, and best at night, after they have rested a while from their work. It is bad to feed them much in the morning or to feed them during the day, as they become heavy and loggy, and do not work so well as on an empty stomach.</p>
-
-          <p>Feeding the dogs was always a trying and interesting task. They are always hungry, and upon appearing among them with an armful of dried fish, in their eagerness to get a stray mouthful, they crowd around in one fighting, jumping mass, and make it difficult for one to even keep his balance. After throwing out a fish to each dog, it takes all hands with clubs to keep off the larger fellows and see that the smaller and weaker ones are allowed to keep and eat their share. Usually they are peaceful enough, but when being fed they are like wild animals, and snarl and bite each other, and keep up a continual fight until everything is eaten. When the meal is finished and there is nothing more to eat in sight, they will lie down quietly in the snow and go to sleep. They are tough and need no protection. During the coldest weather and the most violent blizzards, they will curl up on the snow anywhere and sleep, and when the snow has drifted over them, get up, shake themselves, and lie down again in the same place for another sleep.</p>
-
-          <p>On the morning of March 17 we found the dogs buried in the drift, with only their noses sticking out. They were all right, however, and anxious to be going.</p>
-
-        </div>
-
-
-      </div>
-
-
-      <!--     SCREEN 12-->
-      <div id="blizzards" class="screen twelve">
-
-        <div class="headline">
-          <h2>Blizzards</h2>
-        </div>
-
-        <iframe class="blizzard" src="scripts/blizzard/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
-        <img class="blizzard-gradient" src="images/gradient.png">
-
-
-        <p id="text12-1">Our usual blizzard came up</p>
-
-        <p id="text12-2" class="redaction50">We had our usual snowstorm at night and it lasted until the middle of the following day</p>
-
-        <p id="text12-3">The snow began to fly, blinding us so there was no use trying to face it, and we had to camp where we were. We had to dig a hole in the snow and build a barricade around it before we could pitch our tent in safety.</p>
-
-        <p id="text12-4">We thought our blizzards were about done with, but soon found that they were almost of daily occurrence and we must make the best of them, and the most of what time we could travel in between.</p>
-
-
-        <p id="text12-5">I afterwards learned that during this blizzard Lopp was compelled to move his camp. How such things are done at such times none can tell but those who do them, and too often the experiences are so terrible that the desire is to forget about them when they have passed. When we caught up with the deer herd later, all the party showed the effects of their work this day, in the masses of black skin on their faces and noses where they had been frozen while shifting their camp. During this day the thermometer registered—40° to —45°, which is unusually low with so much wind.</p>
-
-
-
-        <p class="text1-2">Though the temperature moderated somewhat to-day, the wind blew as hard as ever, and we could only remain where we were until the blizzard had spent its force. We had been warned concerning the blizzards on this coast, and I had heard many stories of the terrible times of parties who had been caught in these storms. One party I knew of had been storm-bound for forty-two days at a place but a few miles from where we now were, and were compelled to eat their dogs before the storm passed over.</p>
-
-      </div>
-
-
-      <!--      SCREEN 13-->
-      <div id="mates" class="screen thirteen">
-
-        <div class="headline black">
-          <h2>Companions</h2>
-        </div>
-
-        <img class="officers" src="images/officers.png">
-        <img class="lopp" src="images/lopp.png">
-
-        <p id="text13-1">Our plans were moving on to success, and I can not speak too highly of Lopp and his boys for the courage, fortitude, and skill they showed in making that awful trip successfully.</p>
-
-        <p id="text13-2">We were all grateful to Mr. Lopp and the “boys” for what they had done, and I can not speak too highly of the skill, courage, and persistent, untiring work they showed from the beginning to the end of that long journey.</p>
-
-        <p>There came with Dr. Kettleson, to manage our train, Mikkel, a Laplander, who was counted a thoroughly experienced and capable man, and I found him all that. A stolid, determined character, and possessed of a wonderful patience.</p>
-
-      </div>
-
-
-      <!--     SCREEN 14-->
-      <div id="kill" class="screen fourteen">
-
-        <div class="headline">
-          <h2>Taking lives</h2>
-        </div>
-
-        <!--        id="killl" onmouseover="getElementById('killl').style.display='none'"-->
-
-        <div class="hide">
-
-          <img class="deer" src="images/deer.png">
-          <img class="deer-alt" src="images/deer-alt.png">
-        </div>
-
-        <img class="ducks" src="images/ducks.png">
-        <img class="whales" src="images/whales.png">
-        <img class="seals" src="images/seals.png">
-        <img class="skinning" src="images/skinning.png">
-        <img class="kill" src="images/kill-alt2.png">
-
-
-
-        <!--        <iframe class="kill-emoji" src="scripts/kill-emoji/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>-->
-
-        <!--       448x knife emoji-->
-        <p class="knives-emoji">&#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
-          &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br></p>
-
-
-        <p id="text14-1">If the situation is found, as now anticipated, to be desperate, the officers must take charge in the name of the Government and organize the community for mutual support and good order, appor tioning the provisions on hand, and slaughter as many reindeer as necessary (which it is hoped will have arrived) for food, to make all hold out until August, 1898, when you will arrive in the Bear.</p>
-
-      </div>
-
-
-      <!--     SCREEN 15-->
-      <div id="relief" class="screen fifteen">
-
-        <div class="headline">
-          <h2>Relief</h2>
-        </div>
-
-        <img class="ice-break" src="images/ice-break.png">
-        <img class="free-bear" src="images/free-bear.png">
-        <img class="hauling-supplies" src="images/hauling-supplies.png">
-
-        <p id="text15-1">Ten months later she returned again to Seattle, bringing four crews of wrecked whalers, and having fully carried out all the orders and accomplished all the purposes of the expedition without loss or accident of any kind.</p>
-
-        <h5>without loss</h5>
-
-
-        <p id="text15-2"> Very respectfully, <br>D. H. Jarvis,
-          <em>First Lieutenant, R. C. S.,
-            Commanding <br>Overland Relief Expedition.</em>
-        </p>
-
-        <!--        <div id="button-end"><img src="images/play.svg"></div>-->
-
-        <div class="box" id="text15-3">
-
-          <p><em class="button redaction35" onclick="getElementById('text15-4').style.display='flex'">Fin</em>
-          </p>
-
-        </div>
-
-
-        <div id="text15-4" class="draggable box">
-          <button class="close" onclick="getElementById('text15-4').style.display='none'">x</button>
-
-          <p>We were so near our journey’s end now that we could afford to look back with a measure of satisfaction. On starting out it was hardly thought or contemplated that we could reach Point Barrow before April, and, although I set that limit myself and stuck to it, there were many times, when, considering the difficulties and dangers, I had misgivings as to our being able to arrive within the limited time. Following the windings of the coast, as we had come, we had traveled something in the neighborhood of 1,500 miles or more. We had lived on the country, as we were directed, and had drawn from it all our means of travel, except a part of our camp gear and the small store we brought from the ship. The movements of the reindeer herd had far exceeded our expectations and were due to the extraor dinary work of Mr. Lopp and liis “boys.” Our plans to overcome the many obstacles and difficulties had been carried out almost exactly as we had laid them down. Loss of life or serious accident, which were always imminent, had been averted by extreme care, and we were now within 15 miles of our destination and in good condition and ready to take up the control of the situation at Point Barrow, as we had been directed.</p>
-
-          <p>We started with 448 in all, including the 7 Lieutenant Bertholf brought to Kotzebue Sound, and we arrived at Point Barrow with 382. The difference represents what we had to kill for food for ourselves, and what were killed by overwork and by dogs and wolves, 32 in all; and the 34 which strayed off in a blizzard near Cape Kruzenstern, but were afterwards recovered and driven to Lieutenant Bertholf at Point Hope. Considering the hurried time, the unknown and untried regions, and all the dangers incident to such travel and work, I consider the drive in everyway a marked success.</p>
-
-          <p>In detailing the work of the expedition, I have not dwelt upon the personal part of the travel with any intention to magnify the dangers or trials, but simply to show some of the difficulties we encountered, and which all people traveling in that country have to contend against. That we overcame them was due to the enthusiastic labor of all in the effort to carry out your orders; and to the help we received from those living in the country and from the natives. The help of the natives to us and to the people at Point Barrow is deserving of some substantial reward.</p>
-
-        </div>
-
-
-
-
-
-
-
-      </div>
-
-
-
-      <!--     INNER WRAPPER END-->
     </div>
 
 
-    <!--
+    <!--SCREEN 10-->
+    <div id="deer" class="screen ten">
+
+      <div class="headline">
+        <h2>448</h2>
+      </div>
+
+      <img class="deer" src="images/deer.png">
+
+      <img class="fawns" src="images/fawns.png">
+
+      <!--       448x deer emoji-->
+      <p class="deer-emoji">&#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br>
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;
+        &#129420; &#129420; &#129420; &#129420; &#129420; &#129420; &#129420;<br></p>
+
+      <iframe class="deer-cursor" src="scripts/deer-cursor/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+
+      <p id="text10-1">The first and great need of the whalemen will probably be food. It is believed that the only practicable method of getting it to them is to drive it on the hoof. The purpose is to collect from the herds at Rodney and Cape Prince of Wales the entire available herds of reindeer, all to be driven to Point Barrow.</p>
+
+      <img class="deer-account" src="images/deer-account.png">
+
+
+    </div>
+
+
+    <!--SCREEN 11-->
+    <div id="canidae" class="screen eleven">
+
+      <div class="headline">
+        <h2>Canidae</h2>
+      </div>
+
+      <img class="dogs" src="images/dogs.png">
+      <img class="feeding" src="images/feeding.png">
+
+
+      <div class="draggable box" id="text11-1">
+
+        <p><em class="button redaction35" onclick="getElementById('text11-2').style.display='flex'">wolves</em></p>
+        <h5>and</h5>
+        <p><em class="button redaction35" onclick="getElementById('text11-3').style.display='flex'">dogs</em>
+
+        </p>
+
+      </div>
+
+
+      <div id="text11-2" class="draggable box">
+        <button class="close" onclick="getElementById('text11-2').style.display='none'">x</button>
+
+        <p>Wolves had been following them for the last few days and a strict watch had to be kept both day and night. <br>Last night three wolves got into the herd and killed one deer before they were discovered and driven off.</p>
+
+      </div>
+
+      <div id="text11-3" class="draggable box">
+        <button class="close" onclick="getElementById('text11-3').style.display='none'">x</button>
+
+        <p>And after supper and a smoke it was time to feed the dogs. The frozen seal meat was first chopped into small pieces, and Nekowrah and myself, armed with clubs, would undertake to see that all the dogs fared alike. It was a task, for I know of nothing so ravenous as a hard-worked Eskimo dog, and with a pack of fifteen or twenty animals it took all of our time and attention to see that the larger dogs did not monopolize all the food. If a piece of meat was too large for a dog to swallow immediately, another dog would have it out of his mouth and a general fight ensue, and then a liberal use of the clubs would be necessary to produce harmony in the pack. Dogs should be fed once a day, and best at night, after they have rested a while from their work. It is bad to feed them much in the morning or to feed them during the day, as they become heavy and loggy, and do not work so well as on an empty stomach.</p>
+
+        <p>Feeding the dogs was always a trying and interesting task. They are always hungry, and upon appearing among them with an armful of dried fish, in their eagerness to get a stray mouthful, they crowd around in one fighting, jumping mass, and make it difficult for one to even keep his balance. After throwing out a fish to each dog, it takes all hands with clubs to keep off the larger fellows and see that the smaller and weaker ones are allowed to keep and eat their share. Usually they are peaceful enough, but when being fed they are like wild animals, and snarl and bite each other, and keep up a continual fight until everything is eaten. When the meal is finished and there is nothing more to eat in sight, they will lie down quietly in the snow and go to sleep. They are tough and need no protection. During the coldest weather and the most violent blizzards, they will curl up on the snow anywhere and sleep, and when the snow has drifted over them, get up, shake themselves, and lie down again in the same place for another sleep.</p>
+
+        <p>On the morning of March 17 we found the dogs buried in the drift, with only their noses sticking out. They were all right, however, and anxious to be going.</p>
+
+      </div>
+
+
+    </div>
+
+
+    <!--     SCREEN 12-->
+    <div id="blizzards" class="screen twelve">
+
+      <div class="headline">
+        <h2>Blizzards</h2>
+      </div>
+
+      <iframe class="blizzard" src="scripts/blizzard/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+      <img class="blizzard-gradient" src="images/gradient.png">
+
+
+      <p id="text12-1">Our usual blizzard came up</p>
+
+      <p id="text12-2" class="redaction50">We had our usual snowstorm at night and it lasted until the middle of the following day</p>
+
+      <p id="text12-3">The snow began to fly, blinding us so there was no use trying to face it, and we had to camp where we were. We had to dig a hole in the snow and build a barricade around it before we could pitch our tent in safety.</p>
+
+      <p id="text12-4">We thought our blizzards were about done with, but soon found that they were almost of daily occurrence and we must make the best of them, and the most of what time we could travel in between.</p>
+
+
+      <p id="text12-5">I afterwards learned that during this blizzard Lopp was compelled to move his camp. How such things are done at such times none can tell but those who do them, and too often the experiences are so terrible that the desire is to forget about them when they have passed. When we caught up with the deer herd later, all the party showed the effects of their work this day, in the masses of black skin on their faces and noses where they had been frozen while shifting their camp. During this day the thermometer registered—40° to —45°, which is unusually low with so much wind.</p>
+
+
+
+      <p class="text1-2">Though the temperature moderated somewhat to-day, the wind blew as hard as ever, and we could only remain where we were until the blizzard had spent its force. We had been warned concerning the blizzards on this coast, and I had heard many stories of the terrible times of parties who had been caught in these storms. One party I knew of had been storm-bound for forty-two days at a place but a few miles from where we now were, and were compelled to eat their dogs before the storm passed over.</p>
+
+    </div>
+
+
+    <!--      SCREEN 13-->
+    <div id="mates" class="screen thirteen">
+
+      <div class="headline">
+        <h2>Companions</h2>
+      </div>
+
+      <img class="officers" src="images/officers.png">
+      <img class="lopp" src="images/lopp.png">
+
+      <p id="text13-1">Our plans were moving on to success, and I can not speak too highly of Lopp and his boys for the courage, fortitude, and skill they showed in making that awful trip successfully.</p>
+
+      <p id="text13-2">We were all grateful to Mr. Lopp and the “boys” for what they had done, and I can not speak too highly of the skill, courage, and persistent, untiring work they showed from the beginning to the end of that long journey.</p>
+
+      <p>There came with Dr. Kettleson, to manage our train, Mikkel, a Laplander, who was counted a thoroughly experienced and capable man, and I found him all that. A stolid, determined character, and possessed of a wonderful patience.</p>
+
+    </div>
+
+
+    <!--     SCREEN 14-->
+    <div id="kill" class="screen fourteen">
+
+      <div class="headline">
+        <h2>Taking lives</h2>
+      </div>
+
+      <!--        id="killl" onmouseover="getElementById('killl').style.display='none'"-->
+
+      <div class="hide">
+
+        <img class="deer" src="images/deer.png">
+        <img class="deer-alt" src="images/deer-alt.png">
+      </div>
+
+      <img class="ducks" src="images/ducks.png">
+      <img class="whales" src="images/whales.png">
+      <img class="seals" src="images/seals.png">
+      <img class="skinning" src="images/skinning.png">
+      <img class="kill" src="images/kill-alt2.png">
+
+
+
+      <!--        <iframe class="kill-emoji" src="scripts/kill-emoji/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>-->
+
+      <!--       448x knife emoji-->
+      <p class="knives-emoji">&#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
+        &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br></p>
+
+
+      <p id="text14-1">If the situation is found, as now anticipated, to be desperate, the officers must take charge in the name of the Government and organize the community for mutual support and good order, appor tioning the provisions on hand, and slaughter as many reindeer as necessary (which it is hoped will have arrived) for food, to make all hold out until August, 1898, when you will arrive in the Bear.</p>
+
+    </div>
+
+
+    <!--     SCREEN 15-->
+    <div id="relief" class="screen fifteen">
+
+      <div class="headline">
+        <h2>Relief</h2>
+      </div>
+
+      <img class="ice-break" src="images/ice-break.png">
+      <img class="free-bear" src="images/free-bear.png">
+      <img class="hauling-supplies" src="images/hauling-supplies.png">
+
+      <p id="text15-1">Ten months later she returned again to Seattle, bringing four crews of wrecked whalers, and having fully carried out all the orders and accomplished all the purposes of the expedition without loss or accident of any kind.</p>
+
+      <h5>without loss</h5>
+
+
+      <p id="text15-2"> Very respectfully, <br>D. H. Jarvis,
+        <em>First Lieutenant, R. C. S.,
+          Commanding <br>Overland Relief Expedition.</em>
+      </p>
+
+      <!--        <div id="button-end"><img src="images/play.svg"></div>-->
+
+      <div class="box" id="text15-3">
+
+        <p><em class="button redaction35" onclick="getElementById('text15-4').style.display='flex'">Fin</em>
+        </p>
+
+      </div>
+
+
+      <div id="text15-4" class="draggable box">
+        <button class="close" onclick="getElementById('text15-4').style.display='none'">x</button>
+
+        <p>We were so near our journey’s end now that we could afford to look back with a measure of satisfaction. On starting out it was hardly thought or contemplated that we could reach Point Barrow before April, and, although I set that limit myself and stuck to it, there were many times, when, considering the difficulties and dangers, I had misgivings as to our being able to arrive within the limited time. Following the windings of the coast, as we had come, we had traveled something in the neighborhood of 1,500 miles or more. We had lived on the country, as we were directed, and had drawn from it all our means of travel, except a part of our camp gear and the small store we brought from the ship. The movements of the reindeer herd had far exceeded our expectations and were due to the extraor dinary work of Mr. Lopp and liis “boys.” Our plans to overcome the many obstacles and difficulties had been carried out almost exactly as we had laid them down. Loss of life or serious accident, which were always imminent, had been averted by extreme care, and we were now within 15 miles of our destination and in good condition and ready to take up the control of the situation at Point Barrow, as we had been directed.</p>
+
+        <p>We started with 448 in all, including the 7 Lieutenant Bertholf brought to Kotzebue Sound, and we arrived at Point Barrow with 382. The difference represents what we had to kill for food for ourselves, and what were killed by overwork and by dogs and wolves, 32 in all; and the 34 which strayed off in a blizzard near Cape Kruzenstern, but were afterwards recovered and driven to Lieutenant Bertholf at Point Hope. Considering the hurried time, the unknown and untried regions, and all the dangers incident to such travel and work, I consider the drive in everyway a marked success.</p>
+
+        <p>In detailing the work of the expedition, I have not dwelt upon the personal part of the travel with any intention to magnify the dangers or trials, but simply to show some of the difficulties we encountered, and which all people traveling in that country have to contend against. That we overcame them was due to the enthusiastic labor of all in the effort to carry out your orders; and to the help we received from those living in the country and from the natives. The help of the natives to us and to the people at Point Barrow is deserving of some substantial reward.</p>
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!--     INNER WRAPPER END-->
+  </div>
+
+
+  <!--
     <div id="wrapper2">
 
       <div id="wrapper2-1" class="screen one">
@@ -954,7 +965,7 @@ hide, few or no nails being used;
 -->
 
 
-    <!--    OUTER WRAPPER END-->
+  <!--    OUTER WRAPPER END-->
   </div>
 
 
