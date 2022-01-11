@@ -204,6 +204,8 @@ p {
   font-style: normal;
   color: var(--blue);
   padding: 0.2vw 0.5vw 0vw;
+
+  mix-blend-mode: exclusion;
 }
 
 details,
@@ -234,7 +236,7 @@ summary {
   pointer-events: none;
 
   font-size: 1vw;
-  
+
   mix-blend-mode: exclusion;
 }
 
@@ -274,7 +276,6 @@ iframe {
   position: absolute;
   top: 15vh;
   left: 10vw;
-  mix-blend-mode: exclusion;
 }
 
 /*SCREEN 1*/
@@ -307,7 +308,7 @@ iframe {
 .route {
   top: 0;
   left: 0;
-  height: 150vh;
+  width: 100vw;
   position: absolute;
   z-index: -100;
 }
@@ -321,7 +322,6 @@ iframe {
   top: 1vh;
   width: 50vw;
   /*  z-index: -100;*/
-  mix-blend-mode: exclusion;
 }
 
 .forecastle {
@@ -338,7 +338,6 @@ iframe {
   font-size: 2vw;
 
   color: var(--blue);
-  mix-blend-mode: exclusion;
 }
 
 .scroll {
@@ -357,14 +356,13 @@ iframe {
   right: 12vw;
   top: 10vh;
   width: 50vw;
-  mix-blend-mode: exclusion;
 }
 
 .sled-deer {
   position: absolute;
-  width: 75vw;
+  width: 70vw;
   top: 10vh;
-  mix-blend-mode: exclusion;
+  left: 3vw;
 }
 
 .sled-sail {
@@ -372,17 +370,16 @@ iframe {
   left: -15vw;
   top: -25vh;
   width: 70vw;
-  mix-blend-mode: exclusion;
 }
 
 #text3-1 {
   position: absolute;
-  top: 15vh;
-  left: 15vw;
+  top: 12vh;
+  left: 20vw;
 
   z-index: 100;
 
-  font-size: 1vw;
+  font-size: 2vw;
 }
 
 #text3-2 {
@@ -392,7 +389,7 @@ iframe {
   position: absolute;
   left: 40vw;
   top: 10vh;
-  
+
   width: 50vw;
 
   display: none;
@@ -404,7 +401,7 @@ iframe {
 
 #text3-3 {
   display: flex;
-/*  flex-direction: column;*/
+  /*  flex-direction: column;*/
 
   position: absolute;
   left: 10vw;
@@ -425,7 +422,6 @@ iframe {
   right: 25vw;
   top: 0vh;
   width: 50vw;
-  mix-blend-mode: exclusion;
 }
 
 .natives2 {
@@ -433,7 +429,6 @@ iframe {
   width: 30vw;
   bottom: -5vh;
   left: 10vw;
-  mix-blend-mode: exclusion;
 }
 
 .grave1 {
@@ -441,7 +436,6 @@ iframe {
   right: 0vw;
   bottom: 15vh;
   width: 25vw;
-  mix-blend-mode: exclusion;
 }
 
 .grave2 {
@@ -449,7 +443,6 @@ iframe {
   right: 25vw;
   bottom: 5vh;
   width: 25vw;
-  mix-blend-mode: exclusion;
 }
 
 .grave3 {
@@ -457,30 +450,29 @@ iframe {
   right: 10vw;
   bottom: 0vh;
   width: 25vw;
-  mix-blend-mode: exclusion;
 }
 
 #text4-1 {
   position: absolute;
-  top: 15vh;
-  left: 10vw;
+  top: 20vh;
+  left: 0vw;
   width: 65vw;
 
-  /*  mix-blend-mode: exclusion;*/
-  background-color: var(--transparent);
-  border: 1px solid var(--blue);
-
-  /* offset-x | offset-y | blur-radius | spread-radius | color */
-  box-shadow: var(--shadow);
-
   z-index: 100;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 #text4-2 {
+
+  position: absolute;
+  left: 40vw;
+  top: 50vh;
+
   display: none;
-  z-index: -100;
-  margin-left: 1vw;
+
+  z-index: 100;
+
+  font-size: 1vw;
 }
 
 
@@ -492,7 +484,7 @@ iframe {
   height: 100vh;
   top: 0vh;
   left: 0vw;
-  mix-blend-mode: darken;
+  mix-blend-mode: multiply;
 }
 
 .hut1 {
@@ -500,7 +492,6 @@ iframe {
   width: 75vw;
   top: 1vh;
   left: 16vw;
-  mix-blend-mode: exclusion;
 }
 
 .hut2 {
@@ -508,21 +499,23 @@ iframe {
   width: 50vw;
   top: 16vh;
   left: 27vw;
-  mix-blend-mode: multiply;
 }
 
 #text5-1 {
   position: absolute;
   top: 15vh;
   left: 10vw;
-  mix-blend-mode: exclusion;
+
+  font-size: 1vw;
+
 }
 
 #text5-2 {
   position: absolute;
   top: 45vh;
   left: 20vw;
-  mix-blend-mode: exclusion;
+
+  font-size: 1vw;
 
 }
 
@@ -531,7 +524,6 @@ iframe {
   bottom: 15vh;
   right: 10vw;
   z-index: 100;
-  mix-blend-mode: exclusion;
   font-size: 2vw;
 
 }
@@ -570,7 +562,6 @@ iframe {
   right: -10vw;
   pointer-events: none;
   z-index: 0;
-  /*  mix-blend-mode: exclusion;*/
 }
 
 .track-chart {
@@ -581,18 +572,19 @@ iframe {
   cursor: zoom-in;
   transition: transform .1s;
   z-index: 0;
-  mix-blend-mode: exclusion;
   pointer-events: auto;
 }
 
 .track-chart:active {
-  transform: scale(5);
+  position: absolute;
+  top: -120vh;
+  left: -30vw;
 }
 
 #text6-1 {
   position: absolute;
   top: 15vh;
-  left: 15vw;
+  left: 10vw;
 
   z-index: 100;
   font-size: 2vw;
@@ -600,7 +592,7 @@ iframe {
 
 #text6-2 {
   display: none;
-  
+
   position: absolute;
   top: 40vh;
   left: 0vw;
@@ -612,7 +604,7 @@ iframe {
 
 #text6-3 {
   display: none;
-  
+
   position: absolute;
   top: 15vh;
   left: 55vw;
@@ -624,14 +616,14 @@ iframe {
 
 #text6-4 {
   display: none;
-  
+
   flex-direction: column;
-  
+
   position: absolute;
   top: 25vh;
   left: 10vw;
   width: 15vw;
-  
+
   z-index: 100;
   font-size: 1vw;
 }
@@ -662,10 +654,9 @@ iframe {
   /*  height: 100vh;*/
   width: 100vw;
   z-index: -50;
-  mix-blend-mode: multiply;
 }
 
-#text7-1 {  
+#text7-1 {
   position: absolute;
   top: 15vh;
   left: 15vw;
@@ -674,13 +665,13 @@ iframe {
   z-index: 100;
 
   font-size: 4vw;
-  }
+}
 
 #text7-3 {
   position: absolute;
-  top: 0vh;
-  left: 0vw;
-  
+  top: 30vh;
+  left: 30vw;
+
   display: none;
   width: 45vw;
   font-size: 5vw;
@@ -690,20 +681,20 @@ iframe {
 #text7-2 {
   display: none;
   width: 50vw;
-  
+
   position: absolute;
-  top: 0vh;
-  left: 0vw;
-  
+  top: 20vh;
+  left: 20vw;
+
   font-size: 2vw;
-  
+
   z-index: 100;
 }
 
 #text7-4 {
   position: absolute;
-  top: 0vh;
-  left: 0vw;
+  top: 40vh;
+  left: 40vw;
   display: none;
   width: 50vw;
   font-size: 3vw;
@@ -715,8 +706,8 @@ iframe {
   z-index: 100;
   width: 75vw;
   position: absolute;
-  top: 0vh;
-  left: 0vw;
+  top: 50vh;
+  left: 50vw;
   font-size: 1.5vw;
 }
 
@@ -725,11 +716,9 @@ iframe {
 
 .camp {
   position: absolute;
-  top: 0;
-  top: -10vh;
-  left: -20vw;
-  width: 90vw;
-  mix-blend-mode: exclusion;
+  top: 5vh;
+  left: 5vw;
+  width: 70vw;
 }
 
 .camp-tilton {
@@ -737,7 +726,6 @@ iframe {
   bottom: 0vh;
   left: -15vw;
   width: 40vw;
-  /*  mix-blend-mode: exclusion;*/
 }
 
 .snow-houses {
@@ -745,7 +733,6 @@ iframe {
   top: -10vh;
   right: -10vw;
   width: 70vw;
-  mix-blend-mode: exclusion;
 }
 
 #text8-1 {
@@ -754,6 +741,9 @@ iframe {
   left: 15vw;
 
   z-index: 100;
+
+  font-size: 2vw;
+
 }
 
 #text8-2 {
@@ -816,9 +806,8 @@ iframe {
   position: absolute;
   top: 10vh;
   left: 20vw;
-  font-size: 1.5vw;
+  font-size: 2vw;
   pointer-events: none;
-  mix-blend-mode: exclusion;
 }
 
 #text9-2 {
@@ -850,6 +839,7 @@ iframe {
   z-index: 100;
   left: 30vw;
   top: 0vh;
+  mix-blend-mode: normal;
 }
 
 .fawns {
@@ -858,7 +848,7 @@ iframe {
   z-index: 200;
   right: -0vw;
   top: 0vh;
-  pointer-events: none;
+  /*  pointer-events: none;*/
 }
 
 .deer-cursor {
@@ -922,7 +912,7 @@ iframe {
   z-index: 200;
   height: 100vh;
   width: 100vw;
-/*  mix-blend-mode: lighten;*/
+  /*  mix-blend-mode: lighten;*/
   pointer-events: none;
 }
 
@@ -941,7 +931,7 @@ iframe {
 
 .officers {
   position: absolute;
-  width: 50vw;
+  width: 40vw;
   top: -5vh;
   left: 20vw;
 }
@@ -951,7 +941,6 @@ iframe {
   width: 25vw;
   bottom: 5vh;
   left: -10vw;
-  z-index: -100;
 }
 
 
@@ -963,11 +952,12 @@ iframe {
   z-index: 100;
   left: 30vw;
   top: 0vh;
-  
+
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 1s linear;
 
+  mix-blend-mode: normal;
 }
 
 
@@ -996,7 +986,6 @@ iframe {
   z-index: 200;
   height: 100vh;
   width: 100vw;
-  mix-blend-mode: exclusion;
 }
 
 .ducks {
@@ -1050,11 +1039,9 @@ iframe {
 
 .hauling-supplies {
   position: absolute;
-  left: 20vw;
-  bottom: -15vh;
-  width: 75vw;
+  left: 15vw;
+  bottom: -20vh;
   z-index: -100;
-/*  mix-blend-mode: darken;*/
 }
 
 /*NAVIGATION*/
@@ -1088,7 +1075,7 @@ nav a {
   align-items: center;
 
   color: var(--blue);
-  
+
   font-family: chapman, serif;
   font-weight: 400;
   font-style: italic;
@@ -1118,8 +1105,8 @@ button {
   position: absolute;
   top: 0;
   right: 0;
-  width: 1vw;
-  height: 1vw;
+  width: 1.5vw;
+  height: 1.5vw;
 
   color: var(--blue);
   background-color: rgba(0, 0, 0, 0);
@@ -1132,7 +1119,7 @@ button {
   color: black;
 }
 
-.box {  
+.box {
   position: absolute;
 
   background-color: var(--transparent);
@@ -1181,6 +1168,7 @@ button {
   left: 5vw;
   font-size: 1.5vw;
   color: red;
+  mix-blend-mode: multiply;
 }
 
 .black {
@@ -1211,7 +1199,7 @@ button {
 #text11-3 {
   display: none;
   z-index: 100;
-/*  width: 75vw;*/
+  /*  width: 75vw;*/
   position: absolute;
   top: 10vh;
   left: 10vw;
@@ -1225,9 +1213,8 @@ button {
   position: absolute;
   top: -1vh;
   left: 30vw;
-  font-size: 9vw;  
+  font-size: 9vw;
   line-height: 6vw;
-  mix-blend-mode: exclusion;
 }
 
 #text12-2 {
@@ -1236,8 +1223,8 @@ button {
   position: absolute;
   top: 30vh;
   right: 0vw;
-  font-size: 3vw;  
-/*  color: black;*/
+  font-size: 3vw;
+  /*  color: black;*/
 }
 
 #text12-3 {
@@ -1245,8 +1232,8 @@ button {
   position: absolute;
   top: 10vh;
   left: 5vw;
-  font-size: 3vw; 
-/*  z-index: 100;*/
+  font-size: 3vw;
+  /*  z-index: 100;*/
   color: black;
 }
 
@@ -1255,7 +1242,7 @@ button {
   position: absolute;
   top: 10vh;
   left: 5vw;
-  font-size: 2.5vw;  
+  font-size: 2.5vw;
   z-index: 100;
 }
 
@@ -1273,9 +1260,8 @@ button {
   width: 30vw;
   position: absolute;
   top: 10vh;
-  right: 12vw;
-  font-size: 3vw;  
-  color: black;
+  right: 15vw;
+  font-size: 3vw;
 }
 
 #text13-2 {
@@ -1283,8 +1269,7 @@ button {
   position: absolute;
   bottom: 20vh;
   left: 7vw;
-  font-size:2vw;  
-  color: black;
+  font-size: 2vw;
   z-index: -100;
 }
 
@@ -1293,18 +1278,18 @@ button {
   position: absolute;
   top: 10vh;
   left: 10vw;
-  font-size: 3.5vw;  
+  font-size: 3.5vw;
   color: black;
-/*  line-height: 4.5vw;*/
+  /*  line-height: 4.5vw;*/
 }
 
 #text15-2 {
   width: 50vw;
   position: absolute;
-  bottom: 0vh;
-  right: 0vw;
-  font-size: 3.5vw;  
-/*  color: black;*/
+  bottom: 1vh;
+  right: 1vw;
+  font-size: 2vw;
+  /*  color: black;*/
   text-align: right;
 }
 
@@ -1339,4 +1324,45 @@ button {
   top: 50vh;
   left: 50vw;
   cursor: pointer;
+}
+
+.bear:active {
+  /*  transform: scale(2); */
+  /*  width: auto;*/
+}
+
+img:active {
+  width: auto;
+  position: absolute;
+  left: auto;
+  top: auto;
+}
+
+img {
+  cursor: zoom-in;
+  mix-blend-mode: exclusion;
+}
+
+.text12-6 {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+}
+
+#text13-3 {
+  position: absolute;
+  bottom: 15vh;
+  width: 50vw;
+}
+
+.multiply {
+  mix-blend-mode: multiply;
+}
+
+#text15-1 {
+  width: 30vw;
+  position: absolute;
+  top: 10vh;
+  right: 15vw;
+  font-size: 3vw;
 }
