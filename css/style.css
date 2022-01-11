@@ -1,6 +1,8 @@
+/*
 iframe {
   display: none;
 }
+*/
 
 /*GLOBAL COLOR*/
 
@@ -1365,4 +1367,11 @@ img {
   top: 10vh;
   right: 15vw;
   font-size: 3vw;
+}
+.report {
+  position: absolute;
+  top: 20vh;;
+  right: 10vw;
+  mix-blend-mode:multiply;
+  z-index: 500;
 }
