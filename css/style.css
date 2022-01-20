@@ -1,8 +1,6 @@
-/*
 iframe {
   display: none;
 }
-*/
 
 /*GLOBAL COLOR*/
 
@@ -1414,4 +1412,19 @@ img {
 font-size: 3vw;
   padding: 1vh 1vw 0vw 1vw;
   font-size: 5vw;
+}
+
+
+
+.audio {
+    position: fixed;
+  top: 10vh;
+  left: 10vw;
+}
+
+#audio {
+  position: fixed;
+  bottom: 2vh;
+  right: 1vw;
+  z-index: 100;
 }

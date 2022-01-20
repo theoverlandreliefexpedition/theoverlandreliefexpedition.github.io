@@ -47,15 +47,52 @@
       <li><a href="#15">14°</a></li>
     </ul>
   </nav>
+  
+      <audio id="audio" src="audio/1_duty.mp3" controls></audio>
+
 
   <div id="outer-wrapper">
 
 
     <div id="wrapper">
-
-
-      <!--SCREEN 1-->
+    
       <div id="1" class="screen one">
+        
+        
+        <!--       START INFO-->
+
+        <div id="background">
+
+          <div id="start" class="box">
+
+            <div class="headline">
+              <h2>Hello!</h2>
+            </div>
+
+            <div class="info">
+              <p>
+                Scroll to navigate through different moments of an expedition that is based on real events.<br>
+<!--                The experience is created via a mixture of eyewitness reports, photographs, interactive elements and music. <br>-->
+                Every scene has its own specific sound so make sure your sound is on and the volume is turned up &mdash; but not too high.<br>
+                Use speakers or headphones and Chrome browser on desktop for the full experience.<br>
+                Click on the button to enable sound and start the journey.
+
+
+              </p>
+            </div>
+
+
+            <div id="button" class="button redaction35" onclick="document.getElementById('audio').play(); getElementById('button').style.display='none'; getElementById('start').style.display='none'; getElementById('background').style.display='none'"><p class="startbutton redaction50">start</p>
+</div>
+            
+
+
+          </div>
+
+        </div>
+        
+              <!--SCREEN 1-->
+
 
         <div class="headline">
           <h2>The Overland<br>Relief Expedition</h2>
@@ -85,41 +122,12 @@
 -->
 
         <img src="images/route.svg" class="route">
+        
 
 
         <!--                <iframe class="start" src="index.html" frameBorder="0" scrolling="no"></iframe>-->
 
-        <div id="background">
-
-          <div id="start" class="box">
-
-            <div class="headline">
-              <h2>Hello!</h2>
-            </div>
-
-            <div class="info">
-              <p>
-                Scroll to navigate through different moments of an expedition that is based on real events.<br>
-<!--                The experience is created via a mixture of eyewitness reports, photographs, interactive elements and music. <br>-->
-                Every scene has its own specific sound so make sure your sound is on and the volume is turned up &mdash; but not too high.<br>
-                Use speakers or headphones and Chrome browser on desktop for the full experience.<br>
-                Click on the button to enable sound and start the journey.
-
-
-              </p>
-            </div>
-
-            <audio id="audio" src="audio/1_duty.mp3"></audio>
-
-            <div id="button" class="button redaction35" onclick="document.getElementById('audio').play(); getElementById('button').style.display='none'; getElementById('start').style.display='none'; getElementById('background').style.display='none'"><p class="startbutton redaction50">start</p>
-</div>
-            
-
-
-          </div>
-
-        </div>
-
+       
 
       </div>
 
