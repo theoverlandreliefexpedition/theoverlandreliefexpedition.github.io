@@ -1,6 +1,8 @@
+/*
 iframe {
   display: none;
 }
+*/
 
 /*GLOBAL COLOR*/
 
@@ -392,7 +394,7 @@ iframe {
 
   z-index: 100;
 
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 #text3-3 {
@@ -407,7 +409,7 @@ iframe {
 
   z-index: 100;
 
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 
@@ -462,13 +464,13 @@ iframe {
 
   position: absolute;
   left: 40vw;
-  top: 50vh;
+  top: 30vh;
 
   display: none;
 
   z-index: 100;
 
-  font-size: 1vw;
+  font-size: 2vw;
 }
 
 
@@ -502,7 +504,7 @@ iframe {
   top: 15vh;
   left: 10vw;
 
-  font-size: 1vw;
+  font-size: 1.2vw;
 
 }
 
@@ -511,7 +513,7 @@ iframe {
   top: 45vh;
   left: 20vw;
 
-  font-size: 1vw;
+  font-size: 1.2vw;
 
 }
 
@@ -595,7 +597,7 @@ iframe {
   right: 0vw;
 
   z-index: 100;
-  font-size: 2vw;
+  font-size: 1.2vw;
 }
 
 #text6-3 {
@@ -607,7 +609,7 @@ iframe {
   width: 35vw;
 
   z-index: 100;
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 #text6-4 {
@@ -621,7 +623,7 @@ iframe {
   width: 15vw;
 
   z-index: 100;
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 
@@ -682,7 +684,7 @@ iframe {
   top: 20vh;
   left: 20vw;
 
-  font-size: 2vw;
+  font-size: 2.5vw;
 
   z-index: 100;
 }
@@ -693,7 +695,7 @@ iframe {
   left: 40vw;
   display: none;
   width: 50vw;
-  font-size: 3vw;
+  font-size: 4vw;
   z-index: 100;
 }
 
@@ -745,12 +747,12 @@ iframe {
 #text8-2 {
   display: none;
   z-index: 100;
-  width: 25vw;
-  height: 10vw;
+  width: 30vw;
+  height: 15vw;
   position: absolute;
   top: 50vh;
   left: 50vw;
-  font-size: 1.5vw;
+  font-size: 2vw;
   overflow: auto;
 }
 
@@ -1124,6 +1126,8 @@ button {
   border: 1px solid var(--blue);
 
   box-shadow: var(--shadow);
+  
+  padding: 1vw;
 }
 
 .button {
@@ -1164,7 +1168,7 @@ button {
   position: absolute;
   bottom: 10vh;
   left: 5vw;
-  font-size: 1.5vw;
+  font-size: 2vw;
   color: red;
   mix-blend-mode: multiply;
 }
@@ -1181,7 +1185,7 @@ button {
   position: absolute;
   top: 20vh;
   left: 20vw;
-  font-size: 8vw;
+  font-size: 6vw;
   overflow: auto;
 }
 
@@ -1201,7 +1205,7 @@ button {
   position: absolute;
   top: 10vh;
   left: 10vw;
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 #text12-1 {
@@ -1302,6 +1306,8 @@ button {
 
 #text15-4 {
   display: none;
+  font-size: 1.2vw;
+  z-index: 100;
 }
 
 
@@ -1345,12 +1351,14 @@ img {
   position: absolute;
   top: 10vh;
   left: 10vw;
+  font-size: 1.2vw;
 }
 
 #text13-3 {
   position: absolute;
-  bottom: 15vh;
+  bottom: 10vh;
   width: 50vw;
+  font-size: 1vw;
 }
 
 .multiply {
@@ -1370,7 +1378,7 @@ img {
   top: 20vh;
   ;
   right: 10vw;
-  mix-blend-mode: multiply;
+/*  mix-blend-mode: multiply;*/
   z-index: 500;
 }
 
