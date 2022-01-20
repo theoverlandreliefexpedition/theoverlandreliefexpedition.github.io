@@ -284,11 +284,10 @@ iframe {
 
 .intro {
   position: relative;
-  top: 0;
-  top: 10vh;
+  top: 20vh;
   left: 45vw;
-  width: 50vw;
-  font-size: 1.5vw;
+  width: 55vw;
+  font-size: 2vw;
 }
 
 .em {
@@ -297,11 +296,8 @@ iframe {
   color: black;
 }
 
-#button,
-#button-end,
-#button-again {
+#button {
   position: absolute;
-  width: 25vw;
   top: 50vh;
   left: 50vw;
   cursor: pointer;
@@ -1078,9 +1074,10 @@ nav a {
 
   color: var(--blue);
 
-  font-family: chapman, serif;
-  font-weight: 400;
+  font-family: 'Redaction 50 Italic', serif;
   font-style: italic;
+  font-weight: 500;
+
   font-size: 0.7vw;
   text-decoration: none;
 }
@@ -1105,6 +1102,7 @@ button {
 
 .close {
   position: absolute;
+  z-index: 1000;
   top: 0;
   right: 0;
   width: 1.5vw;
@@ -1368,10 +1366,52 @@ img {
   right: 15vw;
   font-size: 3vw;
 }
+
 .report {
   position: absolute;
-  top: 20vh;;
+  top: 20vh;
+  ;
   right: 10vw;
-  mix-blend-mode:multiply;
+  mix-blend-mode: multiply;
   z-index: 500;
+}
+
+#start {
+  position: absolute;
+  width: 75vw;
+  height: 75vh;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+
+}
+
+.info {
+  position: relative;
+  top: 2vh;
+  left: 25vw;
+  width: 45vw;
+  height: 45vh;
+  font-size: 2vw;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  background-color: var(--transparent);
+}
+
+
+
+
+.startbutton {
+font-size: 3vw;
+  padding: 1vh 1vw 0vw 1vw;
+  font-size: 5vw;
 }
