@@ -12,6 +12,7 @@
   <title>The Overland Relief Expedition</title>
 
   <script src="scripts/p5.js"></script>
+  <script src="scripts/audio.js"></script>
 
   <!-- <script src="scripts/p5.sound.min.js"></script> -->
 
@@ -47,9 +48,6 @@
       <li><a href="#15">14°</a></li>
     </ul>
   </nav>
-  
-      <audio id="audio" src="audio/1_duty.mp3" controls></audio>
-
 
   <div id="outer-wrapper">
 
@@ -82,12 +80,13 @@
             </div>
 
 
-            <div id="button" class="button redaction35" onclick="document.getElementById('audio').play(); getElementById('button').style.display='none'; getElementById('start').style.display='none'; getElementById('background').style.display='none'"><p class="startbutton redaction50">start</p>
+            <div id="button" class="button redaction35" onclick="document.getElementById('audio-1').play(); getElementById('button').style.display='none'; getElementById('start').style.display='none'; getElementById('background').style.display='none'"><p class="startbutton redaction50">start</p>
 </div>
             
 
 
           </div>
+
 
         </div>
         
@@ -128,6 +127,7 @@
         <!--                <iframe class="start" src="index.html" frameBorder="0" scrolling="no"></iframe>-->
 
        
+          <audio id="audio-1" class="audioplayer" src="audio/1_duty.mp3" controls></audio>
 
       </div>
 
@@ -152,6 +152,8 @@
         <img class="bear" src="images/bear.png">
 
         <iframe class="scroll" src="scripts/scroll/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+
+              <audio id="audio-2" class="audioplayer" src="audio/1_duty.mp3" controls></audio>
 
       </div>
 
@@ -243,6 +245,7 @@ hide, few or no nails being used;
          
           -->
 
+      <audio id="audio-3" class="audioplayer" src="audio/1_duty.mp3" controls></audio>
 
       </div>
 

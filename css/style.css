@@ -1430,8 +1430,10 @@ font-size: 3vw;
   left: 10vw;
 }
 
-#audio {
-  position: fixed;
+#audio,
+#audio-2,
+#audio-3 {
+  position: absolute;
   bottom: 2vh;
   right: 1vw;
   z-index: 100;
