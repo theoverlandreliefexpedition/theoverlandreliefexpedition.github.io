@@ -7,7 +7,11 @@
 
   <meta charset="utf-8">
 
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+  <!--  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">-->
+  <!--  <link rel="icon" href="images/favicon-alt.png"/>-->
+  <link rel="icon" href="images/favicon.png" />
+
+
 
   <title>The Overland Relief Expedition</title>
 
@@ -53,13 +57,14 @@
 
 
     <div id="wrapper">
-    
+
       <div id="1" class="screen one">
-        
-        
+
+
         <!--       START INFO-->
 
         <div id="background">
+
 
           <div id="start" class="box">
 
@@ -70,7 +75,6 @@
             <div class="info">
               <p>
                 Scroll to navigate through different moments of an expedition that is based on real events.<br>
-<!--                The experience is created via a mixture of eyewitness reports, photographs, interactive elements and music. <br>-->
                 Every scene has its own specific sound so make sure your sound is on and the volume is turned up &mdash; but not too high.<br>
                 Use speakers or headphones and Chrome browser on desktop for the full experience.<br>
                 Click on the button to enable sound and start the journey.
@@ -80,17 +84,19 @@
             </div>
 
 
-            <div id="button" class="button redaction35" onclick="document.getElementById('audio-1').play(); getElementById('button').style.display='none'; getElementById('start').style.display='none'; getElementById('background').style.display='none'"><p class="startbutton redaction50">start</p>
-</div>
-            
+
+            <div id="button" class="button redaction35" onclick="document.getElementById('audio-2').play(); getElementById('button').style.display='none'; getElementById('start').style.display='none'; getElementById('background').style.display='none'">
+              <p class="startbutton redaction50">start</p>
+            </div>
+
 
 
           </div>
 
 
         </div>
-        
-              <!--SCREEN 1-->
+
+        <!--SCREEN 1-->
 
 
         <div class="headline">
@@ -121,13 +127,12 @@
 -->
 
         <img src="images/route.svg" class="route">
-        
+
 
 
         <!--                <iframe class="start" src="index.html" frameBorder="0" scrolling="no"></iframe>-->
 
-       
-          <audio id="audio-1" class="audioplayer" src="audio/1_duty.mp3" controls></audio>
+
 
       </div>
 
@@ -153,7 +158,13 @@
 
         <iframe class="scroll" src="scripts/scroll/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
 
-              <audio id="audio-2" class="audioplayer" src="audio/1_duty.mp3" controls></audio>
+        <!--              <audio id="audio-2" class="audioplayer" src="audio/1_duty.mp3" controls></audio>-->
+        
+                <audio id="audio-2" class="audioplayer" src="audio/1_duty.mp3" controls></audio>
+
+
+        <iframe id="duty" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("duty").src="svg/duty.html";'></button>
 
       </div>
 
@@ -228,24 +239,10 @@
 
 
 
-
-        <!--
-        <p class="text3-1">The sled is an open framework of<br>
-          hickory or oak, no more wood being used than is absolutely necessary,<br>
-
-
-
-and all the parts are lashed together with strips of seal skin or walrus<br>
-hide, few or no nails being used; 
-          so, while the sled is very strong, it is<br>
-          also flexible and able to withstand the constant rough usage to which<br>
-          it is subjected in traveling.
-
-        </p>
-         
-          -->
-
-      <audio id="audio-3" class="audioplayer" src="audio/1_duty.mp3" controls></audio>
+        <audio id="audio-3" class="audioplayer" src="audio/2_sled-ride.mp3" controls></audio>
+        
+                <iframe id="sled-ride" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("sled-ride").src="svg/sled-ride.html";'>HALLO</button>
 
       </div>
 
@@ -309,6 +306,12 @@ hide, few or no nails being used;
           enables the relatives to find material to build one of their scaffolds, on
           which the body is then placed</p>
 -->
+     
+        <audio id="audio-3" class="audioplayer" src="audio/3_open-hearted.mp3" controls></audio>
+     
+      
+              <iframe id="open-hearted" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("open-hearted").src="svg/open-hearted.html";'></button>
 
       </div>
 
@@ -317,7 +320,7 @@ hide, few or no nails being used;
       <div id="5" class="screen five">
 
         <div class="headline">
-          <h2>Temporary<br> Home</h2>
+          <h2>Temporary<br> Homes</h2>
         </div>
 
         <p id="text5-1">Though it turned out to be a horrible place, no palace could<br>
@@ -344,6 +347,12 @@ hide, few or no nails being used;
         <img class="hut2 multiply" src="images/hut2.png">
 
         <iframe class="hut" src="scripts/hut/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        
+        <audio id="audio-4" class="audioplayer" src="audio/4_temporary-homes.mp3" controls></audio>
+        
+        
+                      <iframe id="temporary-homes" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("temporary-homes").src="svg/temporary-homes.html";'></button>
 
       </div>
 
@@ -409,6 +418,12 @@ hide, few or no nails being used;
           <p>Refreshed by our rest and lunch, we started for the second ascent in good spirits.</p>
 
         </div>
+        
+        <audio id="audio-5" class="audioplayer" src="audio/5_en-route.mp3" controls></audio>
+        
+        
+                      <iframe id="en-route" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("en-route").src="svg/en-route.html";'></button>
 
       </div>
 
@@ -478,6 +493,13 @@ hide, few or no nails being used;
 
           <p>It is the easiest thing in the world for a man to suffer severely in such a climate, but it is possible, by good care and attention, to avoid what one might call extreme suffering, and live there with only the unavoidable discomforts of the country, to which a man in good health sooner or later grows accustomed.</p>
         </div>
+        
+        <audio id="audio-6" class="audioplayer" src="audio/6_infinite-cold.mp3" controls></audio>
+        
+        
+        
+                      <iframe id="infinite-cold" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("infinite-cold").src="svg/infinite-cold.html";'></button>
 
 
       </div>
@@ -487,7 +509,7 @@ hide, few or no nails being used;
       <div id="8" class="screen eight">
 
         <div class="headline">
-          <h2>Camps</h2>
+          <h2>Camping</h2>
         </div>
 
         <img class="camp" src="images/camp.png">
@@ -529,6 +551,12 @@ hide, few or no nails being used;
 
           <p>Breakfast being over, the sleds were gotten out and packed, reserv ing the tent to the last, so as to be handy at night. The grub box, with a little food inside, and a camp kettle and axe were placed on the sled where they could easily be gotten at in case a stop was made during the day. The sleds were then lashed, the dogs caught and har nessed, and we were ready to start.</p>
         </div>
+        
+        <audio id="audio-7" class="audioplayer" src="audio/7_camping.mp3" controls></audio>
+        
+        
+                      <iframe id="camping" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("camping").src="svg/camping.html";'></button>
 
       </div>
 
@@ -538,7 +566,7 @@ hide, few or no nails being used;
 
 
         <div class="headline">
-          <h2>Bright<br>Darkness</h2>
+          <h2>Glowing<br>Darkness</h2>
         </div>
 
 
@@ -577,6 +605,12 @@ hide, few or no nails being used;
         <p>we felt much better in the tent that night after a good
           supper</p>
 -->
+     
+        <audio id="audio-8" class="audioplayer" src="audio/8_glowing-darkness.mp3" controls></audio>
+     
+      
+                    <iframe id="glowing-darkness" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("glowing-darkness").src="svg/glowing-darkness.html";'></button>
 
       </div>
 
@@ -663,6 +697,12 @@ hide, few or no nails being used;
         <p id="text10-1">The first and great need of the whalemen will probably be food. It is believed that the only practicable method of getting it to them is to drive it on the hoof. The purpose is to collect from the herds at Rodney and Cape Prince of Wales the entire available herds of reindeer, all to be driven to Point Barrow.</p>
 
         <img class="deer-account" src="images/deer-account.png">
+        
+        <audio id="audio-9" class="audioplayer" src="audio/9_448.mp3" controls></audio>
+        
+        
+                      <iframe id="448" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("448").src="svg/448.html";'></button>
 
 
       </div>
@@ -707,6 +747,12 @@ hide, few or no nails being used;
           <p>On the morning of March 17 we found the dogs buried in the drift, with only their noses sticking out. They were all right, however, and anxious to be going.</p>
 
         </div>
+        
+        <audio id="audio-10" class="audioplayer" src="audio/10_canidae.mp3" controls></audio>
+                     
+                     
+                      <iframe id="canidae" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("canidae").src="svg/canidae.html";'></button>
 
 
       </div>
@@ -737,6 +783,12 @@ hide, few or no nails being used;
 
 
         <p class="text12-6">Though the temperature moderated somewhat to-day, the wind blew as hard as ever, and we could only remain where we were until the blizzard had spent its force. We had been warned concerning the blizzards on this coast, and I had heard many stories of the terrible times of parties who had been caught in these storms. One party I knew of had been storm-bound for forty-two days at a place but a few miles from where we now were, and were compelled to eat their dogs before the storm passed over.</p>
+        
+        <audio id="audio-11" class="audioplayer" src="audio/11_blizzards.mp3" controls></audio>
+        
+        
+                      <iframe id="blizzards" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("blizzards").src="svg/blizzards.html";'></button>
 
       </div>
 
@@ -756,6 +808,12 @@ hide, few or no nails being used;
         <p id="text13-2">We were all grateful to Mr. Lopp and the “boys” for what they had done, and I can not speak too highly of the skill, courage, and persistent, untiring work they showed from the beginning to the end of that long journey.</p>
 
         <p id="text13-3">There came with Dr. Kettleson, to manage our train, Mikkel, a Laplander, who was counted a thoroughly experienced and capable man, and I found him all that. A stolid, determined character, and possessed of a wonderful patience.</p>
+        
+        <audio id="audio-12" class="audioplayer" src="audio/12_companions.mp3" controls></audio>
+        
+        
+                      <iframe id="companions" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("companions").src="svg/companions.html";'></button>
 
       </div>
 
@@ -853,6 +911,12 @@ hide, few or no nails being used;
 
 
         <p id="text14-1">If the situation is found, as now anticipated, to be desperate, the officers must take charge in the name of the Government and organize the community for mutual support and good order, appor tioning the provisions on hand, and slaughter as many reindeer as necessary (which it is hoped will have arrived) for food, to make all hold out until August, 1898, when you will arrive in the Bear.</p>
+        
+        <audio id="audio-13" class="audioplayer" src="audio/13_taking-lives.mp3" controls></audio>
+        
+        
+                      <iframe id="taking-lives" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("taking-lives").src="svg/taking-lives.html";'></button>
 
       </div>
 
@@ -896,17 +960,21 @@ hide, few or no nails being used;
           <p>We started with 448 in all, including the 7 Lieutenant Bertholf brought to Kotzebue Sound, and we arrived at Point Barrow with 382. The difference represents what we had to kill for food for ourselves, and what were killed by overwork and by dogs and wolves, 32 in all; and the 34 which strayed off in a blizzard near Cape Kruzenstern, but were afterwards recovered and driven to Lieutenant Bertholf at Point Hope. Considering the hurried time, the unknown and untried regions, and all the dangers incident to such travel and work, I consider the drive in everyway a marked success.</p>
 
           <p>In detailing the work of the expedition, I have not dwelt upon the personal part of the travel with any intention to magnify the dangers or trials, but simply to show some of the difficulties we encountered, and which all people traveling in that country have to contend against. That we overcame them was due to the enthusiastic labor of all in the effort to carry out your orders; and to the help we received from those living in the country and from the natives. The help of the natives to us and to the people at Point Barrow is deserving of some substantial reward.</p>
+
+
+          <p>read the report of the overland relief expedition <a href="https://tile.loc.gov/storage-services/service/gdc/gdclccn/02/00/33/21/02003321/02003321.pdf">here</a></p>
           
+        <audio id="audio-14" class="audioplayer" src="audio/14_relief.mp3" controls></audio>
           
-                    <p>read the report of the overland relief expedition <a href="https://tile.loc.gov/storage-services/service/gdc/gdclccn/02/00/33/21/02003321/02003321.pdf">here</a></p>
-                    
-                    
-<!--        <iframe class="report" src="https://tile.loc.gov/storage-services/service/gdc/gdclccn/02/00/33/21/02003321/02003321.pdf" width="50%" height="50%" frameBorder="0" scrolling="no"></iframe>-->
+
+
+              <iframe id="taking-lives" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <button class="svgbtn" onClick='document.getElementById("taking-lives").src="svg/taking-lives.html";'></button>
 
         </div>
 
 
-        
+
 
 
 
