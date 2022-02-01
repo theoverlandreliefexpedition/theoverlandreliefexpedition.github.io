@@ -9,10 +9,10 @@ function draw() {
   noStroke();
   
   textSize(100);
-  text('🦌', mouseX, mouseY);
+  text('🦌', mouseX-20, mouseY+70);
   
     noCursor();
-
+  
 }
 
 function mousePressed() {
