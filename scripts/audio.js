@@ -29,6 +29,8 @@ outerWrapper.addEventListener('scroll', function(){
 	var scrollPosition = outerWrapper.scrollTop;
 	var screenWidth = window.innerWidth;
 
+  scrollPosition -= screenWidth * -1/3;
+  
 	var currentScreen = Math.ceil(scrollPosition/screenWidth);
 
 	if( currentScreen != screen ) {
