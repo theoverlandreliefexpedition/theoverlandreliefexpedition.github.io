@@ -1581,6 +1581,7 @@ audio::-webkit-media-controls-panel {
   bottom: 25vh;
   width: 5vw;
   z-index: 100;
+  pointer-events: none;
 }
 
 .background {
@@ -1594,16 +1595,12 @@ audio::-webkit-media-controls-panel {
 
 
 
-#blood {
-  display: none;
-  background: darkred;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-}
+
 
 #slaughter:hover {
   background: darkred;
+  color: white;
+  padding: 50vw;
 }
 
 .brown {
