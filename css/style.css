@@ -829,7 +829,7 @@ iframe {
   position: absolute;
   bottom: 10vh;
   right: 10vw;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 .deer {
@@ -1707,6 +1707,7 @@ audio::-webkit-media-controls-panel {
   z-index: 1000;
   cursor: pointer !important;
   transition: transform 10s; 
+  mix-blend-mode: exclusion;
 }
 
 .compass:hover {
