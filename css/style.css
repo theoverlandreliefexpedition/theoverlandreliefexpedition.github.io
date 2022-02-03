@@ -335,7 +335,6 @@ iframe {
   left: 10vw;
   font-size: 2vw;
   z-index: 100;
-  color: var(--blue);
 }
 
 .scroll {
@@ -943,7 +942,6 @@ iframe {
 
 .officers:hover {
 transform: scale(1.5);
-/*  top: 10vh;*/
 }
 
 .lopp {
@@ -951,6 +949,12 @@ transform: scale(1.5);
   width: 25vw;
   bottom: 5vh;
   left: -10vw;
+  transition: transform 1s;
+
+}
+
+.lopp:hover {
+transform: scale(1.5);
 }
 
 
@@ -1306,9 +1310,8 @@ button {
   width: 50vw;
 /*  position: absolute;*/
   position: relative;
-  bottom: 1vh;
-  right: 1vw;
-  left: 25vw;
+  bottom: 0vh;
+  right: -30vw;
   font-size: 2vw;
   /*  color: black;*/
   text-align: right;
@@ -1420,9 +1423,9 @@ img {
   position: relative;
   top: 2vh;
   left: 25vw;
-  width: 45vw;
+  width: 50vw;
   height: 45vh;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 #background {
@@ -1432,6 +1435,7 @@ img {
   width: 100%;
   height: 100%;
   z-index: 1500;
+  background: black;
 }
 
 
@@ -1515,6 +1519,7 @@ audio::-webkit-media-controls-panel {
   right: 15vw;
   width: 40vw;
   font-size: 3vw;
+  color: orange !important;
 }
 
 #report:link, #report:visited, .outro a:link, .outro a:visited {
@@ -1587,6 +1592,7 @@ audio::-webkit-media-controls-panel {
   left: 10vw;;
   filter: blur(10vw);
   mix-blend-mode: lighten;
+  opacity: 0.7;
 }
 
 
@@ -1599,8 +1605,8 @@ audio::-webkit-media-controls-panel {
   padding: 50vw;
 }
 
-.brown {
-  color: brown;
+.red {
+  color: darkred;
 }
 
 .ice2 {
@@ -1723,14 +1729,15 @@ audio::-webkit-media-controls-panel {
 
 .sparkle {
   position: absolute;
-  top: 10vh;
-  left: 10vw;
+  bottom: 25vh;
+  left: 5vw;
   width: 10vw;
   pointer-events: none;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
 /*  filter: blur(5vw);*/
+  mix-blend-mode: normal;
 }
 
 #icy-background {
@@ -1744,4 +1751,35 @@ audio::-webkit-media-controls-panel {
   background: var(--blue);
   opacity: 0.5;
   filter: blur(3vw);
+}
+
+#text2-2 {
+  display: none;
+  position: absolute;
+  top: 15vh;
+  right: 10vw;
+
+  width: 50vw;
+
+  font-size: 2vw;
+  z-index: 100;
+}
+
+.medal {
+  position: absolute;
+  width: 10vw;
+  right:5vw;
+  top: 25vh;
+}
+
+#letter {
+  position: absolute;
+  bottom: 20vh;
+  right: 20vw;
+
+  z-index: 100;
+
+  font-size: 2vw;
+  mix-blend-mode: exclusion;
+}
 }

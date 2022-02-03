@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-  background(255, 150, 0);
+  background(255, 150, 100);
   
   r = 0;
   g = 0;
@@ -17,11 +17,11 @@ function draw() {
   
   noStroke();
   //fill(r,g,b);
-  fill(255,0,0);
+  fill(255,r,0);
   
   ellipse(pmouseX,pmouseY,windowWidth/2);
   
-  fill(255,255,100);
+  fill(r,g,b);
   ellipse(pmouseY,pmouseX,mouseX/2);
 
   

@@ -19,11 +19,11 @@ function draw() {
   
   noStroke();
   //fill(r,g,b);
-  fill(r,0,0);
+  fill(255,100,0);
   
   ellipse(pmouseX,pmouseY,windowWidth/2);
   
-  fill(255,255,b);
+  fill(r*2,g,b);
   ellipse(pmouseX,pmouseY,mouseX/2);
 
   
