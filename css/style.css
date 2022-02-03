@@ -135,30 +135,30 @@ body {
 }
 
 #wrapper2-1 {
-  /*  background-color: black;*/
+  /*  background: black;*/
 }
 
 #wrapper2-2 {
-  background-color: var(--blue);
+  background: var(--blue);
 }
 
 #wrapper2-3 {
-  background-color: black;
+  background: black;
 }
 
 #wrapper2-4 {
-  background-color: var(--blue);
+  background: var(--blue);
 }
 
 #wrapper2-5 {
-  background-color: black;
+  background: black;
 }
 
 
 
 ::selection {
   color: black;
-  background-color: var(--blue);
+  background: var(--blue);
 }
 
 
@@ -205,7 +205,7 @@ p {
   font-weight: 400;
   font-style: normal;
   color: var(--blue);
-  padding: 0.2vw 0.5vw 0vw;
+  padding: 0.2vw 1vw 0vw 0.5vw;
 
   mix-blend-mode: exclusion;
 }
@@ -245,7 +245,7 @@ summary {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 0.3rem;
+  width: 0.25vw;
 }
 
 /* Track */
@@ -290,7 +290,7 @@ iframe {
 
 .em {
   text-decoration: underline;
-  background-color: var(--blue);
+  background: var(--blue);
   color: black;
 }
 
@@ -332,7 +332,7 @@ iframe {
   top: 15vh;
   left: 10vw;
   font-size: 2vw;
-
+  z-index: 100;
   color: var(--blue);
 }
 
@@ -376,6 +376,7 @@ iframe {
   z-index: 100;
 
   font-size: 2vw;
+  mix-blend-mode: exclusion;
 }
 
 #text3-2 {
@@ -456,6 +457,8 @@ iframe {
 
   z-index: 100;
   font-size: 2vw;
+    mix-blend-mode: exclusion;
+
 }
 
 #text4-2 {
@@ -565,7 +568,6 @@ iframe {
   width: 20vw;
   top: 40vh;
   left: 40vw;
-  cursor: zoom-in;
   transition: transform .1s;
   z-index: 0;
   pointer-events: auto;
@@ -575,6 +577,7 @@ iframe {
   position: absolute;
   top: -120vh;
   left: -30vw;
+  transform: scale(1);
 }
 
 #text6-1 {
@@ -584,6 +587,8 @@ iframe {
 
   z-index: 100;
   font-size: 2vw;
+    mix-blend-mode: exclusion;
+
 }
 
 #text6-2 {
@@ -739,6 +744,8 @@ iframe {
   z-index: 100;
 
   font-size: 2vw;
+    mix-blend-mode: exclusion;
+
 
 }
 
@@ -925,8 +932,16 @@ iframe {
 .officers {
   position: absolute;
   width: 40vw;
-  top: -5vh;
+  top: -0vh;
   left: 20vw;
+  transition: transform 1s;
+  z-index: 0;
+  pointer-events: auto;
+}
+
+.officers:hover {
+transform: scale(1.5);
+/*  top: 10vh;*/
 }
 
 .lopp {
@@ -1051,7 +1066,7 @@ nav {
   border-color: var(--blue);
 
   /*      bottom: 0rem;*/
-  /*      background-color: white;*/
+  /*      background: white;*/
   /*      border-width: 1px 0 0;*/
   /*      height: 2rem;*/
 }
@@ -1083,7 +1098,7 @@ nav a {
 
 a:hover {
   color: black;
-  background-color: var(--blue);
+  background: var(--blue);
 }
 
 
@@ -1105,25 +1120,33 @@ button {
   height: 1.5vw;
 
   color: var(--blue);
-  background-color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
   border: solid var(--blue);
   border-width: 0 0 1px 1px;
 }
 
 .close:hover {
-  background-color: var(--blue);
+  background: var(--blue);
   color: black;
 }
 
 .box {
   position: absolute;
 
-  background-color: var(--transparent);
+  background: var(--transparent);
   border: 1px solid var(--blue);
 
   box-shadow: var(--shadow);
   
   padding: 1vw;
+}
+
+.box::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+.box::-webkit-scrollbar-track {
+  background-image: var(--transparent);
 }
 
 .button {
@@ -1137,7 +1160,7 @@ button {
 }
 
 .button:hover {
-  background-color: var(--blue);
+  background: var(--blue);
   color: black;
 }
 
@@ -1165,7 +1188,7 @@ button {
   bottom: 10vh;
   left: 5vw;
   font-size: 2vw;
-  color: red;
+  color: darkred;
   mix-blend-mode: multiply;
 }
 
@@ -1192,6 +1215,7 @@ button {
   top: 10vh;
   left: 10vw;
   font-size: 7vw;
+  mix-blend-mode: exclusion;
 }
 
 #text11-3 {
@@ -1283,9 +1307,11 @@ button {
 
 #text15-2 {
   width: 50vw;
-  position: absolute;
+/*  position: absolute;*/
+  position: relative;
   bottom: 1vh;
   right: 1vw;
+  left: 25vw;
   font-size: 2vw;
   /*  color: black;*/
   text-align: right;
@@ -1345,11 +1371,12 @@ img {
   mix-blend-mode: exclusion;
 }
 
-.text12-6 {
+#text12-6 {
   position: absolute;
   top: 10vh;
   left: 10vw;
   font-size: 1.2vw;
+  width: 50vw;
 }
 
 #text13-3 {
@@ -1384,11 +1411,11 @@ img {
   position: absolute;
   width: 75vw;
   height: 75vh;
-  z-index: 1000;
+  z-index: 2000;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: black;
+  background: black;
 }
 
 .info {
@@ -1406,15 +1433,14 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 500;
-  background-color: var(--transparent);
+  z-index: 1500;
+  background: black;
 }
 
 
 
 
 .startbutton {
-font-size: 3vw;
   padding: 1vh 1vw 0vw 1vw;
   font-size: 5vw;
 }
@@ -1515,7 +1541,7 @@ audio::-webkit-media-controls-panel {
   left: 10vw;
   top: 10vh;
 /*  transform: translate(-50%, -50%);*/
-/*  background-color: black;*/
+/*  background: black;*/
     overflow: auto;
 }
 
@@ -1548,3 +1574,141 @@ audio::-webkit-media-controls-panel {
   left: 5vw;
   color: var(--blue);
 }
+
+.fire {
+  position: absolute;
+  right: 15vw;
+  bottom: 25vh;
+  width: 5vw;
+  z-index: 100;
+}
+
+.background {
+  position: absolute;
+  width: 50vw;
+  bottom: 0;
+  left: 10vw;;
+  filter: blur(10vw);
+  mix-blend-mode: lighten;
+}
+
+
+
+#blood {
+  display: none;
+  background: darkred;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#slaughter:hover {
+  background: darkred;
+}
+
+.brown {
+  color: brown;
+}
+
+.ice2 {
+  position: absolute;
+  width: 40vw;
+  bottom: 50vh;
+  left: 50vw;
+  mix-blend-mode: difference;
+}
+
+.start {
+  position: absolute;
+  width: 30vw;
+  bottom: -35vh;
+  right: -30vw;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.start:hover {
+  mix-blend-mode: exclusion;
+  transform: rotate(360deg) scale(0.5);
+}
+
+
+/* Hover Deer */
+@-webkit-keyframes hvr-deer {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes hvr-deer {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.hvr-deer {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-deer:hover, .hvr-deer:focus, .hvr-deer:active {
+  -webkit-animation-name: hvr-deer;
+  animation-name: hvr-deer;
+  -webkit-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+/* Hover Dogs */
+@-webkit-keyframes hvr-dogs {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes hvr-dogs {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.hvr-dogs {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-dogs:hover, .hvr-dogs:focus, .hvr-dogs:active {
+  -webkit-animation-name: hvr-dogs;
+  animation-name: hvr-dogs;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+

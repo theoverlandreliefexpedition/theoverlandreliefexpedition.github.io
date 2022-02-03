@@ -22,14 +22,15 @@ for( audioplayer of audioplayers ){
 
 
 var outerWrapper = document.getElementById('outer-wrapper');
-var screen = 1;
+var screen = 0;
 
 outerWrapper.addEventListener('scroll', function(){
 
 	var scrollPosition = outerWrapper.scrollTop;
 	var screenWidth = window.innerWidth;
 
-  scrollPosition -= screenWidth * -1/3;
+//  scrollPosition -= screenWidth * -1/3;
+  scrollPosition += screenWidth * 1/3;
   
 	var currentScreen = Math.ceil(scrollPosition/screenWidth);
 

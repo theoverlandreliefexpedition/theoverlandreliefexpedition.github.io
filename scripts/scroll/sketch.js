@@ -12,7 +12,7 @@ function draw() {
   rect(pos, windowHeight/2, pos, 2);
   
   noFill();
-  ellipse(0, windowHeight/2, pos*2);
+  ellipse(0, windowHeight/2, mouseX*2);
 
 //  cursor('grab');
 

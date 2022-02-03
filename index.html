@@ -53,13 +53,15 @@
 
 
     <div id="wrapper">
+      
+      <div id="background"></div>
 
       <div id="0" class="screen one">
 
 
         <!--       START INFO-->
 
-        <div id="background">
+<!--        <div id="background">-->
 
 
           <div id="start" class="box">
@@ -72,22 +74,20 @@
               <p>
                 Scroll to navigate through different moments of an expedition that is based on real events.<br>
                 Every scene has its own specific sound so make sure your sound is on and the volume is turned up &mdash; but not too high.<br>
-                Use speakers or headphones and Chrome browser on desktop for the full experience.<br>
-                Click on the button to enable sound and start the journey.
-
-
+                Please do not resize the window.
               </p>
             </div>
 
 
 
-            <div id="button" class="button redaction35" onclick="document.getElementById('audio-2').play(); getElementById('button').style.display='none'; getElementById('start').style.display='none'; getElementById('background').style.display='none'">
-              <p class="startbutton redaction50">start</p>
+            <div id="button" class="redaction35" onclick="document.getElementById('audio-2').play(); getElementById('button').style.display='none'; getElementById('start').style.display='none'; getElementById('background').style.display='none'">
+<!--              <p class="startbutton redaction50">start</p>-->
+              <img class="start" src="images/play.svg">
             </div>
 
 
 
-          </div>
+<!--          </div>-->
 
 
         </div>
@@ -127,7 +127,7 @@
           <h2>Duty</h2>
         </div>
 
-        <p id="text2-1">landed safely on the beach, <br><br>our good-byes to our shipmates had been said, <br> and we stood on the shore watching the boat as it went back to the Bear,<br><br> wondering whether we should ever see our friends again.</p>
+        <p id="text2-1" class="draggable">landed safely on the beach, <br><br>our good-byes to our shipmates had been said, <br> and we stood on the shore watching the boat as it went back to the Bear,<br><br> wondering whether we should ever see our friends again.</p>
 
         <h5>good-bye</h5>
 
@@ -135,12 +135,9 @@
 
         <img class="bear" src="images/bear.png">
 
-        <iframe class="scroll" src="scripts/scroll/index.html" width="100%" height="100%" frameBorder="0"></iframe>
-
-        <!--              <audio id="audio-2" class="audioplayer" src="audio/1_duty.mp3" controls></audio>-->
+        <iframe class="scroll" src="scripts/scroll/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
 
         <audio id="audio-2" class="audioplayer" src="audio/1_duty.mp3" controls></audio>
-
 
         <iframe id="duty" class="svg" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
         <button class="svgbtn" onClick='document.getElementById("duty").src="svg/duty.html";'>compass</button>
@@ -165,8 +162,8 @@
         <div class="draggable" id="text3-1">
 
           <p>The sled is an open framework of hickory or oak, <br>no more wood being used than is absolutely necessary<br><br>
-            <em class="button" onclick="getElementById('text3-2').style.display='flex'">click for dog ride</em>
-            <em class="button" onclick="getElementById('text3-3').style.display='flex'">click for deer ride</em>
+            <em class="button hvr-dogs" onclick="getElementById('text3-2').style.display='flex'">click for dog ride</em>
+            <em class="button hvr-deer" onclick="getElementById('text3-3').style.display='flex'">click for deer ride</em>
 
         </div>
 
@@ -240,7 +237,7 @@
         <img class="grave3" src="images/grave3.png">
 
 
-        <div class="draggable" id="text4-1">
+        <div class="draggable exclusion" id="text4-1">
 
           <p>He saw what our needs were, and, so far as he was able, <br>or as much as he had, he would help us gladly.<br>
             It is refreshing to meet such simple, true-hearted people <br>in time of need,
@@ -285,6 +282,11 @@
           enables the relatives to find material to build one of their scaffolds, on
           which the body is then placed</p>
 -->
+        
+<!--        <img class="background" src="images/campfire.gif">-->
+        
+        <iframe class="background" src="scripts/background/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        
 
         <audio id="audio-4" class="audioplayer" src="audio/3_open-hearted.mp3" controls></audio>
 
@@ -415,7 +417,11 @@
         </div>
 
 
-        <img class="ice" src="images/ice-alt2.png">
+<!--        <img class="ice" src="images/ice-alt2.png">-->
+        
+        <img class="ice" src="images/ice-alt3.png">
+        <img class="ice2" src="images/ice-alt3.png">
+        
         <div class="icy"></div>
         <img class="icy-gradient multiply" src="images/gradient.png">
 
@@ -530,6 +536,12 @@
 
           <p>Breakfast being over, the sleds were gotten out and packed, reserv ing the tent to the last, so as to be handy at night. The grub box, with a little food inside, and a camp kettle and axe were placed on the sled where they could easily be gotten at in case a stop was made during the day. The sleds were then lashed, the dogs caught and har nessed, and we were ready to start.</p>
         </div>
+               
+
+        <img class="fire" src="images/campfire.gif">
+        <iframe class="background" src="scripts/camping/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        
+        
 
         <audio id="audio-8" class="audioplayer" src="audio/7_camping.mp3" controls></audio>
 
@@ -702,7 +714,7 @@
 
           <p><em class="button redaction35" onclick="getElementById('text11-3').style.display='flex'">dogs</em></p>
           <h5>and</h5>
-          <p><em class="button redaction35" onclick="getElementById('text11-2').style.display='flex'">wolves</em></p>
+          <p><em class="button redaction35 brown" onclick="getElementById('text11-2').style.display='flex'">wolves</em></p>
 
         </div>
 
@@ -721,7 +733,7 @@
 
           <p>Feeding the dogs was always a trying and interesting task. They are always hungry, and upon appearing among them with an armful of dried fish, in their eagerness to get a stray mouthful, they crowd around in one fighting, jumping mass, and make it difficult for one to even keep his balance. After throwing out a fish to each dog, it takes all hands with clubs to keep off the larger fellows and see that the smaller and weaker ones are allowed to keep and eat their share. Usually they are peaceful enough, but when being fed they are like wild animals, and snarl and bite each other, and keep up a continual fight until everything is eaten. When the meal is finished and there is nothing more to eat in sight, they will lie down quietly in the snow and go to sleep. They are tough and need no protection. During the coldest weather and the most violent blizzards, they will curl up on the snow anywhere and sleep, and when the snow has drifted over them, get up, shake themselves, and lie down again in the same place for another sleep.</p>
 
-          <p>On the morning of March 17 we found the dogs buried in the drift, with only their noses sticking out. They were all right, however, and anxious to be going.</p>
+          <p class="brown">On the morning of March 17 we found the dogs buried in the drift, with only their noses sticking out. They were all right, however, and anxious to be going.</p>
 
         </div>
 
@@ -746,20 +758,20 @@
         <img class="blizzard-gradient" src="images/gradient.png">
 
 
-        <p id="text12-1">Our usual blizzard came up</p>
+        <p class="draggable" id="text12-1">Our usual blizzard came up</p>
 
-        <p id="text12-2">We had our usual snowstorm at night and it lasted until the middle of the following day</p>
+        <p class="draggable" id="text12-2">We had our usual snowstorm at night and it lasted until the middle of the following day</p>
 
-        <p id="text12-3">The snow began to fly, blinding us so there was no use trying to face it, and we had to camp where we were. We had to dig a hole in the snow and build a barricade around it before we could pitch our tent in safety.</p>
+        <p class="draggable" id="text12-3">The snow began to fly, blinding us so there was no use trying to face it, and we had to camp where we were. We had to dig a hole in the snow and build a barricade around it before we could pitch our tent in safety.</p>
 
-        <p id="text12-4">We thought our blizzards were about done with, but soon found that they were almost of daily occurrence and we must make the best of them, and the most of what time we could travel in between.</p>
-
-
-        <p id="text12-5">I afterwards learned that during this blizzard Lopp was compelled to move his camp. How such things are done at such times none can tell but those who do them, and too often the experiences are so terrible that the desire is to forget about them when they have passed. When we caught up with the deer herd later, all the party showed the effects of their work this day, in the masses of black skin on their faces and noses where they had been frozen while shifting their camp. During this day the thermometer registered—40° to —45°, which is unusually low with so much wind.</p>
+        <p class="draggable" id="text12-4">We thought our blizzards were about done with, but soon found that they were almost of daily occurrence and we must make the best of them, and the most of what time we could travel in between.</p>
 
 
+        <p class="draggable" id="text12-5">I afterwards learned that during this blizzard Lopp was compelled to move his camp. How such things are done at such times none can tell but those who do them, and too often the experiences are so terrible that the desire is to forget about them when they have passed. When we caught up with the deer herd later, all the party showed the effects of their work this day, in the masses of black skin on their faces and noses where they had been frozen while shifting their camp. During this day the thermometer registered—40° to —45°, which is unusually low with so much wind.</p>
 
-        <p class="text12-6">Though the temperature moderated somewhat to-day, the wind blew as hard as ever, and we could only remain where we were until the blizzard had spent its force. We had been warned concerning the blizzards on this coast, and I had heard many stories of the terrible times of parties who had been caught in these storms. One party I knew of had been storm-bound for forty-two days at a place but a few miles from where we now were, and were compelled to eat their dogs before the storm passed over.</p>
+
+
+        <p class="draggable" id="text12-6">Though the temperature moderated somewhat to-day, the wind blew as hard as ever, and we could only remain where we were until the blizzard had spent its force. We had been warned concerning the blizzards on this coast, and I had heard many stories of the terrible times of parties who had been caught in these storms. One party I knew of had been storm-bound for forty-two days at a place but a few miles from where we now were, and were compelled to eat their dogs before the storm passed over.</p>
 
         <audio id="audio-12" class="audioplayer" src="audio/11_blizzards.mp3" controls></audio>
 
@@ -806,7 +818,7 @@
 
         <div class="hide">
 
-          <img class="deer" src="images/deer.png">
+          <img class="deer multiply" src="images/deer.png">
           <img class="deer-alt" src="images/deer-alt.png">
         </div>
 
@@ -819,8 +831,9 @@
 
 
         <!--        <iframe class="kill-emoji" src="scripts/kill-emoji/index.html" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>-->
-
-        <!--       448x knife emoji-->
+        
+<!--
+               448x knife emoji
         <p class="knives-emoji">&#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
@@ -885,9 +898,13 @@
           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br>
           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;
           &#128298; &#128298; &#128298; &#128298; &#128298; &#128298; &#128298;<br></p>
+-->
 
-
-        <p id="text14-1">If the situation is found, as now anticipated, to be desperate, the officers must take charge in the name of the Government and organize the community for mutual support and good order, appor tioning the provisions on hand, and slaughter as many reindeer as necessary (which it is hoped will have arrived) for food, to make all hold out until August, 1898, when you will arrive in the Bear.</p>
+<div id="blood">
+  
+</div>
+       
+        <p id="text14-1">If the situation is found, as now anticipated, to be desperate, the officers must take charge in the name of the Government and organize the community for mutual support and good order, appor tioning the provisions on hand, and <span id="slaughter"><em>slaughter</em></span> as many reindeer as necessary (which it is hoped will have arrived) for food, to make all hold out until August, 1898, when you will arrive in the Bear.</p>
 
         <audio id="audio-14" class="audioplayer" src="audio/13_taking-lives.mp3" controls></audio>
 
@@ -969,7 +986,7 @@
 
             <p><a href="https://de.wikipedia.org/wiki/Kurt_L%C3%BCtgen">Kurt Lüttgen</a> for writing this random book I pulled out of the public bookcase.</p>
 
-            <p><a href="https://d.th-nuernberg.de/en/personen/">Prof. Zitzmann, Prof. Krüll, Prof. Dr. Schaden, Prof. Vetter and Steve Wühr</a> for pushing me in nice directions.</p>
+            <p><a href="https://d.th-nuernberg.de/en/personen/">Prof. Zitzmann, Prof. Krüll, Prof. Dr. Schaden, Prof. Vetter, Steve Wühr</a> and Max Deistler for pushing me in nice directions.</p>
 
             <p><a href="https://www.maxhaesslein.de/" target="_blank">Max Hässlein</a> for helping with the code.</p>
 
