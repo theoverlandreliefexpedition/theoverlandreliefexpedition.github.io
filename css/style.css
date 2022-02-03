@@ -438,14 +438,14 @@ iframe {
 .grave2 {
   position: absolute;
   right: 25vw;
-  bottom: 5vh;
+  bottom: 10vh;
   width: 25vw;
 }
 
 .grave3 {
   position: absolute;
   right: 10vw;
-  bottom: 0vh;
+  bottom: 5vh;
   width: 25vw;
 }
 
@@ -570,14 +570,12 @@ iframe {
   left: 40vw;
   transition: transform .1s;
   z-index: 0;
-  pointer-events: auto;
 }
 
 .track-chart:active {
   position: absolute;
-  top: -120vh;
-  left: -30vw;
-  transform: scale(1);
+  top: -120vh !important;
+  left: -30vw !important;
 }
 
 #text6-1 {
@@ -988,13 +986,7 @@ transform: scale(1.5);
   pointer-events: none;
 }
 
-.kill-emoji {
-  position: absolute;
-  top: 0;
-  z-index: 200;
-  height: 100vh;
-  width: 100vw;
-}
+
 
 .ducks {
   position: absolute;
@@ -1359,7 +1351,7 @@ button {
   /*  width: auto;*/
 }
 
-img:active {
+img:active:not(.compass) {
   width: auto;
   position: absolute;
   left: auto;
@@ -1440,10 +1432,7 @@ img {
 
 
 
-.startbutton {
-  padding: 1vh 1vw 0vw 1vw;
-  font-size: 5vw;
-}
+
 
 
 
@@ -1709,3 +1698,17 @@ audio::-webkit-media-controls-panel {
   animation-iteration-count: infinite;
 }
 
+
+.compass {
+  position: absolute;
+  top: 10vh;
+  right: 20vw;
+  width: 5vw;
+  z-index: 1000;
+  cursor: pointer !important;
+  transition: transform 10s; 
+}
+
+.compass:hover {
+  transform: rotate(360deg);
+}
