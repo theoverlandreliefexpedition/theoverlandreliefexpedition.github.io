@@ -10,7 +10,7 @@ function draw() {
   
   let starX = random(width);
   let starY = random(height);
-  let gr = random(1, 15)
+  let gr = random(1, 10)
   
 //  ellipse(starX, starY, starX/2)
   ellipse(starX, starY, gr)

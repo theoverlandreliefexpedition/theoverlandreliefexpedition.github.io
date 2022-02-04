@@ -418,6 +418,7 @@ iframe {
   right: 25vw;
   top: 0vh;
   width: 50vw;
+  pointer-events: none;
 }
 
 .natives2 {
@@ -533,7 +534,8 @@ iframe {
   position: absolute;
   width: 60vw;
   top: 5vh;
-  left: 5vw;
+  left: 0vw;
+  pointer-events: none;
 }
 
 .cursor {
@@ -661,7 +663,7 @@ iframe {
   left: 15vw;
   width: 30vw;
 
-  z-index: 100;
+  z-index: 1000;
 
   font-size: 4vw;
 }
@@ -705,8 +707,8 @@ iframe {
   z-index: 100;
   width: 75vw;
   position: absolute;
-  top: 50vh;
-  left: 50vw;
+  top: 10vh;
+  left: 15vw;
   font-size: 1.5vw;
   z-index: 1500;
 }
@@ -714,11 +716,12 @@ iframe {
 
 /*SCREEN 8*/
 
-.camp {
+.snow-houses {
   position: absolute;
   top: 5vh;
   left: 5vw;
   width: 70vw;
+  pointer-events: none;
 }
 
 .camp-tilton {
@@ -728,11 +731,12 @@ iframe {
   width: 40vw;
 }
 
-.snow-houses {
+.camp {
   position: absolute;
   top: -10vh;
   right: -10vw;
   width: 70vw;
+  pointer-events: none;
 }
 
 #text8-1 {
@@ -826,10 +830,10 @@ iframe {
 
 #text10-1 {
   z-index: 100;
-  width: 50vw;
+  width: 40vw;
   position: absolute;
-  bottom: 10vh;
-  right: 10vw;
+  bottom: 15vh;
+  right: 0vw;
   font-size: 3vw;
   color: orange;
 }
@@ -864,7 +868,7 @@ iframe {
 
 .deer-account {
   position: absolute;
-  width: 70vw;
+  width: 60vw;
   z-index: 200;
   left: -0vw;
   top: 0vh;
@@ -958,6 +962,8 @@ transform: scale(1.5);
   transition: visibility 0s, opacity 1s linear;
 
   mix-blend-mode: normal;
+    cursor: crosshair;
+
 }
 
 
@@ -1178,9 +1184,9 @@ button {
   top: 20vh;
   left: 20vw;
   font-size: 6vw;
-  line-height: 1vw;
+  line-height: 6vw;
   overflow: auto;
-  border: 1px solid var(--blue);
+  border: 1px solid darkred;
 }
 
 #text11-2::-webkit-scrollbar-thumb {
@@ -1340,7 +1346,7 @@ button {
   /*  width: auto;*/
 }
 
-img:active:not(.compass):not(.companions):not(.midday-halt) {
+img:active:not(.compass):not(.lopp):not(.officers):not(.deer-alt) {
   width: auto;
   position: absolute;
   left: auto;
@@ -1714,7 +1720,7 @@ audio::-webkit-media-controls-panel {
   mix-blend-mode: normal;
 }
 
-#icy-background {
+#icy-background1 {
   display: none;
   position: absolute;
   top: 0;
@@ -1725,7 +1731,50 @@ audio::-webkit-media-controls-panel {
   background: var(--blue);
   opacity: 0.5;
   filter: blur(3vw);
+  pointer-events: none;
 }
+
+#icy-background2 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1500;
+  background: var(--blue);
+  opacity: 0.5;
+  filter: blur(3vw);
+  pointer-events: none;
+}
+
+#icy-background3 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1500;
+  background: var(--blue);
+  opacity: 0.5;
+  filter: blur(3vw);
+  pointer-events: none;
+}
+#icy-background4 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1500;
+  background: var(--blue);
+  opacity: 0.5;
+  filter: blur(3vw);
+  pointer-events: none;
+}
+
 
 #text2-2 {
   display: none;
@@ -1744,6 +1793,7 @@ audio::-webkit-media-controls-panel {
   width: 10vw;
   right:3vw;
   bottom: 2vh;
+  pointer-events: none;
 }
 
 #letter {
@@ -1776,3 +1826,19 @@ span#slaughter.bloody{
 
 
 
+
+
+
+.close-wolf {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  width: 1.75vw;
+  height: 1.75vw;
+
+  color: darkred;
+  background: rgba(0, 0, 0, 0);
+  border: solid darkred;
+  border-width: 0 0 1px 1px;
+}
