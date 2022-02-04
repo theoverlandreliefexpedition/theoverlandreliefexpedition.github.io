@@ -1508,7 +1508,7 @@ audio::-webkit-media-controls-panel {
   right: 15vw;
   width: 40vw;
   font-size: 3vw;
-  color: orange !important;
+  color: peachpuff !important;
 }
 
 #report:link, #report:visited, .outro a:link, .outro a:visited {
@@ -1554,6 +1554,7 @@ audio::-webkit-media-controls-panel {
 
 .fixed {
   position: fixed;
+  color: peachpuff;
 }
 
 .head {
@@ -1797,6 +1798,7 @@ audio::-webkit-media-controls-panel {
   right:3vw;
   bottom: 2vh;
   pointer-events: none;
+/*  filter: hue-rotate(152deg);*/
 }
 
 #letter {
@@ -1844,4 +1846,8 @@ span#slaughter.bloody{
   background: rgba(0, 0, 0, 0);
   border: solid darkred;
   border-width: 0 0 1px 1px;
+}
+
+.placeholder {
+    padding-bottom: 15vw;
 }
