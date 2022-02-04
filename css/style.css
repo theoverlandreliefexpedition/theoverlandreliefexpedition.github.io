@@ -122,9 +122,7 @@ body {
 
 .fourteen {}
 
-.fifteen {
-  background-image: linear-gradient(90deg, transparent 50%, peachpuff 95%);
-}
+.fifteen {}
 
 
 #wrapper2 {
@@ -1292,7 +1290,7 @@ button {
 /*  position: absolute;*/
   position: relative;
   bottom: 0vh;
-  right: -30vw;
+  right: -15vw;
   font-size: 2vw;
   /*  color: black;*/
   text-align: right;
@@ -1302,14 +1300,15 @@ button {
   display: flex;
   z-index: 100;
   position: absolute;
-  top: 40vh;
-  right: 10vw;
+  bottom: 5vh;
+  right: 5vw;
   font-size: 10vw;
-/*  mix-blend-mode: exclusion;*/
+  mix-blend-mode:luminosity;
 }
 
 #text15-4 {
   display: none;
+  width: 75vw;
   font-size: 1.2vw;
   z-index: 100;
   flex-direction: column;
@@ -1532,7 +1531,7 @@ audio::-webkit-media-controls-panel {
   top: 45vh;
   left: 35vw;
   font-size: 5vw;
-  mix-blend-mode: exclusion;
+  mix-blend-mode:luminosity;
 }
 
 .outro {
@@ -1579,14 +1578,6 @@ audio::-webkit-media-controls-panel {
 
 
 
-
-/*
-#slaughter:hover {
-  background: darkred;
-  color: white;
-  padding: 50vw;
-}
-*/
 
 .red {
   color: darkred;
@@ -1751,8 +1742,8 @@ audio::-webkit-media-controls-panel {
 .medal {
   position: absolute;
   width: 10vw;
-  right:5vw;
-  top: 25vh;
+  right:3vw;
+  bottom: 2vh;
 }
 
 #letter {
@@ -1768,19 +1759,20 @@ audio::-webkit-media-controls-panel {
 
 span#slaughter{
     font-style: italic;
-    color: lightblue;
 }
 
 
 span#slaughter.bloody{
-    color: white;
+    color: black;
 }
 
 #veil{
     height: 0px;
     width: 0px;
     z-index: 10000;
-    background-color: red;
+    background-color: darkred;
     opacity: 0;
 }
+
+
 

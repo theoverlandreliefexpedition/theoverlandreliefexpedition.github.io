@@ -780,7 +780,7 @@
        
       
         <div id="veil"></div>
-        <p id="text14-1" >&ldquo;If the situation is found, as now anticipated, to be desperate, the officers must take charge in the name of the Government and organize the community for mutual support and good order, appor tioning the provisions on hand, and <span id="slaughter" class="first">slaughter</span> as many reindeer as necessary (which it is hoped will have arrived) for food, to make all hold out until August, 1898, when you will arrive in the Bear.&rdquo;</p>
+        <p id="text14-1" >&ldquo;If the situation is found, as now anticipated, to be desperate, the officers must take charge in the name of the Government and organize the community for mutual support and good order, appor tioning the provisions on hand, and <span id="slaughter" class="first redaction50">slaughter</span> as many reindeer as necessary (which it is hoped will have arrived) for food, to make all hold out until August, 1898, when you will arrive in the Bear.&rdquo;</p>
 
         <audio id="audio-14" class="audioplayer" src="audio/13_taking-lives.mp3" controls></audio>
 
@@ -818,7 +818,7 @@
 
         <div id="text15-5">
 
-          <p><em class="button hvr-dogs" onclick="getElementById('text15-4').style.display='flex'">success</em>
+          <p><em class="button" onclick="getElementById('text15-4').style.display='flex'">success</em>
           </p>
 
         </div>
@@ -934,6 +934,22 @@
       appendTo: 'body',
       scroll: false //stops scrolling container when moved outside boundaries
     });
+    
+    if(slaughter){
+   slaughter.addEventListener('mouseenter', function(){
+        this.classList.remove('first');
+        this.classList.add('bloody');
+        $(veil).css('opacity', 1) && $(veil).animate({height:10000}, 20);
+       $(veil).css('opacity', 1) && $(veil).animate({width:10000}, 20);
+   });
+    
+    slaughter.addEventListener('mouseleave', function(){
+        this.classList.add('first');
+        this.classList.remove('bloody');
+        $(veil).css('opacity', 0) && $(veil).animate({height:0}, 20);
+        $(veil).css('opacity', 0) && $(veil).animate({width:0}, 20);
+    }); 
+}   
   </script>
 
 </body>
