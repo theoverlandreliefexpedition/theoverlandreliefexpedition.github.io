@@ -533,7 +533,7 @@ iframe {
 
 .midday-halt {
   position: absolute;
-  width: 50vw;
+  width: 60vw;
   top: 5vh;
   left: 5vw;
 }
@@ -833,6 +833,7 @@ iframe {
   bottom: 10vh;
   right: 10vw;
   font-size: 3vw;
+  color: orange;
 }
 
 .deer {
@@ -863,22 +864,9 @@ iframe {
   /*  mix-blend-mode: lighten;*/
 }
 
-.deer-emoji {
-  margin: 0;
-  position: absolute;
-  z-index: 100;
-  left: 50vw;
-  bottom: 0rem;
-  display: inline;
-  font-size: 1rem;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  pointer-events: none;
-}
-
 .deer-account {
   position: absolute;
-  width: 50vw;
+  width: 70vw;
   z-index: 200;
   left: -0vw;
   top: 0vh;
@@ -982,19 +970,6 @@ transform: scale(1.5);
   right: 10vw;
   top: 10vh;
 }
-
-.knives-emoji {
-  margin: 0;
-  position: absolute;
-  z-index: 100;
-  left: 50vw;
-  bottom: 0rem;
-  display: inline;
-  font-size: 1rem;
-  pointer-events: none;
-}
-
-
 
 .ducks {
   position: absolute;
@@ -1116,8 +1091,8 @@ button {
   z-index: 1000;
   top: 0;
   right: 0;
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 1.75vw;
+  height: 1.75vw;
 
   color: var(--blue);
   background: rgba(0, 0, 0, 0);
@@ -1205,7 +1180,13 @@ button {
   top: 20vh;
   left: 20vw;
   font-size: 6vw;
+  line-height: 1vw;
   overflow: auto;
+  border: 1px solid var(--blue);
+}
+
+#text11-2::-webkit-scrollbar-thumb {
+  background: darkred;
 }
 
 #text11-1 {
@@ -1360,7 +1341,7 @@ button {
   /*  width: auto;*/
 }
 
-img:active:not(.compass) {
+img:active:not(.compass):not(.companions):not(.midday-halt) {
   width: auto;
   position: absolute;
   left: auto;
@@ -1599,11 +1580,13 @@ audio::-webkit-media-controls-panel {
 
 
 
+/*
 #slaughter:hover {
   background: darkred;
   color: white;
   padding: 50vw;
 }
+*/
 
 .red {
   color: darkred;
@@ -1782,4 +1765,22 @@ audio::-webkit-media-controls-panel {
   font-size: 2vw;
   mix-blend-mode: exclusion;
 }
+
+span#slaughter{
+    font-style: italic;
+    color: lightblue;
 }
+
+
+span#slaughter.bloody{
+    color: white;
+}
+
+#veil{
+    height: 0px;
+    width: 0px;
+    z-index: 10000;
+    background-color: red;
+    opacity: 0;
+}
+
