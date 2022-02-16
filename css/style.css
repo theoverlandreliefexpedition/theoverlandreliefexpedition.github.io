@@ -1851,3 +1851,11 @@ span#slaughter.bloody{
 .placeholder {
     padding-bottom: 15vw;
 }
+
+.canidae {
+  position: absolute;
+  left: 70vw;
+  top: 60vh;
+  font-size: 10vw;
+  mix-blend-mode:difference;
+}
